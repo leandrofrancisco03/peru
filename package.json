@@ -1,0 +1,39 @@
+{
+  "name": "connectologyia",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev --port=3000 --host=0.0.0.0",
+    "build": "astro build && node scripts/finalize-build.mjs",
+    "preview": "astro preview",
+    "preview:workers": "wrangler dev --local --port 8787 --ip 127.0.0.1",
+    "lint": "astro check",
+    "check:seo": "node scripts/check-seo.mjs",
+    "check:routes": "node scripts/check-routes.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "images:generate": "node scripts/generate-social-images.mjs"
+  },
+  "dependencies": {
+    "@astrojs/react": "^6.0.1",
+    "@astrojs/sitemap": "^3.7.3",
+    "@tailwindcss/vite": "^4.1.14",
+    "astro": "^7.0.7",
+    "react": "^19.0.1",
+    "react-dom": "^19.0.1",
+    "tailwindcss": "^4.1.14"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "parse5": "^7.3.0",
+    "sharp": "^0.35.3",
+    "typescript": "~5.8.2",
+    "wrangler": "^4.147.0"
+  }
+}

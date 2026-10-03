@@ -1,0 +1,10 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import ServiceCards from '../../components/ServiceCards.astro';
+import { services } from '../../data/services';
+import { absoluteUrl } from '../../lib/site';
+const schema = { '@type': 'CollectionPage', '@id': absoluteUrl('/servicios#collection'), mainEntity: { '@type': 'ItemList', itemListElement: services.map((service, i) => ({ '@type': 'ListItem', position: i + 1, name: service.title, url: absoluteUrl('/servicios/' + service.slug) })) } };
+---
+<Layout title="Servicios de automatización e IA en Perú | ConnectologyIA" description="Automatización con n8n y Python, agentes de IA para web y Telegram, WhatsApp API oficial e integraciones para reducir tareas manuales en tu empresa." schema={schema} breadcrumbs={[{ name: 'Inicio', url: '/' }, { name: 'Servicios', url: '/servicios' }]}>
+<main id="main-content" class="page-main shell"><header class="page-heading"><span class="eyebrow">Tecnología al servicio de tu operación</span><h1>Conecta herramientas.<br /><span class="gradient-text">Recupera tiempo.</span></h1><p>Trabajamos con empresas de Perú que necesitan reducir tareas manuales, atender mejor y conectar sus datos. Elegimos la tecnología a partir del proceso.</p></header><ServiceCards /><aside class="callout"><h2>¿Por dónde conviene comenzar?</h2><p>Un proceso frecuente, con reglas claras y un resultado medible suele ser el mejor primer paso.</p><a href="/contacto" class="button">Revisemos tu caso ↗</a></aside></main>
+</Layout>

@@ -1,0 +1,55 @@
+---
+import SiteNav from '../components/SiteNav.astro';
+import { Footer } from '../components/Footer';
+import { WhatsAppButton } from '../components/WhatsAppButton';
+import { absoluteUrl, SITE_NAME, EMAIL, PHONE, jsonLd } from '../lib/site';
+import '../index.css';
+import { getImage } from 'astro:assets';
+import brand from '../assets/brand.png';
+interface Props {
+  title: string; description?: string; canonical?: string; ogType?: string; ogImage?: string;
+  noindex?: boolean; schema?: Record<string, unknown> | Record<string, unknown>[];
+  breadcrumbs?: { name: string; url: string }[];
+}
+const { title, description = 'Automatización con n8n, agentes de IA e integraciones para empresas de Perú.', canonical: customCanonical, ogType = 'website', ogImage = '/og/connectologyia.png', noindex = false, schema = [], breadcrumbs = [] } = Astro.props;
+// File output exposes .html while building; Cloudflare serves extensionless URLs.
+const path = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/\/$/, '') || '/';
+const canonical = customCanonical || absoluteUrl(path);
+const organizationId = absoluteUrl('/#organization');
+const brandIcon = await getImage({ src: brand, width: 96, height: 96, format: 'png' });
+const entities = Array.isArray(schema) ? schema : [schema];
+const mainEntity = entities.find(item => ['Service', 'BlogPosting', 'CollectionPage', 'SoftwareApplication', 'WebApplication'].includes(item['@type'] as string));
+const collection = entities.find(item => item['@type'] === 'CollectionPage');
+const graph = [
+  { '@type': 'Organization', '@id': organizationId, name: SITE_NAME, url: absoluteUrl(), logo: absoluteUrl('/logo-connectologyia.png'), email: EMAIL, telephone: PHONE, areaServed: { '@type': 'Country', name: 'Perú' }, contactPoint: { '@type': 'ContactPoint', telephone: PHONE, contactType: 'sales', areaServed: 'PE', availableLanguage: 'Spanish' } },
+  { '@type': 'WebSite', '@id': absoluteUrl('/#website'), name: SITE_NAME, url: absoluteUrl(), inLanguage: 'es-PE', publisher: { '@id': organizationId } },
+  { '@type': collection ? 'CollectionPage' : path === '/contacto' ? 'ContactPage' : path === '/sobre-nosotros' ? 'AboutPage' : 'WebPage', '@id': canonical + '#webpage', url: canonical, name: title, description, inLanguage: 'es-PE', isPartOf: { '@id': absoluteUrl('/#website') }, about: { '@id': organizationId }, ...(collection ? { mainEntity: collection.mainEntity } : mainEntity?.['@id'] ? { mainEntity: { '@id': mainEntity['@id'] } } : {}), ...(breadcrumbs.length ? { breadcrumb: { '@id': canonical + '#breadcrumb' } } : {}) },
+  ...(breadcrumbs.length ? [{ '@type': 'BreadcrumbList', '@id': canonical + '#breadcrumb', itemListElement: breadcrumbs.map((item, index) => ({ '@type': 'ListItem', position: index + 1, name: item.name, item: absoluteUrl(item.url) })) }] : []),
+  ...entities.filter(item => item['@type'] !== 'CollectionPage'),
+];
+---
+<!doctype html>
+<html lang="es-PE">
+  <head>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#030712" /><link rel="icon" type="image/png" sizes="96x96" href={brandIcon.src} />
+    <meta name="google-site-verification" content="9Wn4rJV03gGH9VbX2hHatur5tdjDyPiIfZzlCdE6syM" />
+    <title>{title}</title><meta name="description" content={description} />
+    <meta name="robots" content={noindex ? 'noindex, follow' : 'index, follow, max-image-preview:large'} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:type" content={ogType} /><meta property="og:url" content={canonical} />
+    <meta property="og:title" content={title} /><meta property="og:description" content={description} />
+    <meta property="og:image" content={absoluteUrl(ogImage)} /><meta property="og:image:alt" content={title} />
+    <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content={SITE_NAME} /><meta property="og:locale" content="es_PE" />
+    <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} /><meta name="twitter:image" content={absoluteUrl(ogImage)} />
+    <link rel="alternate" type="application/rss+xml" title="Blog de ConnectologyIA" href="/rss.xml" />
+    <script is:inline type="application/ld+json" set:html={jsonLd({ '@context': 'https://schema.org', '@graph': graph })} />
+    <slot name="head" />
+  </head>
+  <body class="min-h-screen flex flex-col selection:bg-cyan-500/30">
+    <a href="#main-content" class="skip-link">Saltar al contenido</a><SiteNav brandIcon={brandIcon.src} />
+    <div class="flex-grow"><slot /></div><Footer brandIcon={brandIcon.src} /><WhatsAppButton />
+  </body>
+</html>
