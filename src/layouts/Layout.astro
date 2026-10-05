@@ -45,6 +45,7 @@ const graph = [
     <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} /><meta name="twitter:image" content={absoluteUrl(ogImage)} />
     <link rel="alternate" type="application/rss+xml" title="Blog de ConnectologyIA" href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <script is:inline type="application/ld+json" set:html={jsonLd({ '@context': 'https://schema.org', '@graph': graph })} />
     <slot name="head" />
   </head>
