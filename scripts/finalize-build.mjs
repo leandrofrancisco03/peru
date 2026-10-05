@@ -3,7 +3,7 @@ import { readFile, writeFile } from 'node:fs/promises';
 // Cloudflare normaliza HTML con 307 por defecto. Declaramos 301 para las URLs
 // realmente publicadas, sin tocar el archivo de verificación de Google.
 const dist = new URL('../dist/', import.meta.url);
-const sitemap = await readFile(new URL('sitemap-0.xml', dist), 'utf8');
+const sitemap = await readFile(new URL('sitemap.xml', dist), 'utf8');
 const routes = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => new URL(match[1]).pathname);
 const redirects = (await readFile(new URL('../public/_redirects', import.meta.url), 'utf8')).trim();
 const generated = ['/index.html / 301', '/index / 301'];

@@ -58,7 +58,7 @@ La marca de navegación/favicon se optimiza a 96 × 96 con Astro. La portada y e
 1. Ejecutar lint, pruebas, build y auditoría SEO. Probar rutas con Wrangler local.
 2. Publicar en la cuenta que controla `connectologyia.workers.dev`, con el Worker `peru` y `wrangler.jsonc`.
 3. Ejecutar `npm run check:routes -- https://peru.connectologyia.workers.dev` para revisar el dominio público.
-4. Verificar la propiedad URL-prefix de Search Console si falta y enviar `https://peru.connectologyia.workers.dev/sitemap-index.xml`.
+4. Verificar la propiedad URL-prefix de Search Console si falta y enviar `https://peru.connectologyia.workers.dev/sitemap.xml`.
 5. Inspeccionar portada, servicio, Lima, otra región, sector y artículo: rastreo, canonical seleccionado y HTML recibido.
 6. Revisar tipos compatibles en Rich Results Test y complementar con Schema.org Validator para los demás.
 7. Comparar impresiones/clics por página y consulta con filtro Perú, separando marca y búsquedas de servicio. Relacionar visitas con consultas comerciales útiles.

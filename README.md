@@ -50,7 +50,7 @@ En Workers Builds usa `npm run build && npm run check:seo` como compilación y `
 - Sitio estático: no necesita adaptador SSR, Functions ni servidor Node en producción.
 - Las rutas se generan como archivos HTML. Cloudflare sirve las URLs sin extensión; los canonicals eliminan `.html`.
 - `public/_headers`: cabeceras básicas, caché anual solo para assets con hash y noindex de subdominios de preview.
-- `public/_redirects`: conserva la redirección del sitemap antiguo. `scripts/finalize-build.mjs` añade a `dist/_redirects` redirecciones 301 desde variantes de las URLs publicadas, sin afectar la verificación de Google.
+- `public/_redirects`: no redirige el sitemap; `/sitemap.xml` responde directamente. `scripts/finalize-build.mjs` añade a `dist/_redirects` redirecciones 301 desde variantes de las URLs publicadas, sin afectar la verificación de Google.
 - Se conserva el archivo y la meta de verificación de Google existentes.
 
 No añadas una regla SPA `/* /index.html 200`: ocultaría los errores 404.
@@ -95,3 +95,7 @@ Las regiones y sectores se seleccionan editorialmente. Cada nueva entrada necesi
 El JSON-LD se entrega en el HTML: Organization, WebSite, WebPage/CollectionPage/ContactPage/AboutPage, Service, BlogPosting, BreadcrumbList, FAQPage y WebApplication según el contenido. La auditoría contrasta preguntas y respuestas con las visibles. No se añaden domicilios, reseñas, RUC, perfiles o certificaciones no confirmados.
 
 Consulta [el plan SEO Perú y seguimiento](docs/SEO-PERU.md) y [las pruebas realizadas](docs/VALIDACION.md).
+
+## Sitemap único
+
+La integración local `src/integrations/single-sitemap.mjs` genera `dist/sitemap.xml` a partir del manifiesto y los archivos reales de Astro, incluidas las rutas dinámicas. No hay lista manual ni dependencia de `@astrojs/sitemap`. Consulta [generación y exclusiones](docs/SITEMAP.md).

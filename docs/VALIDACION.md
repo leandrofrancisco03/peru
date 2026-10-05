@@ -1,5 +1,17 @@
 # Validación de la mejora
 
+## Migración a sitemap único — 5 de octubre de 2026
+
+- Build correcto con la integración local de Astro; `dist/sitemap.xml` contiene 39 URLs y un único `urlset`.
+- XML analizado con System.Xml; URLs HTTPS absolutas del dominio oficial, únicas y sin `.html` ni barra final excepto en la home.
+- Solo se genera `sitemap.xml`; los archivos divididos no existen en `dist`.
+- `/404` excluida. RSS, endpoints y archivos públicos no son páginas del manifiesto y no se incluyen. Se prueban también exclusiones por noindex, rutas privadas/previews y canonical alternativo.
+- Diez pruebas pasan (cuatro de calculadora y seis de sitemap); la prueba del hook verifica que una salida dinámica nueva aparece en el siguiente build sin editar una lista.
+- Astro check: 0 errores, 0 warnings y 0 hints. Persisten avisos de obsolescencia de Vite durante el build, ajenos a esta migración.
+- Wrangler local: `/sitemap.xml` devuelve 200 directo, `application/xml; charset=utf-8` y el XML exacto del build. Las antiguas rutas divididas responden 404.
+- robots y link rel=sitemap apuntan al archivo único. Canonical, contenido y diseño no se modificaron. Los nombres antiguos solo quedan como controles negativos de auditoría.
+- No se desplegó esta migración. Tras publicar, actualizar el sitemap enviado en Search Console.
+
 ## Comprobaciones realizadas
 
 - Compilación Astro estática: 40 páginas HTML y RSS; 39 URLs indexables en el sitemap y una página 404 con noindex.
@@ -10,7 +22,7 @@
 - Portada renderizada sin islas React hidratadas.
 - Contacto sin hidratación de React cuando no hay webhook configurado.
 - Marcado Service, CollectionPage/ItemList, BlogPosting, BreadcrumbList, WebApplication y FAQ contrastado con las páginas correspondientes. Preguntas/respuestas del schema contrastadas con el HTML visible.
-- 154 redirecciones canónicas 301 generadas desde el sitemap, además de la redirección existente del sitemap antiguo.
+- 154 redirecciones canónicas 301 generadas desde el sitemap, sin redirigir `/sitemap.xml`.
 - Wrangler local: 39 páginas responden 200 sin redirección, ocho variantes probadas redirigen permanentemente a su canonical, una URL inexistente devuelve 404 y robots/sitemap/RSS están accesibles.
 - La regla noindex de previews usa el formato de Workers `:preview-peru.connectologyia.workers.dev`, sin coincidir con producción. Su aplicación al host público requiere verificación después del despliegue.
 - Favicon/marca de navegación optimizada por Astro: de aproximadamente 195 KiB a 5 KiB, conservando los originales.

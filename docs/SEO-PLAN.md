@@ -37,8 +37,8 @@ Una página comercial por intención principal. Evitar crear muchas páginas cas
 
 ## Publicación y primeros 14 días
 
-1. Publicar en Cloudflare usando el README y revisar dominio canónico, estado 200 de páginas, 404 real y redirección del sitemap antiguo.
-2. En Google Search Console, enviar `https://peru.connectologyia.workers.dev/sitemap-index.xml`. La verificación existente se conservó, pero no se comprobó el acceso a la cuenta.
+1. Publicar en Cloudflare usando el README y revisar dominio canónico, estado 200 de páginas, 404 real y respuesta directa del sitemap único.
+2. En Google Search Console, enviar `https://peru.connectologyia.workers.dev/sitemap.xml`. La verificación existente se conservó, pero no se comprobó el acceso a la cuenta.
 3. Inspeccionar portada, las cuatro páginas de servicios y dos artículos prioritarios. Comprobar HTML renderizado, canonical elegido y bloqueos de indexación.
 4. Revisar un artículo con [Rich Results Test](https://search.google.com/test/rich-results) y el grafo con [Schema Markup Validator](https://validator.schema.org/). Algunos tipos no tienen una presentación enriquecida específica.
 5. Medir con PageSpeed Insights la portada, contacto y una guía en móvil. Las pruebas locales no constituyen Core Web Vitals de usuarios reales.

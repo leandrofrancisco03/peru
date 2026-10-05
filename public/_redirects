@@ -1,1 +1,1 @@
-/sitemap.xml /sitemap-index.xml 301
+# Las variantes HTML se generan durante el build. /sitemap.xml se sirve directamente.

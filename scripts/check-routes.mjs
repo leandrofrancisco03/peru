@@ -3,7 +3,7 @@ import { readFile } from 'node:fs/promises';
 
 // Ejecutar contra Wrangler local después de build. Admite una URL explícita para revisar producción.
 const base = new URL(process.argv[2] || 'http://127.0.0.1:8787');
-const sitemap = await readFile(new URL('../dist/sitemap-0.xml', import.meta.url), 'utf8');
+const sitemap = await readFile(new URL('../dist/sitemap.xml', import.meta.url), 'utf8');
 const routes = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(match => new URL(match[1]).pathname);
 const request = path => fetch(new URL(path, base), { redirect: 'manual', signal: AbortSignal.timeout(15000) });
 
@@ -28,10 +28,12 @@ for (const path of ['/peru', '/peru/lima', '/sectores/academias-y-formacion', '/
 const missing = await request('/pagina-inexistente-prueba-seo');
 assert.equal(missing.status, 404, 'No usar fallback SPA para páginas inexistentes');
 assert.match(await missing.text(), /noindex/, 'La página de error debe tener noindex');
-for (const path of ['/robots.txt', '/sitemap-index.xml', '/sitemap-0.xml', '/rss.xml']) {
+for (const path of ['/robots.txt', '/sitemap.xml', '/rss.xml']) {
   assert.equal((await request(path)).status, 200, path + ': recurso rastreable');
 }
-const legacy = await request('/sitemap.xml');
-assert.equal(legacy.status, 301, 'Redirección de sitemap antiguo');
-assert.equal(new URL(legacy.headers.get('location'), base).pathname, '/sitemap-index.xml');
+const xml = await request('/sitemap.xml');
+assert.equal(xml.status, 200, 'Sitemap debe responder directamente sin redirección');
+assert.equal(xml.headers.get('content-type')?.toLowerCase(), 'application/xml; charset=utf-8');
+assert.equal(await xml.text(), sitemap, 'El XML servido debe coincidir con el build');
+for (const path of ['/sitemap-index.xml', '/sitemap-0.xml']) assert.equal((await request(path)).status, 404, 'Sitemap dividido residual: ' + path);
 console.log(`Rutas OK en ${base.origin}: ${routes.length} páginas 200, 8 variantes redirigidas, 404 real, robots, sitemap, RSS y cabeceras.`);

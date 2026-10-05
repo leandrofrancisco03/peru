@@ -1,17 +1,15 @@
 import { readFile, readdir, stat } from 'node:fs/promises';
 import { resolve, relative, join } from 'node:path';
 import { parse } from 'parse5';
+import { elements, attr, text, pagePath } from './lib/html.mjs';
 const root = resolve('dist');
 const origin = 'https://peru.connectologyia.workers.dev';
 const failures = [];
 const assert = (condition, message) => { if (!condition) failures.push(message); };
 async function walk(dir) { const entries = await readdir(dir, { withFileTypes: true }); return (await Promise.all(entries.map(e => e.isDirectory() ? walk(join(dir, e.name)) : join(dir, e.name)))).flat(); }
-function elements(node) { return [node, ...(node.childNodes || []).flatMap(elements)]; }
-const attr = (node, name) => node.attrs?.find(a => a.name === name)?.value;
-const text = node => node.nodeName === '#text' ? node.value : (node.childNodes || []).map(text).join('');
 const pages = new Map();
 for (const file of (await walk(root)).filter(f => f.endsWith('.html') && !f.includes('googleff'))) {
- const route = '/' + relative(root, file).replaceAll('\\', '/').replace(/index\.html$/, '').replace(/\.html$/, '');
+ const route = pagePath(relative(root, file));
  const html = await readFile(file, 'utf8'); const nodes = elements(parse(html));
  pages.set(route, { file, route, html, nodes });
 }
@@ -35,11 +33,13 @@ for (const page of pages.values()) {
  assert(nodes.some(n => attr(n,'id') === 'main-content'), route + ': destino del enlace de salto');
  assert(!html.includes('/undefined') && !html.includes('client:only'), route + ': contenido o URL inválida');
  const canonical = select('link').filter(n => attr(n, 'rel') === 'canonical');
+ assert(select('link').some(n => attr(n, 'rel') === 'sitemap' && attr(n, 'href') === '/sitemap.xml'), route + ': link sitemap incorrecto');
+ assert(!/connectologyia\.pages\.dev|sitemap-index\.xml|sitemap-0\.xml/.test(html), route + ': referencia SEO anterior');
  const expected = new URL(route, origin).href;
  assert(canonical.length === 1 && attr(canonical[0], 'href') === expected, route + ': canonical incorrecto');
  assert(attr(oneMeta('property','og:url')[0], 'content') === expected, route + ': og:url incorrecto');
  const noindex = attr(oneMeta('name', 'robots')[0], 'content')?.includes('noindex');
- assert(route === '/404' ? noindex : !noindex, route + ': directiva de indexación incorrecta');
+ if (route === '/404') assert(noindex, route + ': la página de error debe tener noindex');
  if (!noindex) expectedSitemap.add(expected);
  const scripts = select('script').filter(n => attr(n,'type') === 'application/ld+json');
  assert(scripts.length === 1, route + ': debe tener un grafo JSON-LD');
@@ -123,8 +123,18 @@ for (const page of pages.values()) {
   }
  }
 }
-const sitemap = await readFile(join(root,'sitemap-0.xml'),'utf8');
-const sitemapUrls = new Set([...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => new URL(m[1]).href));
+const sitemap = await readFile(join(root,'sitemap.xml'),'utf8');
+const locations = [...sitemap.matchAll(/<loc>(.*?)<\/loc>/g)].map(m => m[1]);
+const sitemapUrls = new Set(locations);
+assert(locations.length === sitemapUrls.size, 'Sitemap: URLs duplicadas');
+assert((sitemap.match(/<urlset\b/g) || []).length === 1 && (sitemap.match(/<\/urlset>/g) || []).length === 1, 'Sitemap: debe existir un único urlset');
+assert(sitemap.includes('xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"'), 'Sitemap: namespace incorrecto');
+assert(!/<sitemapindex|<priority|<changefreq/.test(sitemap), 'Sitemap: debe ser un urlset sin prioridad/frecuencia artificial');
+for (const location of locations) {
+ const url = new URL(location);
+ assert(url.origin === origin && url.protocol === 'https:', 'Sitemap: origen incorrecto ' + location);
+ assert(!url.search && !url.hash && !url.pathname.endsWith('.html') && (url.pathname === '/' || !url.pathname.endsWith('/')), 'Sitemap: URL no canónica ' + location);
+}
 for (const url of expectedSitemap) assert(sitemapUrls.has(url), 'Falta en sitemap: ' + url);
 for (const url of sitemapUrls) assert(expectedSitemap.has(url), 'URL inesperada en sitemap: ' + url);
 for (const route of pages.keys()) if (!['/', '/404'].includes(route)) assert(incoming.has(route), 'Página huérfana: ' + route);
@@ -134,7 +144,8 @@ assert(!rss.includes('undefined'), 'URL inválida en RSS');
 const home = pages.get('/').html;
 assert(!home.includes('<astro-island'), 'La portada no debe depender de islas hidratadas');
 const robots = await readFile(join(root,'robots.txt'),'utf8');
-assert(robots.includes(origin + '/sitemap-index.xml'), 'robots: sitemap incorrecto');
-assert(!(await walk(root)).includes(join(root,'sitemap.xml')), 'Sitemap estático duplicado');
+assert(robots.includes(origin + '/sitemap.xml') && !robots.includes('sitemap-index.xml'), 'robots: sitemap incorrecto');
+for (const file of await walk(root)) assert(!/sitemap-(?:index|\d+)\.xml$/.test(file), 'Sitemap dividido residual: ' + file);
+assert(!rss.includes('connectologyia.pages.dev'), 'RSS: dominio incorrecto');
 if (failures.length) { console.error(failures.join('\n')); process.exitCode = 1; }
 else console.log(`SEO OK: ${pages.size} páginas, ${articles} artículos, ${schemas} grafos JSON-LD, ${faqs} bloques FAQ y ${links} enlaces/recursos internos. Schema y contenido visible, canonicals, RSS, sitemap, anclas y páginas huérfanas verificados.`);
