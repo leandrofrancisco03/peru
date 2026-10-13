@@ -7,11 +7,11 @@ import '../index.css';
 import { getImage } from 'astro:assets';
 import brand from '../assets/brand.png';
 interface Props {
-  title: string; description?: string; canonical?: string; ogType?: string; ogImage?: string;
+  title: string; description?: string; canonical?: string; ogType?: string; ogImage?: string; ogImageAlt?: string;
   noindex?: boolean; schema?: Record<string, unknown> | Record<string, unknown>[];
   breadcrumbs?: { name: string; url: string }[];
 }
-const { title, description = 'Automatización con n8n, agentes de IA e integraciones para empresas de Perú.', canonical: customCanonical, ogType = 'website', ogImage = '/og/connectologyia.png', noindex = false, schema = [], breadcrumbs = [] } = Astro.props;
+const { title, description = 'Automatización con n8n, agentes de IA e integraciones para empresas de Perú.', canonical: customCanonical, ogType = 'website', ogImage = '/og/connectologyia.png', ogImageAlt = title, noindex = false, schema = [], breadcrumbs = [] } = Astro.props;
 // File output exposes .html while building; Cloudflare serves extensionless URLs.
 const path = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/, '').replace(/\/$/, '') || '/';
 const canonical = customCanonical || absoluteUrl(path);
@@ -39,11 +39,11 @@ const graph = [
     <link rel="canonical" href={canonical} />
     <meta property="og:type" content={ogType} /><meta property="og:url" content={canonical} />
     <meta property="og:title" content={title} /><meta property="og:description" content={description} />
-    <meta property="og:image" content={absoluteUrl(ogImage)} /><meta property="og:image:alt" content={title} />
+    <meta property="og:image" content={absoluteUrl(ogImage)} /><meta property="og:image:alt" content={ogImageAlt} />
     <meta property="og:image:width" content="1200" /><meta property="og:image:height" content="630" />
     <meta property="og:site_name" content={SITE_NAME} /><meta property="og:locale" content="es_PE" />
     <meta name="twitter:card" content="summary_large_image" /><meta name="twitter:title" content={title} />
-    <meta name="twitter:description" content={description} /><meta name="twitter:image" content={absoluteUrl(ogImage)} />
+    <meta name="twitter:image:alt" content={ogImageAlt} /><meta name="twitter:description" content={description} /><meta name="twitter:image" content={absoluteUrl(ogImage)} />
     <link rel="alternate" type="application/rss+xml" title="Blog de ConnectologyIA" href="/rss.xml" />
     <link rel="sitemap" href="/sitemap.xml" />
     <script is:inline type="application/ld+json" set:html={jsonLd({ '@context': 'https://schema.org', '@graph': graph })} />

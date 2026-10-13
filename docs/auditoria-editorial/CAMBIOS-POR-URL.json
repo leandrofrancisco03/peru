@@ -1,0 +1,2963 @@
+{
+  "changes": [
+    {
+      "route": "/blog",
+      "titleBefore": "Blog de automatización e IA para empresas de Perú",
+      "titleAfter": "Guías n8n, IA y operación comercial en Perú",
+      "h1Before": [
+        "Guías de automatizacióne IA para empresas de Perú."
+      ],
+      "h1After": [
+        "Decisiones de implementaciónpara operar en Perú."
+      ],
+      "headingsBefore": [
+        "Ventas y operaciones en Perú",
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú",
+        "Cómo automatizar ventas por WhatsApp en Perú sin perder el control",
+        "Formación y servicios",
+        "Cómo automatizar consultas e inscripciones de una academia en Perú",
+        "Datos y reportes",
+        "Reportes de ventas automáticos con n8n: guía para empresas de Perú",
+        "Turismo y atención",
+        "Cómo automatizar consultas y reservas turísticas en Perú",
+        "WhatsApp y agentes",
+        "Agente de IA en Telegram con n8n: diseño y controles",
+        "WhatsApp API oficial y coexistencia: qué evaluar en Perú",
+        "Agentes de IA en atención al cliente: usos y límites",
+        "Automatización de procesos",
+        "Cómo automatizar leads con n8n sin duplicar contactos",
+        "Cuánto cuesta automatizar procesos en Perú: cómo estimarlo",
+        "IA para pymes en Perú: qué automatizar primero",
+        "n8n vs. Zapier vs. Make: cómo elegir para tu empresa",
+        "Integraciones y web",
+        "Una web conectada a tu CRM: rendimiento y automatización",
+        "¿Buscas una solución para tu empresa?"
+      ],
+      "headingsAfter": [
+        "Si estás evaluando invertir",
+        "Si ya tienes un flujo funcionando",
+        "Operación comercial",
+        "Cotizaciones B2B: de la solicitud a una versión aprobada",
+        "Academias: seguimiento por convocatoria sin confundir matrículas",
+        "Reservas turísticas: automatizar cambios sin perder confirmaciones",
+        "n8n e integraciones",
+        "Reportes con n8n: cerrar ventas de varias sedes sin descuadres",
+        "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas",
+        "n8n, Zapier o Make: evaluar un flujo comercial completo",
+        "Web y CRM: comprobar que cada solicitud llega a ventas",
+        "WhatsApp y CRM",
+        "WhatsApp a pedido: organizar la venta antes de automatizar mensajes",
+        "WhatsApp API: preparar el alta sin interrumpir a tus asesores",
+        "Agentes de IA",
+        "Telegram y n8n: un asistente interno para pendientes comerciales",
+        "Agentes de IA: del primer mensaje al asesor adecuado",
+        "Decisiones de inversión",
+        "Presupuesto de automatización en Perú: comparar alcances y costos",
+        "Qué automatizar primero en una pyme: una matriz de decisión",
+        "Lleva una decisión de la guía a tu proceso"
+      ],
+      "descriptionBefore": "Guías de n8n, WhatsApp e IA para empresas peruanas: ventas, cotizaciones, reservas, reportes y costos. Ejemplos prácticos con control humano.",
+      "descriptionAfter": "Recorridos de lectura sobre integración, agentes, WhatsApp y decisiones de inversión. Guías para llevar consultas, propuestas y reportes a una operación verificable.",
+      "addedLinks": [
+        {
+          "href": "/blog/impacto-ia-pymes-2026",
+          "text": "priorizar una tarea"
+        },
+        {
+          "href": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+          "text": "alcances y costos"
+        },
+        {
+          "href": "/blog/orquestacion-n8n-vs-zapier",
+          "text": "prueba de plataforma"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "reintentos e idempotencia"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "transferencia al asesor"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "conciliación de resultados"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada"
+        },
+        {
+          "href": "/blog/automatizar-inscripciones-academias-peru",
+          "text": "Academias: seguimiento por convocatoria sin confundir matrículas"
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "Reservas turísticas: automatizar cambios sin perder confirmaciones"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Reportes con n8n: cerrar ventas de varias sedes sin descuadres"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+        },
+        {
+          "href": "/blog/orquestacion-n8n-vs-zapier",
+          "text": "n8n, Zapier o Make: evaluar un flujo comercial completo"
+        },
+        {
+          "href": "/blog/desarrollo-web-moderno-nextjs",
+          "text": "Web y CRM: comprobar que cada solicitud llega a ventas"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "WhatsApp a pedido: organizar la venta antes de automatizar mensajes"
+        },
+        {
+          "href": "/blog/whatsapp-api-oficial-coexistencia-peru",
+          "text": "WhatsApp API: preparar el alta sin interrumpir a tus asesores"
+        },
+        {
+          "href": "/blog/agente-ia-telegram-n8n",
+          "text": "Telegram y n8n: un asistente interno para pendientes comerciales"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "Agentes de IA: del primer mensaje al asesor adecuado"
+        },
+        {
+          "href": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+          "text": "Presupuesto de automatización en Perú: comparar alcances y costos"
+        },
+        {
+          "href": "/blog/impacto-ia-pymes-2026",
+          "text": "Qué automatizar primero en una pyme: una matriz de decisión"
+        },
+        {
+          "href": "/servicios",
+          "text": "Comparar servicios de implementación ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/contacto",
+      "titleBefore": "Evaluación de automatización para tu empresa | ConnectologyIA",
+      "titleAfter": "Contacto en Perú: revisa tu proceso con ConnectologyIA",
+      "h1Before": [
+        "Tu próximo proceso,mejor conectado."
+      ],
+      "h1After": [
+        "Cuéntanos qué empieza,y qué debería terminar."
+      ],
+      "headingsBefore": [
+        "Para aprovechar la conversación",
+        "Cuéntanos tu proceso",
+        "Hablemos directamente"
+      ],
+      "headingsAfter": [
+        "Cuatro datos para preparar el diagnóstico",
+        "Cuéntanos tu proceso",
+        "Hablemos directamente",
+        "Qué se aclara durante la evaluación"
+      ],
+      "descriptionBefore": "Cuéntanos qué proceso quieres automatizar en Perú. Evaluamos n8n, Python, agentes de IA, WhatsApp API oficial e integraciones para tu empresa.",
+      "descriptionAfter": "Contacta por WhatsApp o correo para evaluar un proceso de ventas, atención o administración. Prepara herramientas, resultado y excepciones; atención remota en Perú.",
+      "addedLinks": [
+        {
+          "href": "/servicios",
+          "text": "Comparar alcances antes de escribir ↗"
+        },
+        {
+          "href": "/recursos",
+          "text": "ficha de diagnóstico"
+        }
+      ],
+      "newDestinations": [
+        "/recursos"
+      ]
+    },
+    {
+      "route": "/",
+      "titleBefore": "Automatización con n8n y agentes IA en Perú | ConnectologyIA",
+      "titleAfter": "Automatización e IA para pymes en Perú | ConnectologyIA",
+      "h1Before": [
+        "Automatizacióne IA para empresasen Perú."
+      ],
+      "h1After": [
+        "Automatización e IApara que tu pymeavance en Perú."
+      ],
+      "headingsBefore": [
+        "Automatiza lo repetitivo.Enfócate en lo que importa.",
+        "Automatización de procesos",
+        "Agentes de IA",
+        "Integraciones y sistemas",
+        "WhatsApp para empresas",
+        "Primero el proceso.Después la tecnología.",
+        "Entendemos",
+        "Construimos",
+        "Medimos",
+        "¿Cuánto tiempo podrías recuperar?",
+        "Soluciones por tipo de negocio",
+        "Comercio y distribución",
+        "Turismo y reservas",
+        "Servicios profesionales y B2B",
+        "Academias y formación",
+        "Conectamos operacionesen todo el Perú.",
+        "Aprende antes de automatizar.",
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú",
+        "Cómo automatizar consultas e inscripciones de una academia en Perú",
+        "Reportes de ventas automáticos con n8n: guía para empresas de Perú",
+        "Antes de dar el primer paso",
+        "Cuéntanos qué tareate gustaría dejar de repetir."
+      ],
+      "headingsAfter": [
+        "Parte del pendiente,elige la conexión.",
+        "Solicitudes que no llegan a ventas",
+        "Consultas que vuelven a empezar",
+        "Totales que cambian entre archivos",
+        "Flujos, agentes y sistemascon responsabilidades claras.",
+        "Automatización de procesos",
+        "Agentes de IA",
+        "Integraciones y sistemas",
+        "WhatsApp para empresas",
+        "Qué debe confirmarse antes de avanzar",
+        "Comercio y distribución",
+        "Turismo y reservas",
+        "Servicios profesionales y B2B",
+        "Academias y formación",
+        "Sedes y zonas son reglasde tu proceso.",
+        "Un piloto que puedas aceptarpor su resultado.",
+        "Observamos una muestra",
+        "Acordamos la prueba",
+        "Entregamos para operar",
+        "Estima capacidad recuperable en soles",
+        "Decisiones que conviene resolver primero",
+        "Cotizaciones B2B: de la solicitud a una versión aprobada",
+        "Academias: seguimiento por convocatoria sin confundir matrículas",
+        "Reportes con n8n: cerrar ventas de varias sedes sin descuadres",
+        "Para preparar el primer alcance",
+        "Muéstranos dónde se detiene una solicitud"
+      ],
+      "descriptionBefore": "Reduce tareas manuales con n8n, Python y agentes de IA. Integramos web, Telegram, WhatsApp API oficial y tus sistemas para empresas de Perú.",
+      "descriptionAfter": "Conecta ventas, atención y administración con n8n, Python, agentes IA y APIs. Soluciones para pymes de Perú, desde la consulta hasta la tarea terminada.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar mi tarea repetitiva ↗"
+        },
+        {
+          "href": "/peru",
+          "text": "Encontrar mi caso de uso"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Ver el recorrido ↗"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Solicitudes que no llegan a ventas"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Revisar cómo resolverlo ↗"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "Consultas que vuelven a empezar"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "Revisar cómo resolverlo ↗"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Totales que cambian entre archivos"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Revisar cómo resolverlo ↗"
+        },
+        {
+          "href": "/servicios",
+          "text": "Comparar alcances ↗"
+        },
+        {
+          "href": "/sectores",
+          "text": "Explorar los cuatro sectores ↗"
+        },
+        {
+          "href": "/peru",
+          "text": "Ver el mapa de soluciones para Perú ↗"
+        },
+        {
+          "href": "/sobre-nosotros",
+          "text": "Método y criterios editoriales ↗"
+        },
+        {
+          "href": "/recursos/calculadora-ahorro-automatizacion",
+          "text": "Probar mis supuestos ↗"
+        },
+        {
+          "href": "/blog",
+          "text": "Elegir un recorrido de lectura ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada"
+        },
+        {
+          "href": "/blog/automatizar-inscripciones-academias-peru",
+          "text": "Academias: seguimiento por convocatoria sin confundir matrículas"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Reportes con n8n: cerrar ventas de varias sedes sin descuadres"
+        },
+        {
+          "href": "/contacto",
+          "text": "Preparar mi diagnóstico ↗"
+        }
+      ],
+      "newDestinations": [
+        "/blog/automatizar-leads-n8n-crm",
+        "/blog/agentes-ia-atencion-cliente"
+      ]
+    },
+    {
+      "route": "/peru",
+      "titleBefore": "Automatización e IA en Perú: cobertura y soluciones locales",
+      "titleAfter": "Automatización en Perú: ventas, atención y operaciones",
+      "h1Before": [
+        "Automatización e IApara empresas de Perú."
+      ],
+      "h1After": [
+        "Automatización en Perú:de la consulta a la operación."
+      ],
+      "headingsBefore": [
+        "Guías locales con un punto de partida concreto",
+        "Coordinar consultas, sedes y entregas",
+        "Cotizaciones técnicas y seguimiento B2B",
+        "Pedidos mayoristas y distribución",
+        "Reportes de sedes y coordinación operativa",
+        "Consultas de viajeros y reservas verificadas",
+        "Atención posventa y seguimiento de incidencias",
+        "Consultas de formación e inscripciones",
+        "Visitas técnicas y órdenes de servicio",
+        "¿Tu departamento no aparece?",
+        "Qué preparar para el diagnóstico",
+        "Presupuesto, moneda y alcance",
+        "Empieza por el proceso que más se repite"
+      ],
+      "headingsAfter": [
+        "Cuatro puntos de entrada para tu empresa",
+        "Una consulta necesita seguimiento",
+        "El especialista recibe trabajo incompleto",
+        "Los datos de varias sedes no coinciden",
+        "Una fecha o un cupo cambian",
+        "Qué cambia al coordinar sedes dentro de Perú",
+        "Guías locales con un punto de partida concreto",
+        "Coordinar consultas, sedes y entregas",
+        "Cotizaciones técnicas y seguimiento B2B",
+        "Pedidos mayoristas y distribución",
+        "Reportes de sedes y coordinación operativa",
+        "Consultas de viajeros y reservas verificadas",
+        "Atención posventa y seguimiento de incidencias",
+        "Consultas de formación e inscripciones",
+        "Visitas técnicas y órdenes de servicio",
+        "¿Tu departamento no aparece?",
+        "Qué preparar para el diagnóstico",
+        "Presupuesto, moneda y alcance",
+        "¿Ya identificaste el punto de entrada?"
+      ],
+      "descriptionBefore": "Automatización para empresas de Perú. Guías de Lima y siete regiones: ventas, reservas, reportes e inscripciones, con evaluación e implementación remotas.",
+      "descriptionAfter": "Encuentra un recorrido de automatización para tu empresa en Perú: n8n, agentes IA, WhatsApp y CRM aplicados a ventas, atención y coordinación entre sedes.",
+      "addedLinks": [
+        {
+          "href": "/servicios/whatsapp-api-oficial",
+          "text": "Preparar WhatsApp con el equipo"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "Del mensaje al pedido verificable"
+        },
+        {
+          "href": "/sectores/comercio-y-distribucion",
+          "text": "Ventas y almacén coordinados"
+        },
+        {
+          "href": "/servicios/agentes-de-inteligencia-artificial",
+          "text": "Clasificación y consulta con agentes"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Control de propuestas B2B"
+        },
+        {
+          "href": "/sectores/servicios-profesionales",
+          "text": "Recepción, propuesta y entrega"
+        },
+        {
+          "href": "/servicios/integraciones-y-apis",
+          "text": "Verificar las APIs disponibles"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Cerrar un reporte entre sedes"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Recuperar eventos sin duplicar"
+        },
+        {
+          "href": "/servicios/automatizacion-con-n8n",
+          "text": "Orquestar estados con n8n"
+        },
+        {
+          "href": "/sectores/turismo-y-reservas",
+          "text": "Reservas y reprogramaciones"
+        },
+        {
+          "href": "/sectores/academias-y-formacion",
+          "text": "Convocatorias e inscripciones"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar este alcance para mi empresa ↗"
+        }
+      ],
+      "newDestinations": [
+        "/servicios/whatsapp-api-oficial",
+        "/blog/automatizar-ventas-whatsapp-peru",
+        "/sectores/comercio-y-distribucion",
+        "/servicios/agentes-de-inteligencia-artificial",
+        "/blog/automatizar-cotizaciones-seguimiento-peru",
+        "/sectores/servicios-profesionales",
+        "/servicios/integraciones-y-apis",
+        "/blog/automatizar-reportes-ventas-peru",
+        "/blog/automatizar-leads-n8n-crm",
+        "/servicios/automatizacion-con-n8n",
+        "/sectores/turismo-y-reservas",
+        "/sectores/academias-y-formacion"
+      ]
+    },
+    {
+      "route": "/privacidad",
+      "titleBefore": "Política de privacidad | ConnectologyIA",
+      "titleAfter": "Privacidad de consultas y canales | ConnectologyIA Perú",
+      "h1Before": [
+        "Política de privacidad"
+      ],
+      "h1After": [
+        "Privacidad de tus consultas"
+      ],
+      "headingsBefore": [
+        "Datos de contacto",
+        "Canales y proveedores",
+        "Integraciones empresariales",
+        "Consultas y eliminación",
+        "Cambios"
+      ],
+      "headingsAfter": [
+        "Información que envías al consultar",
+        "Qué canales intervienen",
+        "Acceso a sistemas dentro de un proyecto",
+        "Cómo pedir revisión de tu información",
+        "Revisión de esta página"
+      ],
+      "descriptionBefore": "Información sobre los datos de contacto y solicitudes gestionadas por ConnectologyIA, así como el canal para consultas y eliminación de datos.",
+      "descriptionAfter": "Consulta qué información recibe ConnectologyIA al contactarnos, los canales utilizados y cómo pedir revisión, corrección o eliminación de tus datos.",
+      "addedLinks": [],
+      "newDestinations": []
+    },
+    {
+      "route": "/recursos",
+      "titleBefore": "Recursos de automatización para empresas | ConnectologyIA",
+      "titleAfter": "Recursos para preparar un proyecto de automatización en Perú",
+      "h1Before": [
+        "Decide con datos.Empieza con claridad."
+      ],
+      "h1After": [
+        "Prepara la decisiónantes de elegir herramientas."
+      ],
+      "headingsBefore": [
+        "¿Cuánto vale el tiempo recuperado?",
+        "Diagnóstico de un proceso",
+        "Cómo usar estos recursos",
+        "Compártelos con tu equipo"
+      ],
+      "headingsAfter": [
+        "Ficha de proceso y excepciones",
+        "Calculadora de capacidad y costo",
+        "Una secuencia para trabajar con tu equipo",
+        "Qué llevar a una evaluación",
+        "Reutilización de estos materiales"
+      ],
+      "descriptionBefore": "Calcula el ahorro estimado de una automatización y descarga una plantilla para diagnosticar procesos. Recursos gratuitos para empresas de Perú.",
+      "descriptionAfter": "Documenta tu proceso y compara capacidad recuperable en soles. Plantilla y calculadora gratuitas para preparar un alcance de n8n o IA con datos propios.",
+      "addedLinks": [
+        {
+          "href": "/recursos/plantilla-diagnostico-automatizacion.md",
+          "text": "Descargar ficha editable ↓"
+        },
+        {
+          "href": "/recursos/calculadora-ahorro-automatizacion",
+          "text": "Construir mi escenario ↗"
+        },
+        {
+          "href": "/blog/impacto-ia-pymes-2026",
+          "text": "matriz para elegir el primer proceso"
+        },
+        {
+          "href": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+          "text": "cómo comparar alcance y operación"
+        }
+      ],
+      "newDestinations": [
+        "/blog/impacto-ia-pymes-2026"
+      ]
+    },
+    {
+      "route": "/sectores",
+      "titleBefore": "Automatización por sector en Perú | ConnectologyIA",
+      "titleAfter": "Automatización por negocio: pedidos, reservas y propuestas",
+      "h1Before": [
+        "¿Qué automatizaren tu tipo de negocio?"
+      ],
+      "h1After": [
+        "Cada negocio confirmaalgo distinto."
+      ],
+      "headingsBefore": [
+        "Comercio y distribución",
+        "Turismo y reservas",
+        "Servicios profesionales y B2B",
+        "Academias y formación",
+        "Cómo elegir tu primer proceso",
+        "Recursos para decidir",
+        "Tu negocio puede combinar varios flujos"
+      ],
+      "headingsAfter": [
+        "Comercio y distribución",
+        "Turismo y reservas",
+        "Servicios profesionales y B2B",
+        "Academias y formación",
+        "Elige el compromiso que necesitas controlar",
+        "Recursos para decidir",
+        "¿Tu proceso cruza atención y administración?"
+      ],
+      "descriptionBefore": "Encuentra qué automatizar en comercio, turismo, academias y servicios profesionales. Flujos, requisitos y métricas para un piloto de n8n e IA en Perú.",
+      "descriptionAfter": "Compara procesos de comercio, turismo, servicios B2B y academias en Perú: fuentes autorizadas, excepciones y pruebas para implementar automatización.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Analizar mi recorrido operativo ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/servicios",
+      "titleBefore": "Servicios de automatización e IA en Perú | ConnectologyIA",
+      "titleAfter": "Servicios n8n, IA y conexiones de sistemas en Perú",
+      "h1Before": [
+        "Conecta herramientas.Recupera tiempo."
+      ],
+      "h1After": [
+        "Elige qué conectar.Define qué debe pasar."
+      ],
+      "headingsBefore": [
+        "Automatización de procesos",
+        "Agentes de IA",
+        "Integraciones y sistemas",
+        "WhatsApp para empresas",
+        "¿Por dónde conviene comenzar?"
+      ],
+      "headingsAfter": [
+        "Automatización de procesos",
+        "Agentes de IA",
+        "Integraciones y sistemas",
+        "WhatsApp para empresas",
+        "Una necesidad puede requerir varias piezas",
+        "Qué revisamos antes de presupuestar",
+        "Delimitemos una entrega comprobable"
+      ],
+      "descriptionBefore": "Automatización con n8n y Python, agentes de IA para web y Telegram, WhatsApp API oficial e integraciones para reducir tareas manuales en tu empresa.",
+      "descriptionAfter": "Elige el alcance de implementación: flujos n8n, agentes IA, CRM y WhatsApp oficial. Compara qué resuelve cada servicio y qué preparar para evaluarlo.",
+      "addedLinks": [
+        {
+          "href": "/sectores",
+          "text": "flujos por sector"
+        },
+        {
+          "href": "/recursos",
+          "text": "ficha del proceso"
+        },
+        {
+          "href": "/contacto",
+          "text": "Definir el alcance de mi servicio ↗"
+        }
+      ],
+      "newDestinations": [
+        "/sectores",
+        "/recursos"
+      ]
+    },
+    {
+      "route": "/sobre-nosotros",
+      "titleBefore": "Sobre ConnectologyIA: automatización e IA en Perú",
+      "titleAfter": "ConnectologyIA Perú: método de trabajo y criterios editoriales",
+      "h1Before": [
+        "Tecnología que entiendecómo trabajas."
+      ],
+      "h1After": [
+        "Una automatización debepoder explicarse y operarse."
+      ],
+      "headingsBefore": [
+        "Nuestro enfoque",
+        "Qué buscamos en cada proyecto",
+        "Quién publica nuestras guías",
+        "Conozcamos tu operación"
+      ],
+      "headingsAfter": [
+        "El alcance se acuerda con quien realiza la tarea",
+        "Preguntas que guiamos en el diagnóstico",
+        "Implementar también implica entregar contexto",
+        "Cómo escribimos las guías de este sitio",
+        "Correcciones y consultas sobre una guía",
+        "La primera conversación necesita un caso concreto"
+      ],
+      "descriptionBefore": "Conoce cómo trabajamos: diagnóstico de procesos, automatización con n8n y Python, agentes de IA y documentación para empresas de Perú.",
+      "descriptionAfter": "Conoce cómo delimitamos automatizaciones, probamos fallos y documentamos la operación. Atención remota en Perú y guías con ejemplos identificados.",
+      "addedLinks": [
+        {
+          "href": "/blog",
+          "text": "elegir una guía por problema"
+        },
+        {
+          "href": "/peru",
+          "text": "mapa de soluciones para Perú"
+        },
+        {
+          "href": "/contacto",
+          "text": "Presentar mi proceso ↗"
+        }
+      ],
+      "newDestinations": [
+        "/peru"
+      ]
+    },
+    {
+      "route": "/servicios/agentes-de-inteligencia-artificial",
+      "titleBefore": "Agentes de IA para empresas en Perú | ConnectologyIA",
+      "titleAfter": "Agentes de IA para atención y equipos en Perú",
+      "h1Before": [
+        "Agentes de IA para empresas en Perú"
+      ],
+      "h1After": [
+        "Agentes de IA para atención y equipos en Perú"
+      ],
+      "headingsBefore": [
+        "Dónde podemos ayudarte",
+        "Atención desde tu web",
+        "Operaciones por Telegram",
+        "Agentes para WhatsApp",
+        "Qué incluye la solución",
+        "Qué necesitamos para comenzar",
+        "Cómo se define el presupuesto",
+        "Preguntas antes de empezar",
+        "Aplicaciones para tu negocio y tu región",
+        "Empieza por un proceso concreto",
+        "Guías para decidir mejor",
+        "Conecta esta solución con"
+      ],
+      "headingsAfter": [
+        "Cuándo encaja en tu operación",
+        "Herramientas y responsabilidades",
+        "Un recorrido para evaluar contigo",
+        "Un agente distinto para cada responsabilidad",
+        "Recepción que entrega contexto",
+        "Consulta interna por Telegram",
+        "Preparación de acciones",
+        "Lo que debe quedar definido antes de activarlo",
+        "Qué necesitamos para comenzar",
+        "Cómo se define el presupuesto",
+        "Preguntas antes de empezar",
+        "Aplicaciones para tu negocio y tu región",
+        "Elige una pregunta que tu equipo responda cada día",
+        "Guías para decidir mejor",
+        "Conecta esta solución con"
+      ],
+      "descriptionBefore": "Implementamos agentes de IA con n8n para atención y procesos internos en Perú. Conecta web, Telegram y WhatsApp con tus datos y supervisión humana.",
+      "descriptionAfter": "Implementa agentes que clasifican consultas, buscan información y preparan acciones con n8n, CRM y transferencia al equipo en Perú.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Delimitar mi agente de IA ↗"
+        },
+        {
+          "href": "/sectores",
+          "text": "procesos de tu sector"
+        },
+        {
+          "href": "/peru",
+          "text": "mapa de soluciones para empresas de Perú"
+        },
+        {
+          "href": "/contacto",
+          "text": "Delimitar mi agente de IA ↗"
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "Reservas turísticas: automatizar cambios sin perder confirmaciones ↗"
+        },
+        {
+          "href": "/blog/agente-ia-telegram-n8n",
+          "text": "Telegram y n8n: un asistente interno para pendientes comerciales ↗"
+        },
+        {
+          "href": "/blog/whatsapp-api-oficial-coexistencia-peru",
+          "text": "WhatsApp API: preparar el alta sin interrumpir a tus asesores ↗"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "Agentes de IA: del primer mensaje al asesor adecuado ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/servicios/automatizacion-con-n8n",
+      "titleBefore": "Automatización con n8n y Python en Perú | ConnectologyIA",
+      "titleAfter": "Flujos n8n y Python para operaciones en Perú",
+      "h1Before": [
+        "Automatización con n8n y Python en Perú"
+      ],
+      "h1After": [
+        "Flujos n8n y Python para operaciones en Perú"
+      ],
+      "headingsBefore": [
+        "Dónde podemos ayudarte",
+        "Leads que llegan al lugar correcto",
+        "Reportes sin copiar y pegar",
+        "Documentos con revisión humana",
+        "Qué incluye la solución",
+        "Qué necesitamos para comenzar",
+        "Cómo se define el presupuesto",
+        "Preguntas antes de empezar",
+        "Aplicaciones para tu negocio y tu región",
+        "Empieza por un proceso concreto",
+        "Guías para decidir mejor",
+        "Conecta esta solución con"
+      ],
+      "headingsAfter": [
+        "Cuándo encaja en tu operación",
+        "Herramientas y responsabilidades",
+        "Un recorrido para evaluar contigo",
+        "Tres recorridos que dejan de depender de copiar datos",
+        "Captación hasta asignación",
+        "Cierre comercial entre sedes",
+        "Preparación administrativa",
+        "Del mapa de trabajo al flujo operable",
+        "Qué necesitamos para comenzar",
+        "Cómo se define el presupuesto",
+        "Preguntas antes de empezar",
+        "Aplicaciones para tu negocio y tu región",
+        "Empecemos por una entrada y un resultado",
+        "Guías para decidir mejor",
+        "Conecta esta solución con"
+      ],
+      "descriptionBefore": "Conecta tus herramientas y reduce tareas repetitivas con flujos n8n y Python. Diseñamos automatizaciones para empresas de Perú, con monitoreo y control.",
+      "descriptionAfter": "Automatiza solicitudes, reportes y tareas administrativas con n8n y Python. Diseñamos recepción, validación y recuperación para tu operación en Perú.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Diseñar mi primer flujo n8n ↗"
+        },
+        {
+          "href": "/sectores",
+          "text": "procesos de tu sector"
+        },
+        {
+          "href": "/peru",
+          "text": "mapa de soluciones para empresas de Perú"
+        },
+        {
+          "href": "/contacto",
+          "text": "Diseñar mi primer flujo n8n ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada ↗"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Reportes con n8n: cerrar ventas de varias sedes sin descuadres ↗"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas ↗"
+        },
+        {
+          "href": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+          "text": "Presupuesto de automatización en Perú: comparar alcances y costos ↗"
+        },
+        {
+          "href": "/blog/orquestacion-n8n-vs-zapier",
+          "text": "n8n, Zapier o Make: evaluar un flujo comercial completo ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/servicios/integraciones-y-apis",
+      "titleBefore": "Integraciones de APIs y sistemas en Perú | ConnectologyIA",
+      "titleAfter": "Integración de CRM, APIs y sistemas de gestión",
+      "h1Before": [
+        "Integraciones de APIs y sistemas en Perú"
+      ],
+      "h1After": [
+        "Integración de CRM, APIs y sistemas de gestión"
+      ],
+      "headingsBefore": [
+        "Dónde podemos ayudarte",
+        "CRM y formularios conectados",
+        "Sincronización entre sistemas",
+        "Sistemas web de apoyo",
+        "Qué incluye la solución",
+        "Qué necesitamos para comenzar",
+        "Cómo se define el presupuesto",
+        "Preguntas antes de empezar",
+        "Aplicaciones para tu negocio y tu región",
+        "Empieza por un proceso concreto",
+        "Guías para decidir mejor",
+        "Conecta esta solución con"
+      ],
+      "headingsAfter": [
+        "Cuándo encaja en tu operación",
+        "Herramientas y responsabilidades",
+        "Un recorrido para evaluar contigo",
+        "Conexiones con una fuente de verdad definida",
+        "Web hacia CRM",
+        "Venta hacia operaciones",
+        "Panel de excepciones",
+        "Una integración que pueda mantenerse",
+        "Qué necesitamos para comenzar",
+        "Cómo se define el presupuesto",
+        "Preguntas antes de empezar",
+        "Aplicaciones para tu negocio y tu región",
+        "Comprobemos la operación que necesita cada API",
+        "Guías para decidir mejor",
+        "Conecta esta solución con"
+      ],
+      "descriptionBefore": "Integramos CRM, formularios y sistemas mediante APIs, webhooks y Python. Automatiza el intercambio de datos de tu empresa en Perú con trazabilidad.",
+      "descriptionAfter": "Conecta tu web, CRM y sistemas en Perú con contratos de datos, referencias únicas y conciliación. Evalúa APIs antes de comprometer una integración.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar compatibilidad de mis sistemas ↗"
+        },
+        {
+          "href": "/sectores",
+          "text": "procesos de tu sector"
+        },
+        {
+          "href": "/peru",
+          "text": "mapa de soluciones para empresas de Perú"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar compatibilidad de mis sistemas ↗"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas ↗"
+        },
+        {
+          "href": "/blog/desarrollo-web-moderno-nextjs",
+          "text": "Web y CRM: comprobar que cada solicitud llega a ventas ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/servicios/whatsapp-api-oficial",
+      "titleBefore": "WhatsApp API oficial y coexistencia en Perú | ConnectologyIA",
+      "titleAfter": "WhatsApp oficial conectado a ventas y atención",
+      "h1Before": [
+        "WhatsApp API oficial y coexistencia en Perú"
+      ],
+      "h1After": [
+        "WhatsApp oficial conectado a ventas y atención"
+      ],
+      "headingsBefore": [
+        "Dónde podemos ayudarte",
+        "De conversación a oportunidad",
+        "Atención con agentes de IA",
+        "Coexistencia cuando sea elegible",
+        "Qué incluye la solución",
+        "Qué necesitamos para comenzar",
+        "Cómo se define el presupuesto",
+        "Preguntas antes de empezar",
+        "Aplicaciones para tu negocio y tu región",
+        "Empieza por un proceso concreto",
+        "Guías para decidir mejor",
+        "Conecta esta solución con"
+      ],
+      "headingsAfter": [
+        "Cuándo encaja en tu operación",
+        "Herramientas y responsabilidades",
+        "Un recorrido para evaluar contigo",
+        "Qué debe continuar después de recibir el mensaje",
+        "Responsable desde la primera consulta",
+        "Atención compartida con pausa",
+        "Seguimiento según la oportunidad",
+        "Preparación del canal y pruebas de atención",
+        "Qué necesitamos para comenzar",
+        "Cómo se define el presupuesto",
+        "Preguntas antes de empezar",
+        "Aplicaciones para tu negocio y tu región",
+        "Antes del bot, revisemos cómo atiende tu equipo",
+        "Guías para decidir mejor",
+        "Conecta esta solución con"
+      ],
+      "descriptionBefore": "Conecta WhatsApp con n8n, tu CRM y agentes de IA. Evaluamos API oficial y coexistencia con WhatsApp Business para automatizar la atención en Perú.",
+      "descriptionAfter": "Integra WhatsApp Business Platform con n8n y CRM en Perú. Revisa elegibilidad, asignación de asesores, eventos y una puesta en marcha controlada.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Evaluar mi canal de WhatsApp ↗"
+        },
+        {
+          "href": "/sectores",
+          "text": "procesos de tu sector"
+        },
+        {
+          "href": "/peru",
+          "text": "mapa de soluciones para empresas de Perú"
+        },
+        {
+          "href": "/contacto",
+          "text": "Evaluar mi canal de WhatsApp ↗"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "WhatsApp a pedido: organizar la venta antes de automatizar mensajes ↗"
+        },
+        {
+          "href": "/blog/whatsapp-api-oficial-coexistencia-peru",
+          "text": "WhatsApp API: preparar el alta sin interrumpir a tus asesores ↗"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "Agentes de IA: del primer mensaje al asesor adecuado ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/sectores/academias-y-formacion",
+      "titleBefore": "Automatización para academias y formación en Perú",
+      "titleAfter": "Convocatorias e inscripciones conectadas para academias",
+      "h1Before": [
+        "Automatización para academias y formación en Perú"
+      ],
+      "h1After": [
+        "Convocatorias e inscripciones conectadas para academias"
+      ],
+      "headingsBefore": [
+        "El problema que conviene resolver primero",
+        "Un recorrido con controles en cada paso",
+        "Orientar con información vigente",
+        "Registrar y dar seguimiento",
+        "Validar la inscripción",
+        "Información necesaria",
+        "Qué debe pasar por revisión",
+        "Un piloto que puedas evaluar",
+        "Indicadores útiles",
+        "Antes de implementarlo",
+        "De la guía a la implementación",
+        "Contextos locales",
+        "Conecta este flujo con tu operación"
+      ],
+      "headingsAfter": [
+        "El catálogo cambia y atención conserva el dato anterior",
+        "De pregunta sobre un programa a validación administrativa",
+        "Orientar con información vigente",
+        "Registrar y dar seguimiento",
+        "Validar la inscripción",
+        "Ejemplo: cambio de grupo después de preinscribirse",
+        "Sistemas y responsabilidades",
+        "Condiciones para aceptar el piloto",
+        "Información necesaria",
+        "Qué debe pasar por revisión",
+        "Un piloto que puedas evaluar",
+        "Indicadores útiles",
+        "Antes de implementarlo",
+        "De la guía a la implementación",
+        "Contextos locales",
+        "Revisar el recorrido de una inscripción"
+      ],
+      "descriptionBefore": "Conecta consultas, programas, horarios e inscripciones de tu academia en Perú. Automatización con n8n y agentes IA para atención administrativa.",
+      "descriptionAfter": "Relaciona programas, grupos e interesados en tu academia de Perú. Automatiza orientación y pendientes sin anticipar matrículas ni confirmaciones de pago.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar el recorrido de una inscripción ↗"
+        },
+        {
+          "href": "/servicios/agentes-de-inteligencia-artificial",
+          "text": "Agentes de IA para atención y equipos en Perú ↗"
+        },
+        {
+          "href": "/blog/automatizar-inscripciones-academias-peru",
+          "text": "Academias: seguimiento por convocatoria sin confundir matrículas ↗"
+        },
+        {
+          "href": "/peru/junin",
+          "text": "Inscripciones y convocatorias con n8n en Junín ↗"
+        },
+        {
+          "href": "/peru/lima",
+          "text": "Automatización en Lima: asignación por sede y cobertura ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar el recorrido de una inscripción ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/sectores/comercio-y-distribucion",
+      "titleBefore": "Automatización para comercio y distribución en Perú",
+      "titleAfter": "Pedidos y almacén conectados para comercio en Perú",
+      "h1Before": [
+        "Automatización para comercio y distribución en Perú"
+      ],
+      "h1After": [
+        "Pedidos y almacén conectados para comercio en Perú"
+      ],
+      "headingsBefore": [
+        "El problema que conviene resolver primero",
+        "Un recorrido con controles en cada paso",
+        "Recibir y clasificar",
+        "Consultar y reservar",
+        "Confirmar y seguir",
+        "Información necesaria",
+        "Qué debe pasar por revisión",
+        "Un piloto que puedas evaluar",
+        "Indicadores útiles",
+        "Antes de implementarlo",
+        "De la guía a la implementación",
+        "Contextos locales",
+        "Conecta este flujo con tu operación"
+      ],
+      "headingsAfter": [
+        "El pedido cambia mientras almacén lo prepara",
+        "De solicitud comercial a orden verificable",
+        "Recibir y clasificar",
+        "Consultar y reservar",
+        "Confirmar y seguir",
+        "Ejemplo: entrega parcial con saldo pendiente",
+        "Sistemas y responsabilidades",
+        "Condiciones para aceptar el piloto",
+        "Información necesaria",
+        "Qué debe pasar por revisión",
+        "Un piloto que puedas evaluar",
+        "Indicadores útiles",
+        "Antes de implementarlo",
+        "De la guía a la implementación",
+        "Contextos locales",
+        "Revisar el traspaso a almacén"
+      ],
+      "descriptionBefore": "Conecta ventas, pedidos y stock con n8n en tu comercio. Automatización para empresas de Perú con validación de disponibilidad y seguimiento.",
+      "descriptionAfter": "Coordina venta, reserva y despacho sin confundir stock disponible con confirmado. Diseño de integración para comercios y distribuidores en Perú.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar el traspaso a almacén ↗"
+        },
+        {
+          "href": "/servicios/integraciones-y-apis",
+          "text": "Integración de CRM, APIs y sistemas de gestión ↗"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "WhatsApp a pedido: organizar la venta antes de automatizar mensajes ↗"
+        },
+        {
+          "href": "/peru/lima",
+          "text": "Automatización en Lima: asignación por sede y cobertura ↗"
+        },
+        {
+          "href": "/peru/la-libertad",
+          "text": "Pedidos y distribución con n8n en Trujillo y La Libertad ↗"
+        },
+        {
+          "href": "/peru/piura",
+          "text": "Reportes entre sedes con automatización en Piura ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar el traspaso a almacén ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/sectores/servicios-profesionales",
+      "titleBefore": "Automatización para empresas de servicios en Perú",
+      "titleAfter": "Propuestas y agenda para servicios profesionales en Perú",
+      "h1Before": [
+        "Automatización para empresas de servicios en Perú"
+      ],
+      "h1After": [
+        "Propuestas y agenda para servicios profesionales en Perú"
+      ],
+      "headingsBefore": [
+        "El problema que conviene resolver primero",
+        "Un recorrido con controles en cada paso",
+        "Calificar la consulta",
+        "Preparar una propuesta",
+        "Coordinar el trabajo",
+        "Información necesaria",
+        "Qué debe pasar por revisión",
+        "Un piloto que puedas evaluar",
+        "Indicadores útiles",
+        "Antes de implementarlo",
+        "De la guía a la implementación",
+        "Contextos locales",
+        "Conecta este flujo con tu operación"
+      ],
+      "headingsAfter": [
+        "El trabajo empieza con un alcance que nadie cerró",
+        "Del requerimiento al proyecto con versión aceptada",
+        "Calificar la consulta",
+        "Preparar una propuesta",
+        "Coordinar el trabajo",
+        "Ejemplo: ampliación después de aceptar una propuesta",
+        "Sistemas y responsabilidades",
+        "Condiciones para aceptar el piloto",
+        "Información necesaria",
+        "Qué debe pasar por revisión",
+        "Un piloto que puedas evaluar",
+        "Indicadores útiles",
+        "Antes de implementarlo",
+        "De la guía a la implementación",
+        "Contextos locales",
+        "Revisar cómo aprobamos propuestas"
+      ],
+      "descriptionBefore": "Automatiza consultas, propuestas, agenda y seguimiento B2B en Perú. Flujos con n8n, CRM y revisión humana para empresas de servicios.",
+      "descriptionAfter": "Organiza solicitudes B2B, revisión de alcance y entrega de trabajo con CRM y n8n. Conserva propuestas aprobadas y cambios separados por proyecto.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar cómo aprobamos propuestas ↗"
+        },
+        {
+          "href": "/servicios/automatizacion-con-n8n",
+          "text": "Flujos n8n y Python para operaciones en Perú ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada ↗"
+        },
+        {
+          "href": "/peru/arequipa",
+          "text": "Cotizaciones y seguimiento con n8n en Arequipa ↗"
+        },
+        {
+          "href": "/peru/lima",
+          "text": "Automatización en Lima: asignación por sede y cobertura ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar cómo aprobamos propuestas ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/sectores/turismo-y-reservas",
+      "titleBefore": "Automatización para agencias de turismo en Perú",
+      "titleAfter": "Consultas y cambios de reserva para turismo en Perú",
+      "h1Before": [
+        "Automatización para agencias de turismo en Perú"
+      ],
+      "h1After": [
+        "Consultas y cambios de reserva para turismo en Perú"
+      ],
+      "headingsBefore": [
+        "El problema que conviene resolver primero",
+        "Un recorrido con controles en cada paso",
+        "Completar la solicitud",
+        "Validar el servicio",
+        "Acompañar la reserva",
+        "Información necesaria",
+        "Qué debe pasar por revisión",
+        "Un piloto que puedas evaluar",
+        "Indicadores útiles",
+        "Antes de implementarlo",
+        "De la guía a la implementación",
+        "Contextos locales",
+        "Conecta este flujo con tu operación"
+      ],
+      "headingsAfter": [
+        "Una opción parcial se comunica como reserva completa",
+        "Confirmaciones que viajan entre asesor y operación",
+        "Completar la solicitud",
+        "Validar el servicio",
+        "Acompañar la reserva",
+        "Ejemplo: cambio de fecha con dos proveedores",
+        "Sistemas y responsabilidades",
+        "Condiciones para aceptar el piloto",
+        "Información necesaria",
+        "Qué debe pasar por revisión",
+        "Un piloto que puedas evaluar",
+        "Indicadores útiles",
+        "Antes de implementarlo",
+        "De la guía a la implementación",
+        "Contextos locales",
+        "Revisar mis confirmaciones de reserva"
+      ],
+      "descriptionBefore": "Organiza consultas, cotizaciones y reservas con n8n e IA para turismo en Perú. Conecta disponibilidad, seguimiento y atención con control humano.",
+      "descriptionAfter": "Conecta asesor, disponibilidad y operación turística. Automatiza el seguimiento de opciones y cambios con confirmaciones rastreables por servicio.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar mis confirmaciones de reserva ↗"
+        },
+        {
+          "href": "/servicios/agentes-de-inteligencia-artificial",
+          "text": "Agentes de IA para atención y equipos en Perú ↗"
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "Reservas turísticas: automatizar cambios sin perder confirmaciones ↗"
+        },
+        {
+          "href": "/peru/cusco",
+          "text": "Reservas y proveedores conectados con n8n en Cusco ↗"
+        },
+        {
+          "href": "/peru/lima",
+          "text": "Automatización en Lima: asignación por sede y cobertura ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mis confirmaciones de reserva ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/recursos/calculadora-ahorro-automatizacion",
+      "titleBefore": "Calculadora de ahorro por automatización | ConnectologyIA",
+      "titleAfter": "Calculadora de automatización en soles: capacidad y retorno",
+      "h1Before": [
+        "¿Cuánto tiempopodrías recuperar?"
+      ],
+      "h1After": [
+        "Pon a prueba el ahorrocon tus propios supuestos."
+      ],
+      "headingsBefore": [
+        "Tu escenario estimado",
+        "Qué calcula esta herramienta",
+        "Cómo evitar una estimación optimista",
+        "Contrasta tu estimación con un proceso real"
+      ],
+      "headingsAfter": [
+        "Tu escenario estimado",
+        "Fórmulas que puedes revisar",
+        "Qué supuesto puede cambiar tu decisión",
+        "Convierte el supuesto en una prueba de alcance"
+      ],
+      "descriptionBefore": "Estima horas recuperadas y valor mensual al automatizar procesos. Calculadora en soles con costos recurrentes e implementación, sin registro.",
+      "descriptionAfter": "Compara escenarios de automatización en soles con tiempo observado, porcentaje automatizable y costo de operación. Calcula capacidad y recuperación simple.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar los supuestos de mi proceso ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/peru/arequipa",
+      "titleBefore": "Automatización de procesos con n8n en Arequipa",
+      "titleAfter": "Cotizaciones y seguimiento con n8n en Arequipa",
+      "h1Before": [
+        "Automatización de procesos con n8n en Arequipa"
+      ],
+      "h1After": [
+        "Cotizaciones y seguimiento con n8n en Arequipa"
+      ],
+      "headingsBefore": [
+        "Cotizaciones técnicas y seguimiento B2B",
+        "Procesos que podemos conectar",
+        "Solicitudes con información completa",
+        "Versiones de cotización trazables",
+        "Seguimiento de órdenes y servicio",
+        "Piloto: una familia de productos, una ruta de aprobación",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "De una tarea repetitiva a un flujo medible"
+      ],
+      "headingsAfter": [
+        "Cotizaciones técnicas y seguimiento B2B",
+        "Cotizaciones técnicas y seguimiento B2B: pasos y controles",
+        "Solicitudes con información completa",
+        "Versiones de cotización trazables",
+        "Seguimiento de órdenes y servicio",
+        "Piloto: una familia de productos, una ruta de aprobación",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Cuando se solicita una referencia alternativa",
+        "Qué registro debe quedar al terminar",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "Revisar mi circuito B2B"
+      ],
+      "descriptionBefore": "Conecta cotizaciones, órdenes y seguimiento comercial en Arequipa. Automatización con n8n e IA para proveedores y servicios, con atención remota.",
+      "descriptionAfter": "Automatiza solicitudes B2B en Arequipa: requisitos técnicos, propuestas con versiones y aceptación comprobable. Evaluación e implementación remotas.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar mi circuito B2B ↗"
+        },
+        {
+          "href": "/sectores/servicios-profesionales",
+          "text": "Servicios profesionales y B2B: recorrido operativo ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mi circuito B2B ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/peru/cusco",
+      "titleBefore": "Automatización para turismo y empresas en Cusco",
+      "titleAfter": "Reservas y proveedores conectados con n8n en Cusco",
+      "h1Before": [
+        "Automatización para turismo y empresas en Cusco"
+      ],
+      "h1After": [
+        "Reservas y proveedores conectados con n8n en Cusco"
+      ],
+      "headingsBefore": [
+        "Consultas de viajeros y reservas verificadas",
+        "Procesos que podemos conectar",
+        "Consultas completas desde el primer contacto",
+        "Disponibilidad con fuente y vigencia",
+        "Información previa al servicio",
+        "Piloto: consultas de un solo servicio turístico",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "De una tarea repetitiva a un flujo medible"
+      ],
+      "headingsAfter": [
+        "Consultas de viajeros y reservas verificadas",
+        "Consultas de viajeros y reservas verificadas: pasos y controles",
+        "Consultas completas desde el primer contacto",
+        "Disponibilidad con fuente y vigencia",
+        "Información previa al servicio",
+        "Piloto: consultas de un solo servicio turístico",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Cuando solo parte del itinerario está confirmada",
+        "Qué registro debe quedar al terminar",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "Revisar la coordinación de mis reservas"
+      ],
+      "descriptionBefore": "Conecta consultas, cotizaciones y reservas turísticas en Cusco. Automatización con n8n y agentes IA, con disponibilidad validada y control humano.",
+      "descriptionAfter": "Organiza reservas turísticas en Cusco con disponibilidad por proveedor, cambios de fecha y tareas actualizadas. Implementación de flujos e IA a distancia.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar la coordinación de mis reservas ↗"
+        },
+        {
+          "href": "/sectores/turismo-y-reservas",
+          "text": "Turismo y reservas: recorrido operativo ↗"
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "Reservas turísticas: automatizar cambios sin perder confirmaciones ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar la coordinación de mis reservas ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/peru/ica",
+      "titleBefore": "Automatización de procesos para empresas en Ica",
+      "titleAfter": "Órdenes de servicio y agenda automatizadas en Ica",
+      "h1Before": [
+        "Automatización de procesos para empresas en Ica"
+      ],
+      "h1After": [
+        "Órdenes de servicio y agenda automatizadas en Ica"
+      ],
+      "headingsBefore": [
+        "Visitas técnicas y órdenes de servicio",
+        "Procesos que podemos conectar",
+        "Solicitudes listas para evaluar",
+        "Agenda con capacidad operativa",
+        "Cierre con trabajo realizado y pendientes",
+        "Piloto: una especialidad y una zona de servicio",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "De una tarea repetitiva a un flujo medible"
+      ],
+      "headingsAfter": [
+        "Visitas técnicas y órdenes de servicio",
+        "Visitas técnicas y órdenes de servicio: pasos y controles",
+        "Solicitudes listas para evaluar",
+        "Agenda con capacidad operativa",
+        "Cierre con trabajo realizado y pendientes",
+        "Piloto: una especialidad y una zona de servicio",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Cuando la visita requiere un segundo trabajo",
+        "Qué registro debe quedar al terminar",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "Revisar mis órdenes y visitas"
+      ],
+      "descriptionBefore": "Coordina visitas técnicas, órdenes de servicio y reportes en Ica, Chincha y Pisco. Flujos con n8n y atención remota para tu empresa.",
+      "descriptionAfter": "Conecta solicitudes, visitas y cierre de órdenes en Ica con n8n. Revisa asignación, evidencias y cambios de agenda para servicios técnicos.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar mis órdenes y visitas ↗"
+        },
+        {
+          "href": "/sectores/servicios-profesionales",
+          "text": "Servicios profesionales y B2B: recorrido operativo ↗"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Reportes con n8n: cerrar ventas de varias sedes sin descuadres ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mis órdenes y visitas ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/peru/junin",
+      "titleBefore": "Automatización con n8n e IA en Huancayo y Junín",
+      "titleAfter": "Inscripciones y convocatorias con n8n en Junín",
+      "h1Before": [
+        "Automatización con n8n e IA en Huancayo y Junín"
+      ],
+      "h1After": [
+        "Inscripciones y convocatorias con n8n en Junín"
+      ],
+      "headingsBefore": [
+        "Consultas de formación e inscripciones",
+        "Procesos que podemos conectar",
+        "Información por programa y convocatoria",
+        "Seguimiento de interesados",
+        "Inscripción con validación de cupos",
+        "Piloto: una convocatoria con seguimiento visible",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "De una tarea repetitiva a un flujo medible"
+      ],
+      "headingsAfter": [
+        "Consultas de formación e inscripciones",
+        "Consultas de formación e inscripciones: pasos y controles",
+        "Información por programa y convocatoria",
+        "Seguimiento de interesados",
+        "Inscripción con validación de cupos",
+        "Piloto: una convocatoria con seguimiento visible",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Cuando cambia el horario de una convocatoria",
+        "Qué registro debe quedar al terminar",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "Revisar mi convocatoria y grupos"
+      ],
+      "descriptionBefore": "Conecta consultas, horarios y seguimiento de inscripciones en Huancayo y Junín. Automatización para formación y servicios, con evaluación remota.",
+      "descriptionAfter": "Coordina interesados, programas y cambios de grupo para formación en Junín. Automatización administrativa con cupos y confirmaciones verificadas.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar mi convocatoria y grupos ↗"
+        },
+        {
+          "href": "/sectores/academias-y-formacion",
+          "text": "Academias y formación: recorrido operativo ↗"
+        },
+        {
+          "href": "/blog/automatizar-inscripciones-academias-peru",
+          "text": "Academias: seguimiento por convocatoria sin confundir matrículas ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mi convocatoria y grupos ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/peru/la-libertad",
+      "titleBefore": "Automatización para empresas en Trujillo y La Libertad",
+      "titleAfter": "Pedidos y distribución con n8n en Trujillo y La Libertad",
+      "h1Before": [
+        "Automatización para empresas en Trujillo y La Libertad"
+      ],
+      "h1After": [
+        "Pedidos y distribución con n8n en Trujillo y La Libertad"
+      ],
+      "headingsBefore": [
+        "Pedidos mayoristas y distribución",
+        "Procesos que podemos conectar",
+        "Pedidos con unidades consistentes",
+        "Preparación sin confirmar stock inexistente",
+        "Incidencias de entrega con responsable",
+        "Piloto: pedidos de una ruta comercial",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "De una tarea repetitiva a un flujo medible"
+      ],
+      "headingsAfter": [
+        "Pedidos mayoristas y distribución",
+        "Pedidos mayoristas y distribución: pasos y controles",
+        "Pedidos con unidades consistentes",
+        "Preparación sin confirmar stock inexistente",
+        "Incidencias de entrega con responsable",
+        "Piloto: pedidos de una ruta comercial",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Cuando una entrega sale incompleta",
+        "Qué registro debe quedar al terminar",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "Revisar mis pedidos y saldos"
+      ],
+      "descriptionBefore": "Organiza pedidos, distribución y seguimiento en Trujillo y La Libertad con n8n. Flujos con validación de stock, excepciones y atención remota.",
+      "descriptionAfter": "Conecta pedidos, unidades y entregas parciales en Trujillo y La Libertad. Define validaciones de almacén y seguimiento de incidencias con n8n.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar mis pedidos y saldos ↗"
+        },
+        {
+          "href": "/sectores/comercio-y-distribucion",
+          "text": "Comercio y distribución: recorrido operativo ↗"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Reportes con n8n: cerrar ventas de varias sedes sin descuadres ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mis pedidos y saldos ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/peru/lambayeque",
+      "titleBefore": "Automatización e IA en Chiclayo y Lambayeque",
+      "titleAfter": "Seguimiento posventa automatizado en Lambayeque",
+      "h1Before": [
+        "Automatización e IA en Chiclayo y Lambayeque"
+      ],
+      "h1After": [
+        "Seguimiento posventa automatizado en Lambayeque"
+      ],
+      "headingsBefore": [
+        "Atención posventa y seguimiento de incidencias",
+        "Procesos que podemos conectar",
+        "Consultas vinculadas a la compra",
+        "Derivación según el problema",
+        "Seguimiento sin respuestas contradictorias",
+        "Piloto: una cola de atención posventa con estados claros",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "De una tarea repetitiva a un flujo medible"
+      ],
+      "headingsAfter": [
+        "Atención posventa y seguimiento de incidencias",
+        "Atención posventa y seguimiento de incidencias: pasos y controles",
+        "Consultas vinculadas a la compra",
+        "Derivación según el problema",
+        "Seguimiento sin respuestas contradictorias",
+        "Piloto: una cola de atención posventa con estados claros",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Cuando el cliente vuelve a escribir por un caso abierto",
+        "Qué registro debe quedar al terminar",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "Revisar mi seguimiento posventa"
+      ],
+      "descriptionBefore": "Organiza atención posventa, incidencias y seguimiento de pedidos en Chiclayo y Lambayeque. Automatización con n8n e IA, con atención remota.",
+      "descriptionAfter": "Organiza incidencias posventa en Chiclayo y Lambayeque: pedido de origen, responsable, evidencia y cierre verificado con CRM y n8n.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar mi seguimiento posventa ↗"
+        },
+        {
+          "href": "/sectores/comercio-y-distribucion",
+          "text": "Comercio y distribución: recorrido operativo ↗"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "Agentes de IA: del primer mensaje al asesor adecuado ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mi seguimiento posventa ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/peru/lima",
+      "titleBefore": "Automatización e inteligencia artificial en Lima",
+      "titleAfter": "Automatización en Lima: asignación por sede y cobertura",
+      "h1Before": [
+        "Automatización e inteligencia artificial en Lima"
+      ],
+      "h1After": [
+        "Automatización en Lima: asignación por sede y cobertura"
+      ],
+      "headingsBefore": [
+        "Coordinar consultas, sedes y entregas",
+        "Procesos que podemos conectar",
+        "Ventas con asignación por zona",
+        "Pedidos con cobertura verificable",
+        "Agenda entre varias sedes",
+        "Cómo adaptar el flujo a tus distritos",
+        "Miraflores, San Isidro y San Borja",
+        "Santiago de Surco y La Molina",
+        "Los Olivos, Independencia y Comas",
+        "San Juan de Lurigancho, Ate y Santa Anita",
+        "Cercado de Lima, La Victoria y otros distritos",
+        "Piloto: de consulta a asesor, sin oportunidades olvidadas",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "De una tarea repetitiva a un flujo medible"
+      ],
+      "headingsAfter": [
+        "Coordinar consultas, sedes y entregas",
+        "Coordinar consultas, sedes y entregas: pasos y controles",
+        "Ventas con asignación por zona",
+        "Pedidos con cobertura verificable",
+        "Agenda entre varias sedes",
+        "Cómo adaptar el flujo a tus distritos",
+        "Miraflores, San Isidro y San Borja",
+        "Santiago de Surco y La Molina",
+        "Los Olivos, Independencia y Comas",
+        "San Juan de Lurigancho, Ate y Santa Anita",
+        "Cercado de Lima, La Victoria y otros distritos",
+        "Piloto: de consulta a asesor, sin oportunidades olvidadas",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Cuando una dirección no coincide con la zona asignada",
+        "Qué registro debe quedar al terminar",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "Revisar mis reglas de cobertura"
+      ],
+      "descriptionBefore": "Automatiza ventas, atención y operaciones en Lima con n8n e IA. Guía por distritos, asignación de leads y entregas con cobertura remota.",
+      "descriptionAfter": "Organiza consultas y entregas entre distritos de Lima con CRM y n8n. Define cobertura, responsables y excepciones para una implementación remota.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar mis reglas de cobertura ↗"
+        },
+        {
+          "href": "/sectores/comercio-y-distribucion",
+          "text": "Comercio y distribución: recorrido operativo ↗"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "WhatsApp a pedido: organizar la venta antes de automatizar mensajes ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mis reglas de cobertura ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/peru/piura",
+      "titleBefore": "Automatización e IA para empresas en Piura",
+      "titleAfter": "Reportes entre sedes con automatización en Piura",
+      "h1Before": [
+        "Automatización e IA para empresas en Piura"
+      ],
+      "h1After": [
+        "Reportes entre sedes con automatización en Piura"
+      ],
+      "headingsBefore": [
+        "Reportes de sedes y coordinación operativa",
+        "Procesos que podemos conectar",
+        "Cierre diario con fuentes identificadas",
+        "Sincronización después de una interrupción",
+        "Alertas que llevan a una acción",
+        "Piloto: cierre operativo de dos sedes",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "De una tarea repetitiva a un flujo medible"
+      ],
+      "headingsAfter": [
+        "Reportes de sedes y coordinación operativa",
+        "Reportes de sedes y coordinación operativa: pasos y controles",
+        "Cierre diario con fuentes identificadas",
+        "Sincronización después de una interrupción",
+        "Alertas que llevan a una acción",
+        "Piloto: cierre operativo de dos sedes",
+        "Cómo saber si funciona",
+        "Qué necesitamos revisar contigo",
+        "Implementación a distancia",
+        "Cuando una sede entrega datos después del cierre",
+        "Qué registro debe quedar al terminar",
+        "Preguntas sobre esta operación",
+        "Diseña el siguiente paso",
+        "Costos y prioridades",
+        "Revisar mi cierre entre sedes"
+      ],
+      "descriptionBefore": "Automatiza reportes de sedes, solicitudes y alertas en Piura con n8n e IA. Control de datos, sincronización y evaluación remota para tu empresa.",
+      "descriptionAfter": "Coordina cierres comerciales de sedes en Piura: origen de datos, cobertura del reporte y correcciones tardías con n8n y sistemas existentes.",
+      "addedLinks": [
+        {
+          "href": "/contacto",
+          "text": "Revisar mi cierre entre sedes ↗"
+        },
+        {
+          "href": "/sectores/comercio-y-distribucion",
+          "text": "Comercio y distribución: recorrido operativo ↗"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Reportes con n8n: cerrar ventas de varias sedes sin descuadres ↗"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mi cierre entre sedes ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/blog/agente-ia-telegram-n8n",
+      "titleBefore": "Agente de IA en Telegram con n8n: diseño y controles | ConnectologyIA",
+      "titleAfter": "Telegram y n8n: asistente interno de ventas",
+      "h1Before": [
+        "Agente de IA en Telegram con n8n: diseño y controles"
+      ],
+      "h1After": [
+        "Telegram y n8n: un asistente interno para pendientes comerciales"
+      ],
+      "headingsBefore": [
+        "Elige una tarea y limita las acciones",
+        "Separa el canal, el flujo y las herramientas",
+        "Protege el acceso al bot",
+        "Usa documentos con una fuente reconocible",
+        "Añade confirmación para operaciones que modifican datos",
+        "Prueba los límites antes de ampliar",
+        "Cuándo usar un bot sin IA",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "WhatsApp API oficial y coexistencia: qué evaluar en Perú",
+        "Agentes de IA en atención al cliente: usos y límites",
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú"
+      ],
+      "headingsAfter": [
+        "Empieza por una pregunta que tenga una respuesta verificable",
+        "Del usuario de Telegram al permiso del CRM",
+        "Una arquitectura de consulta con salida controlada",
+        "Leer una propuesta y modificarla son operaciones diferentes",
+        "Pruebas de aceptación para el responsable comercial",
+        "El siguiente paso depende de la operación",
+        "Un bot conectado a los pendientes de tu equipo",
+        "Continúa con el siguiente paso",
+        "Cotizaciones B2B: de la solicitud a una versión aprobada",
+        "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas",
+        "Agentes de IA: del primer mensaje al asesor adecuado"
+      ],
+      "descriptionBefore": "Diseña un bot de Telegram conectado a n8n: permisos, consultas a documentos, acciones con confirmación, derivación y pruebas antes de activarlo.",
+      "descriptionAfter": "Diseña un asistente de Telegram que consulte cotizaciones y pendientes del CRM, con identidad, permisos y aprobaciones para tu equipo en Perú.",
+      "addedLinks": [
+        {
+          "href": "/servicios/agentes-de-inteligencia-artificial",
+          "text": "agentes con herramientas limitadas"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "eventos duplicados y CRM"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "atención con derivación humana"
+        },
+        {
+          "href": "/contacto",
+          "text": "Diseñar mi asistente interno ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "Agentes de IA: del primer mensaje al asesor adecuado"
+        }
+      ],
+      "newDestinations": [
+        "/blog/automatizar-leads-n8n-crm"
+      ]
+    },
+    {
+      "route": "/blog/agentes-ia-atencion-cliente",
+      "titleBefore": "Agentes de IA en atención al cliente: usos y límites | ConnectologyIA",
+      "titleAfter": "Agentes IA para atención y derivación a asesores",
+      "h1Before": [
+        "Agentes de IA en atención al cliente: usos y límites"
+      ],
+      "h1After": [
+        "Agentes de IA: del primer mensaje al asesor adecuado"
+      ],
+      "headingsBefore": [
+        "Chatbot de reglas y agente de IA",
+        "Qué información necesita para responder",
+        "Diseña la derivación como parte del servicio",
+        "Limita lo que puede hacer cada herramienta",
+        "Cómo evaluar un piloto de atención",
+        "Web, Telegram o WhatsApp",
+        "Un primer alcance razonable",
+        "Dos aplicaciones para empresas peruanas",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Agente de IA en Telegram con n8n: diseño y controles",
+        "WhatsApp API oficial y coexistencia: qué evaluar en Perú",
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú"
+      ],
+      "headingsAfter": [
+        "Dibuja las salidas de la conversación antes del prompt",
+        "Usa una ficha de respuesta por servicio",
+        "La transferencia necesita un dueño y una pausa",
+        "Prompt, n8n y CRM tienen responsabilidades distintas",
+        "Evalúa calidad con conversaciones completas",
+        "Decide el alcance a partir de costo y carga humana",
+        "Revisemos una conversación que hoy se atasca",
+        "Continúa con el siguiente paso",
+        "Reservas turísticas: automatizar cambios sin perder confirmaciones",
+        "Telegram y n8n: un asistente interno para pendientes comerciales",
+        "WhatsApp API: preparar el alta sin interrumpir a tus asesores"
+      ],
+      "descriptionBefore": "Cómo diseñar un agente de IA útil para atención al cliente: fuentes confiables, permisos, derivación humana y métricas para evaluar el piloto.",
+      "descriptionAfter": "Organiza atención con IA en tu empresa: clasificación, conocimiento vigente, transferencia a asesores y evaluación de respuestas en WhatsApp o web.",
+      "addedLinks": [
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "reservas turísticas"
+        },
+        {
+          "href": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+          "text": "presupuesto de automatización"
+        },
+        {
+          "href": "/blog/whatsapp-api-oficial-coexistencia-peru",
+          "text": "incorporación a la API oficial"
+        },
+        {
+          "href": "/contacto",
+          "text": "Evaluar mi atención con IA ↗"
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "Reservas turísticas: automatizar cambios sin perder confirmaciones"
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/agente-ia-telegram-n8n",
+          "text": "Telegram y n8n: un asistente interno para pendientes comerciales"
+        },
+        {
+          "href": "/blog/whatsapp-api-oficial-coexistencia-peru",
+          "text": "WhatsApp API: preparar el alta sin interrumpir a tus asesores"
+        }
+      ],
+      "newDestinations": [
+        "/blog/cuanto-cuesta-automatizar-procesos-peru"
+      ]
+    },
+    {
+      "route": "/blog/automatizar-cotizaciones-seguimiento-peru",
+      "titleBefore": "Automatizar cotizaciones y seguimiento en Perú con n8n",
+      "titleAfter": "Automatizar cotizaciones B2B y versiones en Perú",
+      "h1Before": [
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú"
+      ],
+      "h1After": [
+        "Cotizaciones B2B: de la solicitud a una versión aprobada"
+      ],
+      "headingsBefore": [
+        "Define una solicitud que se pueda evaluar",
+        "Crea un modelo de estados comercial",
+        "Separa precio, moneda y condiciones",
+        "Construye el flujo en n8n con aprobación",
+        "No sobrescribas una propuesta que ya se envió",
+        "Haz seguimiento sin perseguir a quien ya respondió",
+        "Comprueba que el proceso mejora",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Cómo automatizar ventas por WhatsApp en Perú sin perder el control",
+        "Cómo automatizar leads con n8n sin duplicar contactos",
+        "Cuánto cuesta automatizar procesos en Perú: cómo estimarlo"
+      ],
+      "headingsAfter": [
+        "La ficha de entrada debe permitir decidir qué falta",
+        "Modela la propuesta como una secuencia de estados",
+        "Separa cálculos, redacción y autorización",
+        "El seguimiento consulta el estado antes de escribir",
+        "Prueba una aceptación tardía de una versión antigua",
+        "Mide el cuello de botella que quieres retirar",
+        "Ordenemos la preparación de tus propuestas",
+        "Continúa con el siguiente paso",
+        "Academias: seguimiento por convocatoria sin confundir matrículas",
+        "Reservas turísticas: automatizar cambios sin perder confirmaciones",
+        "WhatsApp a pedido: organizar la venta antes de automatizar mensajes"
+      ],
+      "descriptionBefore": "Ordena solicitudes, prepara cotizaciones y controla versiones con n8n y tu CRM. Guía B2B con aprobación humana, moneda, vigencia y seguimiento.",
+      "descriptionAfter": "Automatiza cotizaciones en Perú con n8n y CRM: requisitos completos, versiones, moneda, aprobación y seguimiento de la propuesta vigente.",
+      "addedLinks": [
+        {
+          "href": "/servicios/whatsapp-api-oficial",
+          "text": "WhatsApp API oficial"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "arquitectura de leads e idempotencia"
+        },
+        {
+          "href": "/sectores/servicios-profesionales",
+          "text": "servicios profesionales B2B"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mi circuito de cotización ↗"
+        },
+        {
+          "href": "/blog/automatizar-inscripciones-academias-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-inscripciones-academias-peru",
+          "text": "Academias: seguimiento por convocatoria sin confundir matrículas"
+        },
+        {
+          "href": "/blog/automatizar-inscripciones-academias-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "Reservas turísticas: automatizar cambios sin perder confirmaciones"
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "WhatsApp a pedido: organizar la venta antes de automatizar mensajes"
+        }
+      ],
+      "newDestinations": [
+        "/servicios/whatsapp-api-oficial",
+        "/blog/automatizar-inscripciones-academias-peru",
+        "/blog/automatizar-reservas-turismo-peru"
+      ]
+    },
+    {
+      "route": "/blog/automatizar-inscripciones-academias-peru",
+      "titleBefore": "Automatización de inscripciones para academias en Perú",
+      "titleAfter": "Inscripciones de academias con n8n en Perú",
+      "h1Before": [
+        "Cómo automatizar consultas e inscripciones de una academia en Perú"
+      ],
+      "h1After": [
+        "Academias: seguimiento por convocatoria sin confundir matrículas"
+      ],
+      "headingsBefore": [
+        "Separa programa, convocatoria y grupo",
+        "Registra lo necesario para orientar",
+        "Diseña la secuencia administrativa",
+        "No confirmes un cupo solo porque apareció disponible",
+        "Controla cambios de horario y de grupo",
+        "Define los límites del asistente",
+        "Mide cada etapa por separado",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Cómo automatizar leads con n8n sin duplicar contactos",
+        "Agentes de IA en atención al cliente: usos y límites",
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú"
+      ],
+      "headingsAfter": [
+        "El catálogo necesita convocatorias, no solo nombres de cursos",
+        "Conserva el interés aunque cambie la opción elegida",
+        "Conecta n8n con el sistema que controla los cupos",
+        "Los mensajes deben seguir el estado de la solicitud",
+        "Ensaya un cambio después de preparar los avisos",
+        "Amplía cuando atención y administración compartan estados",
+        "Conectemos una convocatoria con tu atención",
+        "Continúa con el siguiente paso",
+        "Cotizaciones B2B: de la solicitud a una versión aprobada",
+        "Reservas turísticas: automatizar cambios sin perder confirmaciones",
+        "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+      ],
+      "descriptionBefore": "Organiza interesados, programas, horarios y preinscripciones con n8n. Guía para academias de Perú con validación de cupos y atención humana.",
+      "descriptionAfter": "Diseña con n8n el recorrido de interesados a inscripción: convocatoria, cambios de grupo, cupos y tareas administrativas para academias de Perú.",
+      "addedLinks": [
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "atención con agentes de IA"
+        },
+        {
+          "href": "/sectores/academias-y-formacion",
+          "text": "proceso de academias y formación"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "control de duplicados de n8n"
+        },
+        {
+          "href": "/contacto",
+          "text": "Diseñar el flujo de mi academia ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada"
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "Reservas turísticas: automatizar cambios sin perder confirmaciones"
+        },
+        {
+          "href": "/blog/automatizar-reservas-turismo-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+        }
+      ],
+      "newDestinations": [
+        "/blog/automatizar-reservas-turismo-peru"
+      ]
+    },
+    {
+      "route": "/blog/automatizar-leads-n8n-crm",
+      "titleBefore": "Cómo automatizar leads con n8n sin duplicar contactos | ConnectologyIA",
+      "titleAfter": "Leads con n8n y CRM: idempotencia y recuperación",
+      "h1Before": [
+        "Cómo automatizar leads con n8n sin duplicar contactos"
+      ],
+      "h1After": [
+        "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+      ],
+      "headingsBefore": [
+        "Define el dato que representa una oportunidad",
+        "Diseña el recorrido antes de conectar la API",
+        "Controla duplicados con un registro persistente",
+        "Decide cómo reaccionar ante cada error",
+        "Protege el formulario y los accesos",
+        "Prueba con una pequeña matriz de casos",
+        "Cuándo añadir inteligencia artificial",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Cuánto cuesta automatizar procesos en Perú: cómo estimarlo",
+        "IA para pymes en Perú: qué automatizar primero",
+        "n8n vs. Zapier vs. Make: cómo elegir para tu empresa"
+      ],
+      "headingsAfter": [
+        "Reconstruye primero la operación incompleta",
+        "Confirma recepción después de registrar el evento",
+        "Redis puede coordinar, pero no demuestra que la venta se guardó",
+        "Resuelve el fallo incierto antes de reintentar",
+        "Cierra el circuito con conciliación y alertas",
+        "Prueba con eventos que llegan dos veces y respuestas que no llegan",
+        "¿Tu formulario genera pendientes o duplicados?",
+        "Continúa con el siguiente paso",
+        "Cotizaciones B2B: de la solicitud a una versión aprobada",
+        "Reportes con n8n: cerrar ventas de varias sedes sin descuadres",
+        "WhatsApp a pedido: organizar la venta antes de automatizar mensajes"
+      ],
+      "descriptionBefore": "Diseña un flujo de formulario a CRM con n8n: valida datos, controla duplicados, asigna responsables y recupera solicitudes cuando una API falla.",
+      "descriptionAfter": "Arquitectura de leads con webhooks, idempotencia, Redis y conciliación: evita que los reintentos creen oportunidades o tareas comerciales duplicadas.",
+      "addedLinks": [
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "cotizaciones con versiones"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "ventas por WhatsApp"
+        },
+        {
+          "href": "/servicios/integraciones-y-apis",
+          "text": "integración de APIs"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mi flujo hacia el CRM ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Reportes con n8n: cerrar ventas de varias sedes sin descuadres"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "WhatsApp a pedido: organizar la venta antes de automatizar mensajes"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "Leer guía ↗"
+        }
+      ],
+      "newDestinations": [
+        "/blog/automatizar-cotizaciones-seguimiento-peru",
+        "/blog/automatizar-ventas-whatsapp-peru",
+        "/blog/automatizar-reportes-ventas-peru"
+      ]
+    },
+    {
+      "route": "/blog/automatizar-reportes-ventas-peru",
+      "titleBefore": "Automatizar reportes de ventas con n8n en Perú",
+      "titleAfter": "Reportes con n8n: cierres y conciliación de ventas",
+      "h1Before": [
+        "Reportes de ventas automáticos con n8n: guía para empresas de Perú"
+      ],
+      "h1After": [
+        "Reportes con n8n: cerrar ventas de varias sedes sin descuadres"
+      ],
+      "headingsBefore": [
+        "Define qué significa una venta para ese reporte",
+        "Fija el corte en hora de Perú",
+        "Extrae los datos sin contar dos veces",
+        "Comprueba completitud antes de enviar",
+        "Separa totales por moneda y criterio",
+        "Prueba la recuperación del reporte",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Cuánto cuesta automatizar procesos en Perú: cómo estimarlo",
+        "n8n vs. Zapier vs. Make: cómo elegir para tu empresa",
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú"
+      ],
+      "headingsAfter": [
+        "Acuerda qué representa una venta en el informe",
+        "Prepara un contrato de datos por fuente",
+        "Separa extracción, validación y publicación",
+        "Los datos tardíos necesitan una política de corrección",
+        "Verifica un reporte antes de distribuirlo",
+        "Entrega una cifra que pueda rastrearse",
+        "Revisemos de dónde sale cada total",
+        "Continúa con el siguiente paso",
+        "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas",
+        "Presupuesto de automatización en Perú: comparar alcances y costos",
+        "n8n, Zapier o Make: evaluar un flujo comercial completo"
+      ],
+      "descriptionBefore": "Consolida ventas de varias sedes sin duplicar registros. Define cortes en hora Perú, moneda, devoluciones y controles para reportes fiables con n8n.",
+      "descriptionAfter": "Prepara reportes comerciales fiables: cortes en hora Perú, monedas separadas, devoluciones, datos tardíos y conciliación entre sedes con n8n.",
+      "addedLinks": [
+        {
+          "href": "/servicios/integraciones-y-apis",
+          "text": "integración entre sistemas"
+        },
+        {
+          "href": "/peru/piura",
+          "text": "operaciones entre sedes en Piura"
+        },
+        {
+          "href": "/recursos/calculadora-ahorro-automatizacion",
+          "text": "calculadora"
+        },
+        {
+          "href": "/contacto",
+          "text": "Diseñar mi cierre de reportes ↗"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+          "text": "Presupuesto de automatización en Perú: comparar alcances y costos"
+        },
+        {
+          "href": "/blog/orquestacion-n8n-vs-zapier",
+          "text": "n8n, Zapier o Make: evaluar un flujo comercial completo"
+        }
+      ],
+      "newDestinations": [
+        "/blog/automatizar-leads-n8n-crm"
+      ]
+    },
+    {
+      "route": "/blog/automatizar-reservas-turismo-peru",
+      "titleBefore": "Automatizar reservas turísticas en Perú con n8n e IA",
+      "titleAfter": "Automatizar reservas y cambios turísticos en Perú",
+      "h1Before": [
+        "Cómo automatizar consultas y reservas turísticas en Perú"
+      ],
+      "h1After": [
+        "Reservas turísticas: automatizar cambios sin perder confirmaciones"
+      ],
+      "headingsBefore": [
+        "Distingue cuatro registros",
+        "Recoge fechas y necesidades sin ambigüedad",
+        "Usa una base informativa aprobada",
+        "Consulta disponibilidad antes de confirmar",
+        "Conecta la confirmación con las indicaciones previas",
+        "Diseña la reprogramación desde el inicio",
+        "Evalúa el piloto con preguntas y errores reales",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Cómo automatizar ventas por WhatsApp en Perú sin perder el control",
+        "Agentes de IA en atención al cliente: usos y límites",
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú"
+      ],
+      "headingsAfter": [
+        "Distingue consulta, opción y reserva",
+        "La disponibilidad viene de una fuente responsable",
+        "Diseña la reprogramación como una operación propia",
+        "Separa documentos vigentes de instrucciones improvisadas",
+        "Prueba el momento en que dos sistemas discrepan",
+        "Elige un servicio donde puedas revisar el recorrido completo",
+        "Probemos una reserva y una reprogramación",
+        "Continúa con el siguiente paso",
+        "Cotizaciones B2B: de la solicitud a una versión aprobada",
+        "Academias: seguimiento por convocatoria sin confundir matrículas",
+        "WhatsApp a pedido: organizar la venta antes de automatizar mensajes"
+      ],
+      "descriptionBefore": "Diseña un flujo de consultas a reservas para turismo en Perú: fechas, cupos, proveedores, idiomas y reprogramaciones con validación humana.",
+      "descriptionAfter": "Coordina consultas, opciones, proveedores y reprogramaciones de turismo en Perú con n8n, conservando disponibilidad y confirmación verificables.",
+      "addedLinks": [
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "flujo de atención con IA"
+        },
+        {
+          "href": "/servicios/whatsapp-api-oficial",
+          "text": "WhatsApp conectado a la operación"
+        },
+        {
+          "href": "/sectores/turismo-y-reservas",
+          "text": "diseño para turismo y reservas"
+        },
+        {
+          "href": "/peru/cusco",
+          "text": "guía operativa para Cusco"
+        },
+        {
+          "href": "/contacto",
+          "text": "Analizar mi circuito de reservas ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada"
+        },
+        {
+          "href": "/blog/automatizar-inscripciones-academias-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-inscripciones-academias-peru",
+          "text": "Academias: seguimiento por convocatoria sin confundir matrículas"
+        },
+        {
+          "href": "/blog/automatizar-inscripciones-academias-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "WhatsApp a pedido: organizar la venta antes de automatizar mensajes"
+        }
+      ],
+      "newDestinations": [
+        "/servicios/whatsapp-api-oficial",
+        "/blog/automatizar-inscripciones-academias-peru"
+      ]
+    },
+    {
+      "route": "/blog/automatizar-ventas-whatsapp-peru",
+      "titleBefore": "Automatizar ventas por WhatsApp en Perú: guía práctica",
+      "titleAfter": "Ventas por WhatsApp: del mensaje al pedido en Perú",
+      "h1Before": [
+        "Cómo automatizar ventas por WhatsApp en Perú sin perder el control"
+      ],
+      "h1After": [
+        "WhatsApp a pedido: organizar la venta antes de automatizar mensajes"
+      ],
+      "headingsBefore": [
+        "Separa conversación, oportunidad y pedido",
+        "Pide los datos que permiten dar el siguiente paso",
+        "Diseña el flujo antes de conectar herramientas",
+        "Trata un comprobante como pendiente hasta validarlo",
+        "Coordina al agente y al asesor",
+        "Prueba lo que puede fallar y mide el resultado",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú",
+        "Cómo automatizar leads con n8n sin duplicar contactos",
+        "WhatsApp API oficial y coexistencia: qué evaluar en Perú"
+      ],
+      "headingsAfter": [
+        "Decide qué evento convierte la consulta en oportunidad",
+        "Construye un tablero de estados compartidos",
+        "El catálogo debe explicar unidades y condiciones",
+        "Automatiza el traspaso al asesor antes del cierre",
+        "Los reintentos no deben repetir el pedido",
+        "Mide oportunidades que llegan a una siguiente acción",
+        "Conectemos la conversación con tu pedido",
+        "Continúa con el siguiente paso",
+        "Cotizaciones B2B: de la solicitud a una versión aprobada",
+        "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas",
+        "WhatsApp API: preparar el alta sin interrumpir a tus asesores"
+      ],
+      "descriptionBefore": "Diseña un flujo de WhatsApp a CRM y pedidos: datos mínimos, stock, pagos por revisar, asignación de asesores y pruebas para un negocio peruano.",
+      "descriptionAfter": "Convierte conversaciones en pedidos verificables: responsable, catálogo, stock, pagos pendientes y seguimiento comercial para negocios en Perú.",
+      "addedLinks": [
+        {
+          "href": "/peru/lima",
+          "text": "guía de Lima"
+        },
+        {
+          "href": "/blog/whatsapp-api-oficial-coexistencia-peru",
+          "text": "API oficial y coexistencia"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "n8n y CRM sin duplicados"
+        },
+        {
+          "href": "/contacto",
+          "text": "Revisar mi venta por WhatsApp ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+        },
+        {
+          "href": "/blog/whatsapp-api-oficial-coexistencia-peru",
+          "text": "WhatsApp API: preparar el alta sin interrumpir a tus asesores"
+        }
+      ],
+      "newDestinations": [
+        "/peru/lima"
+      ]
+    },
+    {
+      "route": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+      "titleBefore": "Cuánto cuesta automatizar procesos en Perú: cómo estimarlo | ConnectologyIA",
+      "titleAfter": "Cuánto cuesta automatizar en Perú: comparar propuestas",
+      "h1Before": [
+        "Cuánto cuesta automatizar procesos en Perú: cómo estimarlo"
+      ],
+      "h1After": [
+        "Presupuesto de automatización en Perú: comparar alcances y costos"
+      ],
+      "headingsBefore": [
+        "Los cuatro componentes del presupuesto",
+        "Qué hace que un proyecto sea más complejo",
+        "Un ejemplo de cálculo en soles",
+        "Tiempo recuperado no equivale siempre a dinero ahorrado",
+        "Qué pedir en una propuesta",
+        "Empieza con un piloto que puedas medir",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Cómo automatizar leads con n8n sin duplicar contactos",
+        "IA para pymes en Perú: qué automatizar primero",
+        "n8n vs. Zapier vs. Make: cómo elegir para tu empresa"
+      ],
+      "headingsAfter": [
+        "Escribe el resultado que aceptarías como terminado",
+        "Divide la propuesta en partidas que puedas revisar",
+        "Lleva las monedas a una base comparable",
+        "Calcula capacidad recuperada y ahorro de caja por separado",
+        "Compara tres escenarios con el mismo proceso",
+        "Pide una demostración del fallo, además del éxito",
+        "Preparemos un alcance que puedas comparar",
+        "Continúa con el siguiente paso",
+        "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas",
+        "Qué automatizar primero en una pyme: una matriz de decisión",
+        "n8n, Zapier o Make: evaluar un flujo comercial completo"
+      ],
+      "descriptionBefore": "Aprende a comparar presupuestos de automatización con n8n y Python: implementación, operación, mantenimiento y valor del tiempo recuperado.",
+      "descriptionAfter": "Compara propuestas de n8n e IA sin tarifas inventadas: alcance, gasto recurrente, supervisión y escenarios de retorno expresados en soles.",
+      "addedLinks": [
+        {
+          "href": "/recursos/calculadora-ahorro-automatizacion",
+          "text": "calculadora de automatización"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "leads con n8n y CRM"
+        },
+        {
+          "href": "/blog/impacto-ia-pymes-2026",
+          "text": "matriz de prioridad para pymes"
+        },
+        {
+          "href": "/contacto",
+          "text": "Solicitar un alcance de automatización ↗"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+        },
+        {
+          "href": "/blog/impacto-ia-pymes-2026",
+          "text": "Qué automatizar primero en una pyme: una matriz de decisión"
+        },
+        {
+          "href": "/blog/orquestacion-n8n-vs-zapier",
+          "text": "n8n, Zapier o Make: evaluar un flujo comercial completo"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/blog/desarrollo-web-moderno-nextjs",
+      "titleBefore": "Una web conectada a tu CRM: rendimiento y automatización | ConnectologyIA",
+      "titleAfter": "Web y CRM: solicitudes que llegan a ventas",
+      "h1Before": [
+        "Una web conectada a tu CRM: rendimiento y automatización"
+      ],
+      "h1After": [
+        "Web y CRM: comprobar que cada solicitud llega a ventas"
+      ],
+      "headingsBefore": [
+        "Haz que el contenido principal llegue con la página",
+        "Mide la experiencia real de carga",
+        "Diseña el formulario para que se pueda completar",
+        "Conecta la solicitud sin exponer credenciales",
+        "Cuándo necesitas un sistema web adicional",
+        "Revisa el recorrido completo antes de publicar",
+        "Qué conviene medir después",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú",
+        "Cómo automatizar consultas e inscripciones de una academia en Perú",
+        "Reportes de ventas automáticos con n8n: guía para empresas de Perú"
+      ],
+      "headingsAfter": [
+        "Define lo que promete el botón de envío",
+        "La página pública y el sistema comercial tienen límites distintos",
+        "Conserva el origen sin acumular datos innecesarios",
+        "Diseña la ruta cuando el CRM no está disponible",
+        "Haz una prueba que llegue hasta el responsable comercial",
+        "Mide solicitudes entregadas, no solo conversiones visuales",
+        "Comprobemos el recorrido de una consulta web",
+        "Continúa con el siguiente paso",
+        "Cotizaciones B2B: de la solicitud a una versión aprobada",
+        "Reportes con n8n: cerrar ventas de varias sedes sin descuadres",
+        "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+      ],
+      "descriptionBefore": "Cómo conectar una web de servicios con tu operación: contenido rápido, formularios accesibles, registro de leads y seguimiento sin duplicados.",
+      "descriptionAfter": "Diseña la captación web de una pyme de Perú: formulario, recepción persistente, asignación comercial y recuperación cuando falla el CRM.",
+      "addedLinks": [
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "diseño de idempotencia y recuperación"
+        },
+        {
+          "href": "/servicios/integraciones-y-apis",
+          "text": "solución de APIs y sistemas"
+        },
+        {
+          "href": "/contacto",
+          "text": "Conectar mi web con ventas ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Reportes con n8n: cerrar ventas de varias sedes sin descuadres"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leer guía ↗"
+        }
+      ],
+      "newDestinations": []
+    },
+    {
+      "route": "/blog/impacto-ia-pymes-2026",
+      "titleBefore": "IA para pymes en Perú: qué automatizar primero | ConnectologyIA",
+      "titleAfter": "Qué automatizar primero en tu pyme de Perú",
+      "h1Before": [
+        "IA para pymes en Perú: qué automatizar primero"
+      ],
+      "h1After": [
+        "Qué automatizar primero en una pyme: una matriz de decisión"
+      ],
+      "headingsBefore": [
+        "Haz una lista de tareas que se repiten",
+        "Evalúa frecuencia, estabilidad y consecuencias",
+        "Decide si realmente necesitas IA",
+        "Tres ejemplos de alcance inicial",
+        "Prepara al equipo y los accesos",
+        "Mide antes y después del piloto",
+        "Cómo decidir el siguiente paso",
+        "Elige un ejemplo cercano a tu negocio",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Cómo automatizar leads con n8n sin duplicar contactos",
+        "Cuánto cuesta automatizar procesos en Perú: cómo estimarlo",
+        "n8n vs. Zapier vs. Make: cómo elegir para tu empresa"
+      ],
+      "headingsAfter": [
+        "Reúne evidencia de una semana representativa",
+        "Compara candidatos sin esconder el riesgo en un promedio",
+        "Separa tres tipos de trabajo",
+        "Escribe una hipótesis que pueda salir mal",
+        "El piloto necesita una entrega operable",
+        "Invierte después de entender el siguiente cuello de botella",
+        "Elijamos un primer proceso viable",
+        "Continúa con el siguiente paso",
+        "Cotizaciones B2B: de la solicitud a una versión aprobada",
+        "Reportes con n8n: cerrar ventas de varias sedes sin descuadres",
+        "Presupuesto de automatización en Perú: comparar alcances y costos"
+      ],
+      "descriptionBefore": "Identifica procesos adecuados para IA y automatización en tu pyme: frecuencia, reglas, calidad de datos, riesgos y un piloto con resultados medibles.",
+      "descriptionAfter": "Prioriza tareas de ventas, atención y administración con una matriz de frecuencia, datos y riesgo antes de invertir en n8n o agentes IA en Perú.",
+      "addedLinks": [
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "cotizaciones B2B"
+        },
+        {
+          "href": "/recursos",
+          "text": "plantilla de diagnóstico"
+        },
+        {
+          "href": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+          "text": "guía de presupuesto"
+        },
+        {
+          "href": "/servicios",
+          "text": "servicios de n8n e IA"
+        },
+        {
+          "href": "/contacto",
+          "text": "Priorizar mi primer proyecto ↗"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Cotizaciones B2B: de la solicitud a una versión aprobada"
+        },
+        {
+          "href": "/blog/automatizar-cotizaciones-seguimiento-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Reportes con n8n: cerrar ventas de varias sedes sin descuadres"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+          "text": "Presupuesto de automatización en Perú: comparar alcances y costos"
+        }
+      ],
+      "newDestinations": [
+        "/servicios"
+      ]
+    },
+    {
+      "route": "/blog/orquestacion-n8n-vs-zapier",
+      "titleBefore": "n8n vs. Zapier vs. Make: cómo elegir para tu empresa | ConnectologyIA",
+      "titleAfter": "n8n vs. Zapier y Make: prueba comercial comparada",
+      "h1Before": [
+        "n8n vs. Zapier vs. Make: cómo elegir para tu empresa"
+      ],
+      "h1After": [
+        "n8n, Zapier o Make: evaluar un flujo comercial completo"
+      ],
+      "headingsBefore": [
+        "Primero comprueba las acciones que necesitas",
+        "Compara el modelo de uso, no solo la mensualidad",
+        "Qué valorar en cada alternativa",
+        "Cuándo evaluar n8n",
+        "Cuándo mantener una plataforma que ya funciona",
+        "Haz una prueba con el mismo proceso",
+        "La decisión que conviene documentar",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Cómo automatizar leads con n8n sin duplicar contactos",
+        "Cuánto cuesta automatizar procesos en Perú: cómo estimarlo",
+        "IA para pymes en Perú: qué automatizar primero"
+      ],
+      "headingsAfter": [
+        "Prepara un guion de prueba compartido",
+        "Compara responsabilidades de operación",
+        "Cuenta la operación completa para estimar consumo",
+        "Introduce un fallo después de la escritura",
+        "Evalúa a quien mantendrá la solución",
+        "Deja una decisión escrita, no un ganador universal",
+        "Evaluemos tu proceso en la herramienta adecuada",
+        "Continúa con el siguiente paso",
+        "Reportes con n8n: cerrar ventas de varias sedes sin descuadres",
+        "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas",
+        "Presupuesto de automatización en Perú: comparar alcances y costos"
+      ],
+      "descriptionBefore": "Compara n8n, Zapier y Make según integraciones, volumen, mantenimiento y control. Una guía para elegir la herramienta que encaje con tu proceso.",
+      "descriptionAfter": "Compara plataformas con una prueba de cotización realista: API, ramas, reintentos, mantenimiento y costo total para una empresa de Perú.",
+      "addedLinks": [
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "modelo de leads sin duplicados"
+        },
+        {
+          "href": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+          "text": "presupuesto total en soles"
+        },
+        {
+          "href": "/servicios/automatizacion-con-n8n",
+          "text": "servicio de automatización con n8n"
+        },
+        {
+          "href": "/contacto",
+          "text": "Elegir plataforma para mi flujo ↗"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Reportes con n8n: cerrar ventas de varias sedes sin descuadres"
+        },
+        {
+          "href": "/blog/automatizar-reportes-ventas-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+        },
+        {
+          "href": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+          "text": "Presupuesto de automatización en Perú: comparar alcances y costos"
+        }
+      ],
+      "newDestinations": [
+        "/blog/automatizar-reportes-ventas-peru"
+      ]
+    },
+    {
+      "route": "/blog/whatsapp-api-oficial-coexistencia-peru",
+      "titleBefore": "WhatsApp API oficial y coexistencia: qué evaluar en Perú | ConnectologyIA",
+      "titleAfter": "WhatsApp API y coexistencia: preparar el alta en Perú",
+      "h1Before": [
+        "WhatsApp API oficial y coexistencia: qué evaluar en Perú"
+      ],
+      "h1After": [
+        "WhatsApp API: preparar el alta sin interrumpir a tus asesores"
+      ],
+      "headingsBefore": [
+        "Aplicación, API y coexistencia",
+        "Qué revisar antes de conectar tu número",
+        "Un flujo de atención que puedes usar como referencia",
+        "Permisos y mensajes salientes",
+        "Qué costos debes separar",
+        "Pruebas mínimas antes de activar",
+        "Preguntas frecuentes",
+        "¿La coexistencia está garantizada?",
+        "¿Necesito un agente de IA desde el primer día?",
+        "Cómo aplicarlo a ventas en Perú",
+        "¿Cómo se aplicaría a tu empresa?",
+        "Sigue conectando ideas",
+        "Agente de IA en Telegram con n8n: diseño y controles",
+        "Agentes de IA en atención al cliente: usos y límites",
+        "Cómo automatizar cotizaciones y seguimiento comercial en Perú"
+      ],
+      "headingsAfter": [
+        "Haz un inventario del canal antes de contratar",
+        "Aclara qué cambia para atención y qué cambia para sistemas",
+        "Prepara una matriz de responsabilidad por conversación",
+        "Conecta eventos con estados comerciales verificables",
+        "Ejecuta una prueba operativa con el asesor",
+        "Presupuesta el canal completo",
+        "Revisemos la incorporación de tu canal",
+        "Continúa con el siguiente paso",
+        "WhatsApp a pedido: organizar la venta antes de automatizar mensajes",
+        "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas",
+        "Agentes de IA: del primer mensaje al asesor adecuado"
+      ],
+      "descriptionBefore": "Qué revisar antes de conectar WhatsApp Business con n8n y agentes de IA: elegibilidad, atención humana, costos y pruebas de coexistencia.",
+      "descriptionAfter": "Planifica API oficial y posible coexistencia de WhatsApp Business: titularidad, atención compartida, prueba de mensajes y reversión operativa.",
+      "addedLinks": [
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "de conversación a pedido"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "clasificación y derivación con agentes"
+        },
+        {
+          "href": "/servicios/whatsapp-api-oficial",
+          "text": "servicio de WhatsApp oficial"
+        },
+        {
+          "href": "/contacto",
+          "text": "Evaluar mi integración oficial ↗"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "WhatsApp a pedido: organizar la venta antes de automatizar mensajes"
+        },
+        {
+          "href": "/blog/automatizar-ventas-whatsapp-peru",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": ""
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leads en n8n y CRM: recuperar solicitudes sin duplicar ventas"
+        },
+        {
+          "href": "/blog/automatizar-leads-n8n-crm",
+          "text": "Leer guía ↗"
+        },
+        {
+          "href": "/blog/agentes-ia-atencion-cliente",
+          "text": "Agentes de IA: del primer mensaje al asesor adecuado"
+        }
+      ],
+      "newDestinations": [
+        "/blog/automatizar-leads-n8n-crm"
+      ]
+    }
+  ],
+  "publication": [
+    {
+      "route": "/blog/agente-ia-telegram-n8n",
+      "published": "2026-09-23",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/agentes-ia-atencion-cliente",
+      "published": "2026-05-28",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/automatizar-cotizaciones-seguimiento-peru",
+      "published": "2026-10-02",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/automatizar-inscripciones-academias-peru",
+      "published": "2026-10-02",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/automatizar-leads-n8n-crm",
+      "published": "2026-09-23",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/automatizar-reportes-ventas-peru",
+      "published": "2026-10-02",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/automatizar-reservas-turismo-peru",
+      "published": "2026-10-02",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/automatizar-ventas-whatsapp-peru",
+      "published": "2026-10-02",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/cuanto-cuesta-automatizar-procesos-peru",
+      "published": "2026-09-23",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/desarrollo-web-moderno-nextjs",
+      "published": "2026-05-10",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/impacto-ia-pymes-2026",
+      "published": "2026-07-01",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/orquestacion-n8n-vs-zapier",
+      "published": "2026-06-15",
+      "modified": "2026-10-12"
+    },
+    {
+      "route": "/blog/whatsapp-api-oficial-coexistencia-peru",
+      "published": "2026-09-23",
+      "modified": "2026-10-12"
+    }
+  ]
+}

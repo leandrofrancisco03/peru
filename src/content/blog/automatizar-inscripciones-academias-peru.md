@@ -1,71 +1,63 @@
 ---
-title: "Cómo automatizar consultas e inscripciones de una academia en Perú"
-seoTitle: "Automatización de inscripciones para academias en Perú"
-description: "Organiza interesados, programas, horarios y preinscripciones con n8n. Guía para academias de Perú con validación de cupos y atención humana."
-category: "Formación y servicios"
-tags: ["academias", "inscripciones", "n8n", "Perú"]
+title: "Academias: seguimiento por convocatoria sin confundir matrículas"
+seoTitle: "Inscripciones de academias con n8n en Perú"
+description: "Diseña con n8n el recorrido de interesados a inscripción: convocatoria, cambios de grupo, cupos y tareas administrativas para academias de Perú."
+category: "Operación comercial"
+tags: ["academias","convocatorias","inscripciones","n8n"]
 datePublished: "2026-10-02"
 image: "/og/academias-peru.png"
+imageAlt: "Tarjeta sobre consultas e inscripciones de academias."
 relatedServices: ["agentes-de-inteligencia-artificial", "automatizacion-con-n8n"]
-relatedPosts: ["automatizar-leads-n8n-crm", "agentes-ia-atencion-cliente"]
+relatedPosts: ["agentes-ia-atencion-cliente","automatizar-leads-n8n-crm","impacto-ia-pymes-2026"]
+excerpt: "Diseña con n8n el recorrido de interesados a inscripción: convocatoria, cambios de grupo, cupos y tareas administrativas para academias de Perú."
+dateModified: "2026-10-12"
+ctaTitle: "Conectemos una convocatoria con tu atención"
+ctaText: "Indica cómo registras interesados, quién valida los cupos y qué evento confirma una inscripción."
+ctaLabel: "Diseñar el flujo de mi academia"
 ---
 
-Automatizar la atención de una academia puede ayudar a responder preguntas sobre programas, registrar interesados y avisar al asesor cuando falta una validación. El diseño debe distinguir una consulta de una inscripción confirmada: responder el horario de un curso no significa reservar un cupo.
+Una persona pregunta por un curso nocturno, cambia al grupo de fin de semana y recibe después un recordatorio del horario anterior. El error aparece cuando se guarda un teléfono, pero no la relación entre interesado, convocatoria y grupo elegido.
 
-Para un centro de formación en Perú, un piloto razonable comienza con una convocatoria y un catálogo revisado. El objetivo es dar continuidad a la atención administrativa y reducir información contradictoria entre formularios, mensajes y hojas de cálculo.
+Esta guía plantea un flujo administrativo para academias de Perú. La automatización ayuda a orientar y seguir solicitudes; las decisiones académicas y la validación de requisitos continúan bajo responsabilidad del centro.
 
-## Separa programa, convocatoria y grupo
+## El catálogo necesita convocatorias, no solo nombres de cursos
 
-Un mismo programa puede ofrecerse varias veces al año y tener grupos con horarios diferentes. Si toda la información se guarda bajo el nombre del curso, el asistente podría responder con la fecha de una convocatoria anterior.
+Separa programa, edición o convocatoria y grupo. El mismo curso puede abrirse con fechas, modalidad y horarios distintos. Cada ficha debe tener un responsable de actualización y una condición que indique si puede ofrecerse.
 
-Crea identificadores para cada nivel. La ficha de un programa describe su contenido general. La convocatoria define periodo y condiciones. El grupo concreta horario, modalidad, sede y capacidad. Conserva un responsable y una fecha de revisión para cada conjunto de datos.
+Una consulta general necesita poca información personal. Pide programa y preferencia de horario antes de documentos o datos adicionales. La recepción de información de menores o documentación personal requiere un proceso definido por el centro y acceso limitado.
 
-## Registra lo necesario para orientar
+## Conserva el interés aunque cambie la opción elegida
 
-En una consulta inicial suelen bastar programa de interés, modalidad, horario preferido y un medio de contacto. Si el interesado aún no sabe qué curso necesita, una persona puede ayudar a orientar la consulta. No hace falta pedir documentos personales para informar sobre horarios generales.
+El contacto identifica a la persona; la solicitud representa su interés en una convocatoria. No sobrescribas una consulta por otro programa ni abras una matrícula al recibir una pregunta. Guarda el historial de cambios que afecta a los recordatorios.
 
-| Registro | Datos útiles | Error que evita |
-| --- | --- | --- |
-| Contacto | Identificador y canal | Duplicar una persona por cada mensaje. |
-| Interés | Programa y convocatoria | Perder la consulta por un segundo curso. |
-| Grupo | Horario, modalidad y cupo | Ofrecer un turno que ya no existe. |
-| Preinscripción | Estado y pendiente | Confundir intención con confirmación. |
-| Próxima acción | Responsable y fecha | Dejar consultas sin seguimiento. |
+| Evento | Acción administrativa |
+| --- | --- |
+| Consulta sin programa | Orientar y pedir una aclaración |
+| Grupo seleccionado | Consultar disponibilidad vigente |
+| Cambio de grupo | Actualizar solicitud y cancelar avisos antiguos |
+| Comprobante recibido | Registrar revisión pendiente |
+| Validación completa | Confirmar según reglas del centro |
 
-La [guía de automatización de leads](/blog/automatizar-leads-n8n-crm) explica por qué deduplicar un evento y reconocer un contacto son controles diferentes.
+## Conecta n8n con el sistema que controla los cupos
 
-## Diseña la secuencia administrativa
+El flujo recibe la consulta, consulta la ficha autorizada, registra al interesado y asigna una siguiente acción. Si la fuente de cupos no permite reservar con seguridad, crea una tarea de revisión en lugar de prometer una vacante.
 
-1. Recibe la consulta y registra una clave del evento.
-2. Identifica el programa y la convocatoria; solicita aclaración si falta información.
-3. Consulta la ficha vigente y presenta las opciones disponibles.
-4. Registra el interés y asigna un asesor cuando se requiera.
-5. Crea una preinscripción solo al alcanzar el paso definido por el centro.
-6. Valida cupo, requisitos y pago mediante el procedimiento autorizado.
-7. Confirma la inscripción y conserva la referencia del registro final.
+Dos interesados pueden solicitar el último cupo al mismo tiempo. Un contador en una hoja compartida no garantiza que ambas operaciones se coordinen. Antes de automatizar confirmaciones, identifica qué sistema puede aceptar una reserva de forma consistente.
 
-Si el sistema académico ofrece una API, revisa las operaciones permitidas antes de integrarlo. Si no permite crear matrículas, el flujo puede preparar una tarea completa para el equipo administrativo. El [servicio de integraciones](/servicios/integraciones-y-apis) parte de esa comprobación.
+## Los mensajes deben seguir el estado de la solicitud
 
-## No confirmes un cupo solo porque apareció disponible
+Un seguimiento útil responde a una necesidad concreta: aclarar horario, completar un requisito o comunicar una decisión validada. Antes de cada mensaje comprueba si la persona respondió, cambió de convocatoria o pidió detener el contacto.
 
-La disponibilidad puede cambiar entre la consulta y la inscripción. Si varias personas solicitan el último cupo, el sistema que gestiona los grupos debe resolver cuál queda confirmado. Una hoja consultada minutos antes no garantiza que el cupo siga libre.
+La IA puede interpretar preguntas diversas y recuperar información de una ficha. Si el precio o el horario no están publicados en la fuente aprobada, deriva al asesor. El diseño de [atención con agentes de IA](/blog/agentes-ia-atencion-cliente) explica cómo conservar el contexto durante esa transferencia.
 
-De forma similar, un comprobante adjunto no equivale a una conciliación de pago. Mantén estados separados para recibido, pendiente de revisión y validado. El equipo debe poder explicar por qué una inscripción sigue pendiente.
+## Ensaya un cambio después de preparar los avisos
 
-## Controla cambios de horario y de grupo
+Cambia un grupo de horario y verifica que ninguna comunicación conserve el dato anterior. Reenvía un comprobante: debe aparecer una sola tarea de revisión, sin dar por confirmado el pago. Cierra una convocatoria y comprueba que el asistente deje de ofrecerla.
 
-Cuando un grupo cambie, identifica a los interesados y preinscritos afectados. Prepara la comunicación desde la versión vigente y evita que se sigan enviando recordatorios del horario anterior. Un cambio solicitado por el interesado requiere validar cupo en el nuevo grupo antes de liberar o modificar el anterior, según las reglas del centro.
+Mide consultas correctamente asociadas, tiempo hasta una orientación válida y solicitudes pendientes por etapa. El número de mensajes enviados no informa cuántas personas completaron su inscripción.
 
-No borres el historial de opciones ofrecidas. Conservarlo permite resolver dudas y entender por qué una persona recibió determinada información.
+## Amplía cuando atención y administración compartan estados
 
-## Define los límites del asistente
+Empieza por un programa, una convocatoria y un canal. Documenta quién puede actualizar el catálogo y quién confirma los requisitos. Después conecta el resto del [proceso de academias y formación](/sectores/academias-y-formacion).
 
-El agente puede responder desde el catálogo aprobado, resumir una consulta y crear una tarea. Las decisiones de admisión, evaluación académica o aceptación de excepciones pertenecen a los responsables del centro.
-
-Las preguntas fuera del material aprobado deben derivarse a una persona. Consulta el enfoque de [agentes de IA con control humano](/blog/agentes-ia-atencion-cliente) antes de habilitar acciones sobre datos administrativos. Para implementar flujos, utiliza la [documentación oficial de n8n](https://docs.n8n.io/).
-
-## Mide cada etapa por separado
-
-Compara consultas recibidas, solicitudes con información completa, preinscripciones y matrículas confirmadas. Son etapas diferentes; sumar todas como inscripciones inflaría el resultado. Mide además tiempo de atención, registros corregidos y pendientes sin responsable.
-
-Prueba un grupo lleno, un interesado en dos programas, un reenvío del formulario y un cambio de horario después de la preinscripción. La [guía de Huancayo y Junín](/peru/junin) propone un piloto por convocatoria. La solución de [academias y formación](/sectores/academias-y-formacion) reúne los datos necesarios para evaluar el proyecto.
+El [control de duplicados de n8n](/blog/automatizar-leads-n8n-crm) resuelve reenvíos técnicos. La separación entre programa, grupo e inscripción resuelve la confusión administrativa: necesitas ambas para ampliar el flujo.

@@ -1,7 +1,7 @@
 # Ficha de diagnóstico de automatización
 
 Recurso de ConnectologyIA — https://peru.connectologyia.workers.dev/recursos
-Versión: 23 de septiembre de 2026.
+Versión: 12 de octubre de 2026.
 Puedes copiar, adaptar y compartir esta plantilla citando la fuente e indicando los cambios.
 
 ## 1. Proceso
@@ -59,3 +59,17 @@ No escribas contraseñas ni tokens en esta ficha.
 - Horas recuperadas = tareas × minutos / 60 × porcentaje / 100.
 - Valor neto = horas recuperadas × costo por hora - operación mensual.
 El valor del tiempo no equivale automáticamente a ahorro de caja.
+
+## 8. Traspaso entre equipos
+- Qué dato demuestra que la tarea terminó:
+- Qué sistema manda sobre cada campo:
+- Quién acepta la tarea siguiente:
+- Referencia para conciliar origen y destino:
+- Cómo revisar una escritura con resultado incierto:
+
+## 9. Sedes, moneda y agenda
+- Sedes y zonas cubiertas realmente:
+- Zona horaria del corte y de cada fuente:
+- Moneda de cada importe:
+- Si hay conversión: tasa, fuente, fecha y responsable que la aprueba:
+- Qué cambio cancela comunicaciones o tareas anteriores:

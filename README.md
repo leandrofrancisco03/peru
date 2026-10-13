@@ -99,3 +99,11 @@ Consulta [el plan SEO Perú y seguimiento](docs/SEO-PERU.md) y [las pruebas real
 ## Sitemap único
 
 La integración local `src/integrations/single-sitemap.mjs` genera `dist/sitemap.xml` a partir del manifiesto y los archivos reales de Astro, incluidas las rutas dinámicas. No hay lista manual ni dependencia de `@astrojs/sitemap`. Consulta [generación y exclusiones](docs/SITEMAP.md).
+
+## Revisión editorial de octubre de 2026
+
+La comparación con el sitio general, el inventario previo y el resultado por URL están en [el informe de diferenciación](docs/auditoria-editorial/INFORME-FINAL.md). Esta revisión conserva las 39 URLs indexables y reescribe los 13 artículos.
+
+Cada nuevo post debe definir `ctaTitle`, `ctaText` y `ctaLabel` según su intención, además de sus metadatos y relaciones. `imageAlt` describe la tarjeta social y se utiliza en OG y Twitter.
+
+`node scripts/audit-editorial.mjs` actualiza la extracción local después del build; `node scripts/report-editorial.mjs` compara esa extracción con el inventario previo. Los archivos de auditoría son evidencia histórica de esta revisión. No regenerar la base con `--baseline` salvo que se inicie una auditoría nueva y se archive primero la anterior.

@@ -1,69 +1,63 @@
 ---
-title: "Reportes de ventas automáticos con n8n: guía para empresas de Perú"
-seoTitle: "Automatizar reportes de ventas con n8n en Perú"
-description: "Consolida ventas de varias sedes sin duplicar registros. Define cortes en hora Perú, moneda, devoluciones y controles para reportes fiables con n8n."
-category: "Datos y reportes"
-tags: ["reportes", "n8n", "ventas", "Perú"]
+title: "Reportes con n8n: cerrar ventas de varias sedes sin descuadres"
+seoTitle: "Reportes con n8n: cierres y conciliación de ventas"
+description: "Prepara reportes comerciales fiables: cortes en hora Perú, monedas separadas, devoluciones, datos tardíos y conciliación entre sedes con n8n."
+category: "n8n e integraciones"
+tags: ["reportes","n8n","conciliación","ventas"]
 datePublished: "2026-10-02"
 image: "/og/reportes-peru.png"
+imageAlt: "Tarjeta sobre reportes de ventas sin contar dos veces un movimiento."
 relatedServices: ["automatizacion-con-n8n", "integraciones-y-apis"]
-relatedPosts: ["orquestacion-n8n-vs-zapier", "cuanto-cuesta-automatizar-procesos-peru"]
+relatedPosts: ["automatizar-leads-n8n-crm","orquestacion-n8n-vs-zapier","cuanto-cuesta-automatizar-procesos-peru"]
+excerpt: "Prepara reportes comerciales fiables: cortes en hora Perú, monedas separadas, devoluciones, datos tardíos y conciliación entre sedes con n8n."
+dateModified: "2026-10-12"
+ctaTitle: "Revisemos de dónde sale cada total"
+ctaText: "Trae las columnas de tus fuentes y un ejemplo anonimizado de un descuadre entre ventas y el reporte."
+ctaLabel: "Diseñar mi cierre de reportes"
 ---
 
-Un reporte automático de ventas necesita poder explicar sus totales. Si mezcla pedidos con pagos, suma soles y dólares o considera una sede sin datos como una sede sin ventas, el envío puntual del archivo no soluciona el problema.
+La sede envía su archivo, el equipo central suma y el total parece correcto. Más tarde aparece una devolución o una venta atrasada y nadie sabe qué reporte debe cambiar. Automatizar ese mismo cálculo solo distribuye la inconsistencia más rápido.
 
-El diseño comienza por una definición común del indicador y una fuente identificada para cada registro. n8n puede coordinar extracción, controles y distribución del reporte; una transformación más compleja puede requerir consultas a una base de datos o código específico.
+Un reporte de ventas para una empresa con sedes en Perú necesita una definición de cierre, reglas para corregir y una forma de comprobar que todas las fuentes llegaron. n8n puede coordinar el recorrido; el significado de cada cifra debe acordarse antes.
 
-## Define qué significa una venta para ese reporte
+## Acuerda qué representa una venta en el informe
 
-Elige si vas a medir pedidos confirmados, importes facturados, cobros o servicios completados. Son estados diferentes. Un pedido confirmado puede seguir pendiente de pago; un cobro puede corresponder a una operación de un mes anterior.
+Pedido creado, documento emitido, entrega y cobro son hitos distintos. Elige cuál responde a la pregunta del lector. Si el gerente quiere revisar cobranza, un total de pedidos no es suficiente. Nombra cada indicador y conserva sus filtros.
 
-Documenta qué fecha manda, cómo se tratan anulaciones y dónde se registran devoluciones. La definición debe aparecer en el reporte para que dirección, ventas y operaciones interpreten el mismo número.
+Identifica anulaciones y devoluciones con referencias al movimiento original. No mezcles importes de monedas distintas en una sola suma. Si el negocio necesita una cifra convertida a soles, registra la regla, tasa y fecha usadas y conserva también el importe original.
 
-| Campo | Ejemplo didáctico | Uso |
-| --- | --- | --- |
-| id_operacion | PED-000123 | Evitar duplicados y rastrear el origen. |
-| sede | PIU-01 | Separar resultados operativos. |
-| fecha_evento | Fecha y hora con zona | Asignar la jornada correcta. |
-| moneda | PEN | Evitar sumar monedas distintas. |
-| estado | Confirmado | Aplicar el criterio del indicador. |
-| actualizado_en | Marca de modificación | Detectar correcciones posteriores. |
+## Prepara un contrato de datos por fuente
 
-No incluyas nombres o teléfonos de clientes si el reporte solo necesita totales por sede. Reducir datos facilita la distribución y la revisión de permisos.
+| Campo | Decisión que debe quedar documentada |
+| --- | --- |
+| Identificador y sede | Cómo distinguir movimientos sin colisiones |
+| Fecha de operación | Qué evento representa y en qué zona horaria |
+| Fecha de actualización | Cómo detectar correcciones tardías |
+| Importe y moneda | Unidad y tratamiento de valores negativos |
+| Estado | Qué registros entran o se excluyen |
 
-## Fija el corte en hora de Perú
+Un archivo sin estas definiciones puede importarse técnicamente y seguir siendo inútil. Para operaciones diarias, configura el intervalo en America/Lima y conviértelo de manera explícita si la API devuelve UTC. Evita depender de la zona del servidor.
 
-Configura explícitamente la zona `America/Lima` para la planificación y las agrupaciones que dependan del día operativo. No asumas que el servidor y el sistema de ventas utilizan la misma zona horaria.
+## Separa extracción, validación y publicación
 
-Conserva una fecha de evento y otra de recepción. Una venta sincronizada al día siguiente puede pertenecer a la jornada anterior. Define si el reporte se corrige, se reemite con versión o muestra un ajuste en el siguiente periodo. Consulta la [configuración de workflows de n8n](https://docs.n8n.io/workflows/settings/) al implementar el horario.
+Extrae con paginación o por intervalos según las capacidades de cada API. Conserva una marca de avance solo después de guardar los datos. Deduplica por clave de negocio y versión, sin eliminar una devolución legítima por compartir referencia de pedido.
 
-## Extrae los datos sin contar dos veces
+Valida cantidad de registros, campos obligatorios y coherencia de estados. Si una sede no llegó, el reporte debe mostrar cobertura incompleta y fecha de sus datos. Publicar silenciosamente un total parcial puede inducir una decisión equivocada.
 
-Cuando el origen lo permita, consulta registros modificados desde el último punto de control. Incluye un pequeño solapamiento para recuperar eventos tardíos y elimina duplicados por identificador estable. Guarda el punto de control solo después de terminar correctamente la carga.
+## Los datos tardíos necesitan una política de corrección
 
-Un archivo reenviado no debe crear otra venta. Utiliza la clave de operación, sede y origen que hayas definido; si dos fuentes pueden usar el mismo número, incorpora el identificador de sistema. No deduzcas unicidad solo del importe y la fecha.
+Puedes mantener un cierre preliminar y otro revisado, o reabrir un intervalo de consulta acordado. Elige según cómo operen las fuentes y etiqueta cada versión del reporte. Una ventana de consulta solapada exige deduplicación, pero ayuda a recuperar movimientos que aparecieron después.
 
-## Comprueba completitud antes de enviar
+Cuando una API solo permite leer el estado actual, evalúa si necesitas almacenar cambios para reconstruir el pasado. La [integración entre sistemas](/servicios/integraciones-y-apis) debe contemplar esta limitación desde el alcance.
 
-1. Verifica que respondieron todas las fuentes esperadas.
-2. Valida columnas, formatos y monedas.
-3. Separa registros rechazados con una razón concreta.
-4. Compara número de operaciones y totales con cada origen.
-5. Identifica anulaciones o devoluciones pendientes de aplicar.
-6. Publica el resultado como completo o parcial, según los controles.
+## Verifica un reporte antes de distribuirlo
 
-Una sede que no envió datos debe aparecer como pendiente. Sustituirla por cero produce una falsa caída de ventas. En un reporte parcial, muestra la hora de actualización y el responsable de revisar la fuente faltante.
+Prueba una sede ausente, una moneda inesperada, una devolución posterior y dos páginas de API con un registro repetido. Compara los resultados con una muestra revisada manualmente. Usa diferencias explicables; no ajustes el total para que coincida sin localizar el origen.
 
-## Separa totales por moneda y criterio
+Las alertas deben señalar fuente, período y control fallido. Consulta la [gestión de errores de n8n](https://docs.n8n.io/flow-logic/error-handling/) para configurar avisos técnicos, y añade controles de negocio que detecten un reporte vacío aunque la ejecución finalice correctamente.
 
-Si operas en soles y dólares, presenta subtotales separados o una conversión identificada con su regla y fecha. Evita sumar directamente ambas monedas. Aplica el mismo criterio a importes antes y después de impuestos o descuentos: el indicador debe definir qué incluye.
+## Entrega una cifra que pueda rastrearse
 
-Para devoluciones, elige entre reflejarlas en su fecha de registro o ajustar el periodo original, según el objetivo del informe. Lo importante es mantener una regla explícita y una forma de conciliar los cambios.
+Acompaña el resumen con corte, cobertura, moneda y versión. Permite ir del total al movimiento que lo compone según los permisos de cada lector. Una integración reproducible reduce el tiempo de discusión sobre qué archivo es el correcto.
 
-## Prueba la recuperación del reporte
-
-Simula una API caída, una sede ausente, un archivo duplicado y una devolución recibida después del cierre. Verifica que el reintento no vuelva a enviar varias veces el mismo informe como si fueran versiones nuevas.
-
-Mide tiempo de preparación, registros observados y diferencia pendiente de conciliación. La [guía de Piura](/peru/piura) desarrolla un piloto entre sedes; la de [Trujillo y La Libertad](/peru/la-libertad) conecta estos controles con distribución y pedidos.
-
-Antes de encargar un panel más complejo, revisa el servicio de [integración de sistemas](/servicios/integraciones-y-apis) y prepara dos reportes reales anonimizados: uno normal y otro con una corrección. Esa comparación revela más requisitos que una lista de gráficos deseados.
+La guía para [operaciones entre sedes en Piura](/peru/piura) desarrolla el reparto de responsabilidades. Para estimar el valor de automatizar, registra también el tiempo de conciliación en la [calculadora](/recursos/calculadora-ahorro-automatizacion), no solo el de preparar la hoja.

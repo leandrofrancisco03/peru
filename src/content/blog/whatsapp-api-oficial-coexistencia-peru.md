@@ -1,74 +1,63 @@
 ---
-title: "WhatsApp API oficial y coexistencia: qué evaluar en Perú"
-seoTitle: "WhatsApp API oficial y coexistencia: qué evaluar en Perú | ConnectologyIA"
-description: "Qué revisar antes de conectar WhatsApp Business con n8n y agentes de IA: elegibilidad, atención humana, costos y pruebas de coexistencia."
-category: "WhatsApp y agentes"
-tags: ["whatsapp-api-oficial","agentes-de-inteligencia-artificial"]
+title: "WhatsApp API: preparar el alta sin interrumpir a tus asesores"
+seoTitle: "WhatsApp API y coexistencia: preparar el alta en Perú"
+description: "Planifica API oficial y posible coexistencia de WhatsApp Business: titularidad, atención compartida, prueba de mensajes y reversión operativa."
+category: "WhatsApp y CRM"
+tags: ["WhatsApp API","coexistencia","CRM","atención"]
 datePublished: "2026-09-23"
-dateModified: "2026-10-02"
+dateModified: "2026-10-12"
 image: "/og/whatsapp.png"
+imageAlt: "Tarjeta sobre conversaciones conectadas con WhatsApp API oficial."
 relatedServices: ["whatsapp-api-oficial","agentes-de-inteligencia-artificial"]
+excerpt: "Planifica API oficial y posible coexistencia de WhatsApp Business: titularidad, atención compartida, prueba de mensajes y reversión operativa."
+ctaTitle: "Revisemos la incorporación de tu canal"
+ctaText: "Indica si utilizas la aplicación Business, cuántas personas atienden y qué sistema debería recibir las consultas."
+ctaLabel: "Evaluar mi integración oficial"
+relatedPosts: ["automatizar-ventas-whatsapp-peru","agentes-ia-atencion-cliente","automatizar-leads-n8n-crm"]
 ---
 
-Conectar WhatsApp con un CRM puede reducir el registro manual de solicitudes. Pero antes de construir el flujo necesitas resolver una pregunta operativa: ¿cómo van a trabajar juntos el asesor, la aplicación de WhatsApp Business y la automatización?
+El número ya recibe consultas y los asesores dependen de él. Antes de añadir un agente o un CRM, necesitas decidir cómo seguirá trabajando el equipo durante el cambio y qué ocurrirá si la integración no responde.
 
-Esta guía propone una lista de evaluación para empresas de Perú. No asume que todas las cuentas tengan las mismas opciones de alta ni que la coexistencia esté habilitada para cualquier número.
+Esta guía aborda la preparación operativa de una empresa de Perú para WhatsApp Business Platform. La coexistencia con la aplicación Business es una opción que debe verificarse en el proceso oficial y para la cuenta concreta; no la damos por disponible para cualquier número.
 
-## Aplicación, API y coexistencia
+## Haz un inventario del canal antes de contratar
 
-La aplicación WhatsApp Business es una herramienta de atención directa. La plataforma API permite integrar mensajes y eventos con sistemas externos. La coexistencia busca combinar la aplicación y la API con el mismo número mediante un proceso de incorporación oficial, cuando la cuenta resulte elegible.
+Identifica quién administra el negocio y el número, qué accesos existen, cuántas personas atienden y dónde se guarda hoy la información comercial. Registra las herramientas que ya están conectadas y las dependencias de cada asesor.
 
-No conviene tratar estas opciones como intercambiables. Antes de planificar una migración, confirma las funciones disponibles, el historial que puede mantenerse y las limitaciones del flujo habilitado para tu cuenta. La [documentación de WhatsApp de Meta](https://developers.facebook.com/docs/whatsapp/) es la referencia para revisar las condiciones técnicas.
+No compartas contraseñas o códigos de verificación para una evaluación inicial. El acceso de implementación debe acordarse con permisos y responsables definidos. Tener control del teléfono no sustituye revisar todos los activos necesarios para el alta.
 
-## Qué revisar antes de conectar tu número
+## Aclara qué cambia para atención y qué cambia para sistemas
 
-Pide que la evaluación deje por escrito:
+La API permite integrar el canal con aplicaciones; no proporciona por sí sola tu procedimiento de atención. Define dónde verá el asesor las conversaciones, cómo aceptará un caso y qué estado pausará la respuesta automática.
 
-- Quién controla el número y los activos empresariales.
-- Qué modalidad de incorporación está disponible.
-- Qué funciones de la aplicación seguirán disponibles.
-- Cómo se gestionarán permisos y accesos del proveedor.
-- Qué ocurrirá con el historial, dispositivos y conversaciones existentes.
-- Cómo se detendrá la automatización si hay un problema.
+La documentación oficial de [WhatsApp Business Platform](https://developers.facebook.com/docs/whatsapp/) y el [flujo de incorporación de usuarios de la aplicación Business](https://developers.facebook.com/docs/whatsapp/embedded-signup/custom-flows/onboarding-business-app-users/) son las referencias para verificar requisitos actuales. Las condiciones deben revisarse durante el alta; no se promete aprobación de cuentas, números o plantillas.
 
-No compartas credenciales personales para resolver el alta. La propuesta debe identificar los accesos que necesita cada participante y quién conserva el control del negocio.
+## Prepara una matriz de responsabilidad por conversación
 
-## Un flujo de atención que puedes usar como referencia
+| Situación | Comportamiento diseñado |
+| --- | --- |
+| Consulta nueva | Registrar y asignar según reglas |
+| Agente responde | Mantener contexto y fuente de respuesta |
+| Asesor toma el caso | Pausar automatización de esa conversación |
+| Integración falla | Cola visible y atención alternativa acordada |
+| Cliente pide detener mensajes | Registrar preferencia y cancelar seguimientos aplicables |
 
-Imagina una empresa de servicios que recibe consultas sobre disponibilidad. Un flujo propuesto sería: llega el mensaje, se identifica el motivo, se consulta información aprobada y se registra una oportunidad. Si el cliente solicita una cotización particular, se deriva al asesor.
+Distingue automatización interna de mensajería externa. Crear una tarea al asesor no tiene el mismo propósito que enviar un recordatorio al cliente. Revisa permisos y reglas del canal antes de activar cada tipo de salida.
 
-La [automatización con n8n](/servicios/automatizacion-con-n8n) puede coordinar esas etapas. El agente no debería inventar precios ni confirmar disponibilidad sin una fuente válida. Si el sistema de agenda falla, la respuesta debe explicar que la solicitud necesita confirmación.
+## Conecta eventos con estados comerciales verificables
 
-La conversación tiene que guardar un estado: “automatización activa”, “esperando asesor” o “atendida por una persona”. Ese estado evita que el bot responda al mismo tiempo que el equipo.
+n8n recibe eventos, valida su origen según la integración y relaciona mensajes con conversaciones. El CRM conserva contacto, oportunidad y próxima acción. Los eventos repetidos necesitan control de idempotencia.
 
-## Permisos y mensajes salientes
+Un mensaje entregado no acredita una venta aceptada. Tampoco una captura confirma un pago. El artículo [de conversación a pedido](/blog/automatizar-ventas-whatsapp-peru) muestra qué evidencia debe exigir cada transición comercial.
 
-Tener acceso a una API no autoriza a enviar cualquier mensaje. El diseño debe contemplar el consentimiento y las reglas aplicables a las comunicaciones empresariales. Revisa la [política de mensajes de WhatsApp Business](https://business.whatsapp.com/policy) antes de definir campañas o seguimientos.
+## Ejecuta una prueba operativa con el asesor
 
-Desde el punto de vista operativo, registra el origen del permiso, las preferencias del contacto y las solicitudes de baja. Distingue una respuesta a una consulta de un mensaje comercial posterior. No reutilices automáticamente una lista de teléfonos para un propósito distinto.
+Comprueba recepción, respuesta, estados, transferencia y pausa. Reenvía un evento, interrumpe la conexión al CRM y verifica que los pendientes sean recuperables. Prueba el regreso a atención manual según la arquitectura elegida, sin suponer que todas las modalidades permiten el mismo procedimiento.
 
-## Qué costos debes separar
+Define quién decide detener el piloto y qué comunicaciones se cancelan. La puesta en marcha debe conservar trazabilidad suficiente para investigar un caso sin exponer conversaciones completas en alertas innecesarias.
 
-Una propuesta clara distingue implementación, proveedor, mensajería, consumo del modelo de IA y soporte. Pregunta qué se cobra por uso y qué tiene una tarifa fija. Las condiciones pueden cambiar; compara la propuesta con la información vigente del proveedor.
+## Presupuesta el canal completo
 
-También cuenta el trabajo humano. Un agente puede clasificar solicitudes, pero alguien debe revisar excepciones, actualizar respuestas y resolver casos que quedan fuera del alcance. Nuestra [guía de costos de automatización](/blog/cuanto-cuesta-automatizar-procesos-peru) ayuda a ordenar estos componentes.
+Separa implementación, proveedor o bandeja de atención, cargos aplicables de mensajería, infraestructura, IA y mantenimiento. Solicita condiciones vigentes y registra los supuestos de volumen; esta guía no fija precios ni elegibilidad.
 
-## Pruebas mínimas antes de activar
-
-Prueba mensajes duplicados, consultas sin respuesta, clientes que piden hablar con una persona y fallos del CRM. Verifica que una conversación atendida manualmente no vuelva al bot por error y que el equipo reciba contexto suficiente.
-
-El criterio de éxito no debe limitarse a que el mensaje salga. Mide registros correctos, derivaciones resueltas y tiempo de atención. Si necesitas implementar este flujo, revisa nuestro servicio de [WhatsApp API oficial y coexistencia](/servicios/whatsapp-api-oficial).
-
-## Preguntas frecuentes
-
-### ¿La coexistencia está garantizada?
-
-No. La elegibilidad y las funciones deben verificarse con las condiciones vigentes de Meta y del proveedor antes de comprometer una implementación.
-
-### ¿Necesito un agente de IA desde el primer día?
-
-No necesariamente. Capturar solicitudes, registrarlas y avisar al asesor puede ser suficiente para un primer piloto. Añade IA cuando exista una tarea concreta que lo justifique.
-
-## Cómo aplicarlo a ventas en Perú
-
-Una vez definida la incorporación oficial, conecta la conversación con un proceso verificable: registrar la oportunidad, consultar producto y cobertura, asignar asesor y confirmar el pedido solo desde su sistema fuente. La [guía de ventas por WhatsApp en Perú](/blog/automatizar-ventas-whatsapp-peru) desarrolla los datos mínimos, la revisión de pagos y la coordinación entre agente y equipo humano.
+Puedes empezar registrando y asignando consultas antes de incorporar IA. Cuando ese recorrido funcione, añade [clasificación y derivación con agentes](/blog/agentes-ia-atencion-cliente). El [servicio de WhatsApp oficial](/servicios/whatsapp-api-oficial) debe adaptarse a esa secuencia operativa, no obligarte a cambiar toda la atención de una vez.

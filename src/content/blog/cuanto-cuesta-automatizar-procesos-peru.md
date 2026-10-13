@@ -1,64 +1,63 @@
 ---
-title: "Cuánto cuesta automatizar procesos en Perú: cómo estimarlo"
-seoTitle: "Cuánto cuesta automatizar procesos en Perú: cómo estimarlo | ConnectologyIA"
-description: "Aprende a comparar presupuestos de automatización con n8n y Python: implementación, operación, mantenimiento y valor del tiempo recuperado."
-category: "Automatización de procesos"
-tags: ["automatizacion-con-n8n"]
+title: "Presupuesto de automatización en Perú: comparar alcances y costos"
+seoTitle: "Cuánto cuesta automatizar en Perú: comparar propuestas"
+description: "Compara propuestas de n8n e IA sin tarifas inventadas: alcance, gasto recurrente, supervisión y escenarios de retorno expresados en soles."
+category: "Decisiones de inversión"
+tags: ["presupuesto","automatización","soles","costos"]
 datePublished: "2026-09-23"
 image: "/og/costos.png"
+imageAlt: "Tarjeta de planificación: medir tiempo y evaluar impacto."
 relatedServices: ["automatizacion-con-n8n"]
+excerpt: "Compara propuestas de n8n e IA sin tarifas inventadas: alcance, gasto recurrente, supervisión y escenarios de retorno expresados en soles."
+dateModified: "2026-10-12"
+ctaTitle: "Preparemos un alcance que puedas comparar"
+ctaText: "Indica el proceso, sistemas y volumen aproximado. Separaremos lo que se implementa de lo que cuesta operarlo."
+ctaLabel: "Solicitar un alcance de automatización"
+relatedPosts: ["impacto-ia-pymes-2026","orquestacion-n8n-vs-zapier","automatizar-leads-n8n-crm"]
 ---
 
-El costo de automatizar un proceso no se puede estimar únicamente contando nodos de n8n. Un flujo pequeño puede requerir controles complejos si modifica datos importantes; otro más largo puede ser sencillo porque solo prepara un reporte.
+Dos propuestas dicen «automatizar atención», pero una registra consultas y la otra consulta el CRM, modifica pedidos y atiende excepciones. Comparar sus importes sin aclarar esas diferencias conduce a elegir proyectos distintos como si fueran equivalentes.
 
-Para una empresa de Perú, el primer paso es separar el costo de construir la solución del costo de operarla. Esta guía no publica una tarifa de mercado: te ayuda a pedir propuestas comparables y a entender los supuestos.
+No existe una tarifa única aplicable a todas las empresas de Perú. Esta guía te ayuda a preparar un presupuesto comparable, con costos de implementación y operación separados, sin presentar rangos comerciales que no podamos verificar.
 
-## Los cuatro componentes del presupuesto
+## Escribe el resultado que aceptarías como terminado
 
-**Diagnóstico y diseño.** Incluye entender los pasos, mapear datos, identificar excepciones y definir cómo se comprobará el resultado. Si nadie puede explicar el proceso actual, la automatización necesita primero ese trabajo.
+Describe entrada, salida y condición de aceptación. Por ejemplo: una solicitud válida llega al CRM con responsable y próxima acción; un reenvío no crea otra oportunidad; una caída queda visible para recuperación. Añade qué tareas conservará una persona.
 
-**Implementación.** Considera conexiones, transformaciones, lógica, interfaz si hace falta y pruebas. También la recuperación frente a fallos y la documentación para usar el flujo.
+Especifica qué integra la propuesta: lectura o escritura, uno o varios canales, migración de datos, documentación y acompañamiento. Una palabra como «soporte» necesita horario, alcance y procedimiento de solicitud.
 
-**Operación.** Puede incluir hosting, plataforma, API de mensajería, modelo de IA, base de datos y almacenamiento. Las [condiciones de n8n](https://n8n.io/pricing/) distinguen planes y modalidades; no supongas que alojarlo por tu cuenta elimina todos los gastos.
+## Divide la propuesta en partidas que puedas revisar
 
-**Mantenimiento.** Contempla cambios en APIs, revisión de errores, actualizaciones y adaptación a nuevas reglas de negocio. Pregunta qué soporte está incluido y qué se considera un cambio de alcance.
-
-## Qué hace que un proyecto sea más complejo
-
-Integrar dos APIs bien documentadas es distinto de trabajar con archivos inconsistentes o una aplicación sin interfaz de integración. Otros factores son el número de excepciones, la necesidad de aprobación y la cantidad de datos históricos a migrar.
-
-| Pregunta | Por qué afecta el alcance |
+| Partida | Qué comprobar |
 | --- | --- |
-| ¿La sincronización es de una o dos vías? | En dos vías hay que decidir cómo resolver conflictos. |
-| ¿Se pueden repetir eventos? | Se necesitan controles para no duplicar acciones. |
-| ¿La información es sensible? | Hay que definir acceso, exposición y retención. |
-| ¿El proceso puede esperar? | Una operación urgente puede necesitar mayor disponibilidad. |
-| ¿Existe IA generativa? | Se añaden evaluación, consumo y manejo de respuestas inciertas. |
+| Descubrimiento y diseño | Proceso, excepciones y accesos evaluados |
+| Implementación | Conexiones, transformaciones y controles incluidos |
+| Puesta en marcha | Pruebas, formación y procedimiento de reversión |
+| Operación | Infraestructura, plataformas, APIs y consumo |
+| Mantenimiento | Actualizaciones, incidencias y cambios de alcance |
 
-No compares solo el total de dos presupuestos. Compara también las pruebas, exclusiones y responsabilidades.
+Pregunta quién contrata cada servicio y qué ocurre al terminar la relación. La titularidad de cuentas, exportación de flujos y entrega de documentación deben quedar claras antes de depender de una solución.
 
-## Un ejemplo de cálculo en soles
+## Lleva las monedas a una base comparable
 
-Supón que una tarea ocurre 400 veces al mes y consume 8 minutos. Eso representa unas 53,3 horas de trabajo. Si una solución elimina el 60 % de ese tiempo, libera 32 horas mensuales.
+Si una licencia cobra en otra moneda, conserva su importe original y el supuesto de conversión a soles. Indica fecha y fuente elegidas para la estimación. No confundas un tipo de cambio de planificación con una cotización futura garantizada.
 
-Con un costo de referencia de S/ 25 por hora, el valor bruto sería S/ 800. Si operar el sistema cuesta S/ 200 al mes, el valor neto estimado sería S/ 600. Una implementación hipotética de S/ 2.400 tendría una recuperación simple de cuatro meses.
+Comprueba cómo cuenta uso cada proveedor: el nombre de la unidad y lo que incluye pueden variar. Para un agente, registra conversaciones, llamadas al modelo, consultas a herramientas y reintentos. Para un flujo, cuenta también las ramas fallidas y tareas de supervisión.
 
-Estos importes son un ejemplo didáctico, no una cotización ni resultados de clientes. El cálculo supone que las horas liberadas se aprovechan y que no hay otros costos. Puedes cambiar los datos en la [calculadora de ahorro](/recursos/calculadora-ahorro-automatizacion).
+## Calcula capacidad recuperada y ahorro de caja por separado
 
-## Tiempo recuperado no equivale siempre a dinero ahorrado
+Horas liberadas multiplicadas por un costo horario estimado expresan capacidad, no necesariamente dinero disponible. Si nadie deja de incurrir en un gasto, el beneficio puede ser atender más trabajo o reducir retrasos.
 
-Si el equipo mantiene su jornada y utiliza el tiempo para atender mejor, el beneficio es capacidad disponible. No necesariamente disminuye el gasto mensual. Evita presentar ambas cosas como si fueran iguales.
+La [calculadora de automatización](/recursos/calculadora-ahorro-automatizacion) permite explorar esos supuestos. Usa tiempos observados y resta revisión, corrección y mantenimiento. Si el beneficio mensual neto es cero o negativo, no presentes un plazo de recuperación positivo.
 
-Mide también retrabajos, solicitudes perdidas o demoras. Usa esos datos para decidir, pero no los sumes varias veces: reducir una tarea y reducir su costo horario puede estar describiendo el mismo beneficio.
+## Compara tres escenarios con el mismo proceso
 
-## Qué pedir en una propuesta
+En el escenario conservador, contempla menor volumen útil y más revisión. En el esperado, utiliza una muestra representativa. En el de mayor carga, comprueba qué costos aumentan y qué límites requieren ampliar infraestructura o plan.
 
-Solicita una lista de procesos incluidos, sistemas a conectar, datos de entrada y resultados esperados. Pide criterios de aceptación concretos, por ejemplo: “el mismo evento reenviado no crea otra oportunidad”.
+No cambies simultáneamente todas las variables para hacer favorable una propuesta. Documenta cuál genera incertidumbre: acceso a una API, calidad del catálogo o capacidad de respuesta del equipo. Resolver esa duda con un piloto puede ser más útil que negociar una cifra basada en supuestos.
 
-La propuesta también debería indicar costos de terceros, quién administra las cuentas, documentación entregada, soporte y procedimiento para cambios. Si vas a integrar WhatsApp, revisa además los componentes de la [API oficial y coexistencia](/blog/whatsapp-api-oficial-coexistencia-peru).
+## Pide una demostración del fallo, además del éxito
 
-## Empieza con un piloto que puedas medir
+Una propuesta sólida explica quién recibe una alerta, cómo se recupera una operación y cómo se evita repetir una escritura. Revisa el ejemplo de [leads con n8n y CRM](/blog/automatizar-leads-n8n-crm) para convertir esas condiciones en aceptación verificable.
 
-Elige una tarea frecuente, estable y con un responsable disponible. Establece una medición previa, un periodo de revisión y un criterio para detener el flujo si genera errores.
-
-Puedes completar la [plantilla de diagnóstico](/recursos) antes de solicitar una [evaluación de automatización](/contacto). Así la conversación empieza con un proceso concreto y no con una lista de tecnologías.
+Si todavía no has elegido proceso, utiliza la [matriz de prioridad para pymes](/blog/impacto-ia-pymes-2026). El presupuesto empieza a ser útil cuando compra un resultado delimitado y una operación que tu empresa puede sostener.

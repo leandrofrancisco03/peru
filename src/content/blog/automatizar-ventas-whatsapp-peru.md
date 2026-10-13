@@ -1,67 +1,64 @@
 ---
-title: "Cómo automatizar ventas por WhatsApp en Perú sin perder el control"
-seoTitle: "Automatizar ventas por WhatsApp en Perú: guía práctica"
-description: "Diseña un flujo de WhatsApp a CRM y pedidos: datos mínimos, stock, pagos por revisar, asignación de asesores y pruebas para un negocio peruano."
-category: "Ventas y operaciones en Perú"
-tags: ["WhatsApp", "CRM", "Perú", "ventas"]
+title: "WhatsApp a pedido: organizar la venta antes de automatizar mensajes"
+seoTitle: "Ventas por WhatsApp: del mensaje al pedido en Perú"
+description: "Convierte conversaciones en pedidos verificables: responsable, catálogo, stock, pagos pendientes y seguimiento comercial para negocios en Perú."
+category: "WhatsApp y CRM"
+tags: ["WhatsApp","CRM","pedidos","ventas"]
 datePublished: "2026-10-02"
 image: "/og/ventas-peru.png"
+imageAlt: "Tarjeta de ventas por WhatsApp: de la conversación al pedido."
 relatedServices: ["whatsapp-api-oficial", "integraciones-y-apis"]
-relatedPosts: ["automatizar-leads-n8n-crm", "whatsapp-api-oficial-coexistencia-peru"]
+relatedPosts: ["whatsapp-api-oficial-coexistencia-peru","automatizar-leads-n8n-crm","automatizar-cotizaciones-seguimiento-peru"]
+excerpt: "Convierte conversaciones en pedidos verificables: responsable, catálogo, stock, pagos pendientes y seguimiento comercial para negocios en Perú."
+dateModified: "2026-10-12"
+ctaTitle: "Conectemos la conversación con tu pedido"
+ctaText: "Cuéntanos dónde se confirma hoy la venta y qué paso obliga al asesor a volver a copiar información."
+ctaLabel: "Revisar mi venta por WhatsApp"
 ---
 
-Automatizar ventas por WhatsApp consiste en conectar una conversación con acciones verificables: registrar una oportunidad, consultar un producto y asignar un asesor. Un mensaje respondido no demuestra que el pedido se haya guardado ni que exista stock para atenderlo.
+Responder «sí hay» en una conversación no reserva un producto. Recibir una captura tampoco confirma un abono. Cuando el chat concentra toda la venta, estas diferencias quedan en la memoria del asesor y resultan difíciles de compartir con almacén.
 
-Para un comercio peruano que recibe consultas sobre precio, disponibilidad y entrega, el primer flujo puede ser sencillo: recoger los datos necesarios, consultar una fuente aprobada y dejar cada solicitud en un estado visible. La IA es opcional; el control del pedido no lo es.
+Para automatizar ventas por WhatsApp en un negocio de Perú, conviene empezar por el traspaso entre conversación y pedido. La API es el canal de integración; las reglas comerciales pertenecen al negocio.
 
-## Separa conversación, oportunidad y pedido
+## Decide qué evento convierte la consulta en oportunidad
 
-Una persona puede preguntar por dos productos en días distintos. También puede reenviar un mensaje porque no recibió respuesta. Si todo se deduplica por teléfono, podrías borrar una consulta válida; si cada mensaje crea un pedido, multiplicarías registros.
+Identifica intención, producto o servicio, datos faltantes y responsable. No crees un pedido por cada mensaje. Una persona puede preguntar varias veces antes de decidir, o solicitar dos productos con entregas distintas.
 
-Utiliza un identificador para el contacto, otro para la oportunidad y otro para el pedido confirmado. Los eventos del canal necesitan su propia clave para controlar reintentos. Conserva el origen de la consulta y la relación entre registros, sin copiar toda la conversación donde no sea necesaria.
+El CRM conserva la oportunidad y próxima acción. El sistema de pedidos registra cantidades y compromisos. Vincula ambos por identificadores para que un cambio de asesor no pierda la referencia comercial.
 
-## Pide los datos que permiten dar el siguiente paso
+## Construye un tablero de estados compartidos
 
-Para consultar un producto pueden bastar código y cantidad. Para evaluar entrega, añade distrito o localidad. La dirección completa puede esperar hasta que exista intención de compra y sea necesaria para el despacho.
+| Estado | Responsable de validación |
+| --- | --- |
+| Consulta abierta | Atención comercial |
+| Oferta preparada | Asesor autorizado |
+| Disponibilidad pendiente | Almacén o sistema fuente |
+| Pedido aceptado | Regla de confirmación del negocio |
+| Pago por revisar | Responsable de conciliación |
+| Listo para despacho | Operaciones |
 
-| Dato | Para qué sirve | Control recomendado |
-| --- | --- | --- |
-| Producto y variante | Consultar catálogo | Confirmar código cuando el nombre sea ambiguo. |
-| Cantidad y unidad | Calcular disponibilidad | Diferenciar unidad, caja y paquete. |
-| Distrito o localidad | Verificar cobertura | Consultar la tabla de zonas del negocio. |
-| Responsable | Dar continuidad | Asignar una persona o cola atendida. |
-| Estado comercial | Evitar seguimientos equivocados | Separar consulta, cotización, pedido y cierre. |
+Cada transición necesita una evidencia. Si la fuente solo permite consultar stock, el bot no puede prometer una reserva segura. Si almacén rechaza una solicitud, la oportunidad debe volver al asesor con el motivo.
 
-Si atiendes varios distritos, la [guía de automatización en Lima](/peru/lima#distritos) explica cómo incorporar zonas y sedes sin duplicar el proceso comercial.
+## El catálogo debe explicar unidades y condiciones
 
-## Diseña el flujo antes de conectar herramientas
+Relaciona nombres comerciales con códigos. Una caja y una unidad no son intercambiables sin una conversión aprobada. Solicita aclaración si el mensaje no permite identificar presentación o cantidad.
 
-1. Recibe el evento del canal autorizado y registra su identificador.
-2. Valida datos y busca la oportunidad a la que corresponde.
-3. Consulta catálogo, precio y disponibilidad en sus sistemas fuente.
-4. Solicita aclaración si faltan datos o la consulta no coincide con el catálogo.
-5. Crea una propuesta o pedido pendiente según las reglas comerciales.
-6. Asigna un asesor para aprobar las excepciones y confirmar lo necesario.
-7. Registra el resultado antes de comunicar el estado al cliente.
+Para entregas en Lima, el distrito puede ayudar a elegir una zona; no confirma cobertura exacta ni tarifa. Usa la tabla vigente de tu negocio, dirección suficiente y horario acordado. La [guía de Lima](/peru/lima) desarrolla cómo tratar excepciones sin generar páginas repetidas por distrito.
 
-Para conectar WhatsApp se evalúa la incorporación mediante la plataforma oficial y las posibilidades de la cuenta. Las reglas de mensajería, permisos y condiciones deben revisarse al implementar. Consulta la [documentación oficial de WhatsApp](https://developers.facebook.com/docs/whatsapp/) y nuestra página de [WhatsApp API en Perú](/servicios/whatsapp-api-oficial).
+## Automatiza el traspaso al asesor antes del cierre
 
-## Trata un comprobante como pendiente hasta validarlo
+Cuando una persona toma la conversación, pausa al agente y muestra el contexto útil: producto solicitado, consulta de stock, propuesta vigente y dato pendiente. Define cómo se devuelve el caso a automatización si el asesor termina su intervención.
 
-Si un cliente envía una captura de Yape, Plin o una transferencia, el flujo puede adjuntarla a la operación para revisión. La imagen por sí sola no debe cambiar el pedido a pagado. La confirmación requiere una fuente autorizada o la conciliación de una persona.
+Para activar el canal revisa la [API oficial y coexistencia](/blog/whatsapp-api-oficial-coexistencia-peru). La elegibilidad del número y las reglas de mensajería deben comprobarse en el alta; no son una consecuencia de tener un flujo de n8n preparado.
 
-No se presupone que cualquier cuenta o aplicación de pago permita una integración. Primero se comprueba qué acceso ofrece el proveedor. Si no existe, un paso manual bien identificado es preferible a un estado de pago que nadie pueda justificar.
+## Los reintentos no deben repetir el pedido
 
-## Coordina al agente y al asesor
+Guarda el identificador de mensaje o evento y su resultado. Si el sistema de pedidos tarda, consulta la referencia antes de volver a crear. Un estado de entrega del mensaje informa sobre comunicación, no sobre pago, reserva o despacho.
 
-Define un estado explícito de atención humana. Cuando un asesor toma la conversación, el agente debe respetar esa asignación y evitar respuestas comerciales paralelas. Para retomar la automatización, establece quién libera el caso y qué contexto se conserva.
+Ensaya dos asesores atendiendo el mismo caso, el último producto solicitado simultáneamente y un comprobante reenviado. El artículo de [n8n y CRM sin duplicados](/blog/automatizar-leads-n8n-crm) detalla la recuperación cuando una escritura queda incierta.
 
-Las excepciones necesitan dueño: precio especial, producto no reconocido, reclamo o pago sin conciliar. El objetivo no es responder automáticamente a todo, sino evitar que una solicitud quede sin siguiente acción.
+## Mide oportunidades que llegan a una siguiente acción
 
-## Prueba lo que puede fallar y mide el resultado
+Revisa consultas sin responsable, pedidos corregidos y tiempo hasta confirmación. Analiza dónde se detienen los casos: falta de datos, stock o revisión de condiciones. Enviar más mensajes no demuestra que el proceso venda mejor.
 
-Incluye reenvíos, dos pedidos simultáneos del último producto, cambios de distrito, caída del CRM y confirmación de pago pendiente. Si el CRM tarda en responder, comprueba si guardó la operación antes de crearla otra vez. La [guía de leads con n8n](/blog/automatizar-leads-n8n-crm) desarrolla este control.
-
-Mide tiempo hasta asignación, solicitudes completas, pedidos corregidos y oportunidades sin seguimiento. Evalúa un periodo comparable antes y después; una respuesta automática rápida no equivale a una venta.
-
-El siguiente paso puede ser un piloto de [comercio y distribución](/sectores/comercio-y-distribucion) con un canal y pocos productos. Usa la [calculadora de ahorro](/recursos/calculadora-ahorro-automatizacion) con el tiempo de revisión incluido, no solo con los minutos que deja de teclear el asesor.
+Empieza por un catálogo y un canal de recepción. La solución para [comercio y distribución](/sectores/comercio-y-distribucion) conecta esa primera etapa con preparación, entrega e incidencias. Amplía cuando cada equipo pueda reconocer qué debe hacer y qué dato puede confiar.
