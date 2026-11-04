@@ -13,7 +13,7 @@ const blogCollection = defineCollection({
     secondaryKeywords: z.array(z.string()).optional(),
     category: z.string(),
     tags: z.array(z.string()),
-    author: z.string().default("Equipo ConnectologyIA"),
+    author: z.string().default("Equipo Mavetio Systems"),
     datePublished: z.coerce.date(),
     dateModified: z.coerce.date().optional(),
     image: z.string().optional(),

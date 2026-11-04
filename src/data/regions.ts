@@ -336,7 +336,7 @@ export const regions: Region[] = [
     "description": "Coordina interesados, programas y cambios de grupo para formación en Junín. Automatización administrativa con cupos y confirmaciones verificadas.",
     "intro": "Una consulta sobre horarios no es todavía una inscripción. Esta guía para formación en Junín relaciona interesado, convocatoria y grupo para que cada seguimiento refleje la elección vigente.",
     "focus": "Consultas de formación e inscripciones",
-    "context": "Una academia o centro de formación que atiende en Huancayo y otras localidades de Junín puede ofrecer grupos presenciales, remotos o combinados. El flujo necesita distinguir programa, modalidad, sede y horario antes de proponer una inscripción. La atención de ConnectologyIA es remota; las modalidades del curso corresponden al centro y se consultan en su catálogo.",
+    "context": "Una academia o centro de formación que atiende en Huancayo y otras localidades de Junín puede ofrecer grupos presenciales, remotos o combinados. El flujo necesita distinguir programa, modalidad, sede y horario antes de proponer una inscripción. La atención de Mavetio Systems es remota; las modalidades del curso corresponden al centro y se consultan en su catálogo.",
     "cases": [
       {
         "title": "Información por programa y convocatoria",
@@ -418,7 +418,7 @@ export const regions: Region[] = [
         "El flujo puede contemplar varias zonas si la empresa proporciona sus reglas de cobertura, agenda y asignación. La automatización no sustituye la validación de rutas ni de capacidad del equipo."
       ],
       [
-        "¿ConnectologyIA debe visitar nuestras instalaciones?",
+        "¿Mavetio Systems debe visitar nuestras instalaciones?",
         "La evaluación y la implementación se realizan de forma remota. Las visitas de esta guía corresponden al servicio que tu empresa presta a sus clientes."
       ]
     ],

@@ -5,7 +5,7 @@ import singleSitemap from './src/integrations/single-sitemap.mjs';
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://peru.connectologyia.workers.dev',
+  site: 'https://mavetio.com',
   output: 'static',
   trailingSlash: 'never',
   build: { format: 'file' },

@@ -14,7 +14,7 @@ for (const path of routes) {
   assert.ok(!/noindex/i.test(response.headers.get('x-robots-tag') || ''), path + ': cabecera noindex inesperada');
   assert.equal(response.headers.get('x-content-type-options'), 'nosniff', path + ': cabeceras estáticas');
   const body = await response.text();
-  assert.ok(body.includes('https://peru.connectologyia.workers.dev' + path), path + ': dominio canónico');
+  assert.ok(body.includes('https://mavetio.com' + path), path + ': dominio canónico');
 }
 
 for (const path of ['/peru', '/peru/lima', '/sectores/academias-y-formacion', '/blog/automatizar-ventas-whatsapp-peru']) {

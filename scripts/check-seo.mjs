@@ -3,7 +3,7 @@ import { resolve, relative, join } from 'node:path';
 import { parse } from 'parse5';
 import { elements, attr, text, pagePath } from './lib/html.mjs';
 const root = resolve('dist');
-const origin = 'https://peru.connectologyia.workers.dev';
+const origin = 'https://mavetio.com';
 const failures = [];
 const assert = (condition, message) => { if (!condition) failures.push(message); };
 async function walk(dir) { const entries = await readdir(dir, { withFileTypes: true }); return (await Promise.all(entries.map(e => e.isDirectory() ? walk(join(dir, e.name)) : join(dir, e.name)))).flat(); }

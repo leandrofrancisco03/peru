@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://peru.connectologyia.workers.dev/sitemap.xml
+Sitemap: https://mavetio.com/sitemap.xml

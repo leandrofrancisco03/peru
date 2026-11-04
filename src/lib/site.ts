@@ -1,5 +1,5 @@
-export const SITE_URL = 'https://peru.connectologyia.workers.dev';
-export const SITE_NAME = 'ConnectologyIA';
+export const SITE_URL = 'https://mavetio.com';
+export const SITE_NAME = 'Mavetio Systems';
 export const EMAIL = 'connectologyaia@gmail.com';
 export const PHONE = '+51970430127';
 export const PHONE_DISPLAY = '+51 970 430 127';

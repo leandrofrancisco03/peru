@@ -7,7 +7,7 @@ import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { pathToFileURL } from 'node:url';
 
-const site = 'https://peru.connectologyia.workers.dev';
+const site = 'https://mavetio.com';
 test('normaliza archivos de páginas estáticas y dinámicas sin alterar slugs terminados en index', () => {
   assert.equal(pagePath('index.html'), '/');
   assert.equal(pagePath('blog/index.html'), '/blog');

@@ -37,7 +37,7 @@ export default function singleSitemap() {
   let site;
   let routes = [];
   return {
-    name: 'connectologyia-single-sitemap',
+    name: 'mavetio-single-sitemap',
     hooks: {
       'astro:config:done': ({ config }) => {
         if (!config.site || new URL(config.site).protocol !== 'https:') throw new Error('El sitemap requiere site con HTTPS.');

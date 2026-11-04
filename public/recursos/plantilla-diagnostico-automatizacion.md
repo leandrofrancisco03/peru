@@ -1,6 +1,6 @@
 # Ficha de diagnóstico de automatización
 
-Recurso de ConnectologyIA — https://peru.connectologyia.workers.dev/recursos
+Recurso de Mavetio Systems — https://mavetio.com/recursos
 Versión: 12 de octubre de 2026.
 Puedes copiar, adaptar y compartir esta plantilla citando la fuente e indicando los cambios.
 

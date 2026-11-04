@@ -107,3 +107,7 @@ La comparación con el sitio general, el inventario previo y el resultado por UR
 Cada nuevo post debe definir `ctaTitle`, `ctaText` y `ctaLabel` según su intención, además de sus metadatos y relaciones. `imageAlt` describe la tarjeta social y se utiliza en OG y Twitter.
 
 `node scripts/audit-editorial.mjs` actualiza la extracción local después del build; `node scripts/report-editorial.mjs` compara esa extracción con el inventario previo. Los archivos de auditoría son evidencia histórica de esta revisión. No regenerar la base con `--baseline` salvo que se inicie una auditoría nueva y se archive primero la anterior.
+
+## Mavetio Systems
+
+El dominio corporativo actual es https://mavetio.com. Para lanzamiento, redirecciones, contactos conservados y configuración del Worker peru, consultar [la guía de migración](docs/MIGRACION-MAVETIO.md). Los informes de ConnectologyIA anteriores son históricos.

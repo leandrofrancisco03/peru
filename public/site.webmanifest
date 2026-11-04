@@ -1,0 +1,17 @@
+{
+  "name": "Mavetio Systems",
+  "short_name": "MAVETIO",
+  "lang": "es-PE",
+  "start_url": "/",
+  "display": "browser",
+  "background_color": "#030712",
+  "theme_color": "#071321",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

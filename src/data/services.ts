@@ -220,5 +220,59 @@ export const services = [
     "fit": "Tiene sentido cuando necesitas relacionar conversaciones con CRM, tareas o pedidos. Revisamos cuenta, número, accesos y modalidad de incorporación. La posible coexistencia con la aplicación Business se comprueba para el caso concreto; no se ofrece como garantía universal.",
     "example": "Ejemplo propuesto: llega una consulta de producto, se identifica el motivo y se crea una oportunidad. Al tomar el caso, el asesor pausa la automatización. El stock se consulta en el sistema autorizado y el pedido solo se confirma cuando operaciones registra su aceptación.",
     "architecture": "La plataforma oficial entrega eventos a una integración validada; n8n relaciona conversación y contacto, evita reenvíos repetidos y actualiza el CRM. La bandeja y el procedimiento de transferencia deben acordarse para que una persona pueda retomar el caso."
+  },
+  {
+    "slug": "desarrollo-de-software",
+    "number": "05",
+    "label": "Software y aplicaciones",
+    "title": "Desarrollo web y software para empresas en Perú",
+    "description": "Aplicaciones web, portales y software a medida para conectar trabajo y datos. Mavetio Systems define alcance, permisos e integración con tus sistemas.",
+    "intro": "Cuando una hoja o herramienta existente no permite operar el proceso, diseñamos una aplicación enfocada en el trabajo de tu equipo: registrar, revisar, aprobar y consultar información.",
+    "cases": [
+      [
+        "Portales internos",
+        "Solicitudes y aprobaciones con estados, responsables y acceso por rol."
+      ],
+      [
+        "Web comercial conectada",
+        "Contenido rápido y formularios que entregan solicitudes verificables al equipo."
+      ],
+      [
+        "Herramientas operativas",
+        "Paneles para revisar excepciones, consultar registros y coordinar tareas."
+      ]
+    ],
+    "deliverables": [
+      "Requisitos y recorrido de usuario con criterios de aceptación.",
+      "Interfaz responsive y lógica de negocio del alcance acordado.",
+      "Validación, permisos e integraciones documentadas.",
+      "Pruebas, instrucciones de despliegue y mantenimiento acordado."
+    ],
+    "requirements": "Necesitamos conocer usuarios, operaciones permitidas, estructura de datos y sistemas que deben integrarse. Una muestra anonimizada ayuda a delimitar el primer recorrido.",
+    "cost": "El alcance depende de pantallas, reglas, roles, integraciones y operación posterior. Se separa desarrollo de alojamiento, servicios externos y mantenimiento.",
+    "faq": [
+      [
+        "¿Pueden mejorar una aplicación existente?",
+        "Sí, después de revisar su código, dependencias, accesos y posibilidades de mantenimiento. Se delimita qué conservar y qué necesita cambios."
+      ],
+      [
+        "¿Incluye una aplicación móvil nativa?",
+        "No se presupone. Primero distinguimos una web responsive de una aplicación nativa y evaluamos cuál responde a la necesidad."
+      ]
+    ],
+    "posts": [
+      "desarrollo-web-moderno-nextjs",
+      "automatizar-leads-n8n-crm"
+    ],
+    "source": "https://developer.mozilla.org/es/docs/Web/HTTP",
+    "sourceName": "Referencia de HTTP de MDN",
+    "caseHeading": "Interfaces que resuelven tareas concretas",
+    "deliveryHeading": "De los requisitos a una entrega mantenible",
+    "cta": "Evaluar mi aplicación",
+    "ctaTitle": "Describe la tarea que necesita una interfaz propia",
+    "ctaText": "Revisaremos usuarios, datos y operaciones antes de elegir arquitectura o estimar el desarrollo.",
+    "fit": "Conviene cuando existe un recorrido estable que las herramientas actuales no cubren. Primero evaluamos si configurar o integrar lo disponible resuelve la necesidad; el desarrollo propio se justifica por requisitos concretos.",
+    "example": "Ejemplo propuesto: un portal interno recibe solicitudes, asigna revisión y muestra el historial de aprobaciones. Cada usuario ve los registros autorizados y el sistema de gestión conserva el estado definitivo.",
+    "architecture": "La interfaz facilita la tarea, el servidor valida identidad y permisos y la base de datos conserva los registros. Las APIs conectan el software con CRM y automatizaciones. Se define quién mantiene cada componente y cómo se recupera la información."
   }
 ] as const;
