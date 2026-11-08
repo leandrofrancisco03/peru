@@ -1,6 +1,6 @@
 export const SITE_URL = 'https://mavetio.com';
 export const SITE_NAME = 'Mavetio Systems';
-export const EMAIL = 'connectologyaia@gmail.com';
+export const EMAIL = 'contacto@mavetio.com';
 export const PHONE = '+51970430127';
 export const PHONE_DISPLAY = '+51 970 430 127';
 export const WHATSAPP_URL = 'https://wa.me/51970430127';
@@ -12,3 +12,5 @@ export const faqSchema = (items: readonly (readonly [string, string])[], path: s
   mainEntity: items.map(([question, answer]) => ({ '@type': 'Question', name: question, acceptedAnswer: { '@type': 'Answer', text: answer } })),
 });
 export const formatDate = (date: Date) => date.toLocaleDateString('es-PE', { year: 'numeric', month: 'long', day: 'numeric', timeZone: 'UTC' });
+
+export const whatsappLink = (message: string) => WHATSAPP_URL + '?text=' + encodeURIComponent(message);
