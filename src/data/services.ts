@@ -1,9 +1,10 @@
 export const services = [
   {
     "slug": "automatizacion-con-n8n",
+    "summary": "Conecta formularios, CRM y reportes con n8n. Reduce la copia manual de datos y deja visibles las tareas que requieren revisión.",
     "number": "01",
     "label": "Automatización de procesos",
-    "title": "Flujos n8n y Python para operaciones en Perú",
+    "title": "Automatización con n8n para empresas en Perú",
     "description": "Automatiza solicitudes, reportes y tareas administrativas con n8n y Python. Diseñamos recepción, validación y recuperación para tu operación en Perú.",
     "intro": "Una solicitud recibida debe convertirse en una tarea terminada. Conectamos formularios, CRM, archivos y sistemas para que el trabajo avance con responsables, estados y una ruta de recuperación cuando algo falla.",
     "cases": [
@@ -58,6 +59,7 @@ export const services = [
   },
   {
     "slug": "agentes-de-inteligencia-artificial",
+    "summary": "Atiende consultas con información aprobada, clasifica solicitudes y entrega al asesor lo que necesita para continuar.",
     "number": "02",
     "label": "Agentes de IA",
     "title": "Agentes de IA para atención y equipos en Perú",
@@ -114,6 +116,7 @@ export const services = [
   },
   {
     "slug": "integraciones-y-apis",
+    "summary": "Sincroniza tu CRM, web y sistemas de gestión para que ventas y operaciones trabajen con datos coherentes.",
     "number": "03",
     "label": "Integraciones y sistemas",
     "title": "Integración de CRM, APIs y sistemas de gestión",
@@ -168,10 +171,11 @@ export const services = [
   },
   {
     "slug": "whatsapp-api-oficial",
+    "summary": "Organiza consultas por WhatsApp, registra oportunidades en tu CRM y combina respuestas automáticas con atención humana.",
     "number": "04",
     "label": "WhatsApp para empresas",
-    "title": "WhatsApp oficial conectado a ventas y atención",
-    "description": "Integra WhatsApp Business Platform con n8n y CRM en Perú. Revisa elegibilidad, asignación de asesores, eventos y una puesta en marcha controlada.",
+    "title": "Chatbots y automatización de WhatsApp en Perú",
+    "description": "Conecta WhatsApp Business Platform con chatbots, n8n y tu CRM en Perú. Organiza consultas y seguimiento con transferencia a asesores. Solicita una propuesta.",
     "intro": "Haz que las consultas de WhatsApp tengan responsable y próxima acción. Preparamos la integración oficial con tus sistemas y el recorrido del asesor, desde la entrada del mensaje hasta el registro de la oportunidad.",
     "cases": [
       [
@@ -223,9 +227,10 @@ export const services = [
   },
   {
     "slug": "desarrollo-de-software",
+    "summary": "Crea portales y aplicaciones para registrar, aprobar y consultar el trabajo que tus herramientas actuales no cubren.",
     "number": "05",
     "label": "Software y aplicaciones",
-    "title": "Desarrollo web y software para empresas en Perú",
+    "title": "Desarrollo de software empresarial en Perú",
     "description": "Aplicaciones web, portales y software a medida para conectar trabajo y datos. Mavetio Systems define alcance, permisos e integración con tus sistemas.",
     "intro": "Cuando una hoja o herramienta existente no permite operar el proceso, diseñamos una aplicación enfocada en el trabajo de tu equipo: registrar, revisar, aprobar y consultar información.",
     "cases": [

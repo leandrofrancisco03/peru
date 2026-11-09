@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import hero from '../assets/solutions/mavetio-automatizacion-empresas.png';
+import n8n from '../assets/solutions/automatizaciones-n8n.png';
+import whatsapp from '../assets/solutions/chatbots-whatsapp-ia.png';
+import integrations from '../assets/solutions/integraciones-apis-software.png';
+
+const images = {
+  hero: { src: hero, alt: 'Ilustración de WhatsApp, un asistente IA y sistemas conectados a un panel de automatización empresarial.' },
+  n8n: { src: n8n, alt: 'Ilustración de un flujo que conecta solicitudes, calendario, datos y avisos mediante automatización.' },
+  whatsapp: { src: whatsapp, alt: 'Ilustración de consultas por WhatsApp conectadas a un chatbot y a la atención de un asesor.' },
+  integrations: { src: integrations, alt: 'Ilustración de aplicaciones, bases de datos y paneles conectados alrededor de Mavetio.' },
+};
+interface Props { kind: keyof typeof images; priority?: boolean; }
+const { kind, priority = false } = Astro.props;
+const image = images[kind];
+---
+<figure class="solution-figure">
+  <Image src={image.src} alt={image.alt} format="webp" quality={78}
+    widths={[360, 540, 720, 1080]} sizes="(max-width: 760px) min(540px, calc(100vw - 36px)), (max-width: 1000px) 44vw, 575px"
+    width={1080} height={864} loading={priority ? 'eager' : 'lazy'}
+    fetchpriority={priority ? 'high' : 'auto'} decoding="async" />
+  <figcaption>Ilustración conceptual · El alcance se define para cada proyecto.</figcaption>
+</figure>

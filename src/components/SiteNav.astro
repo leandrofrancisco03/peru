@@ -11,3 +11,15 @@ const path = Astro.url.pathname.replace(/\/index\.html$/, '/').replace(/\.html$/
     <details class="mobile-menu"><summary>Menú <span aria-hidden="true">☰</span></summary><div>{links.map(([href, label]) => <a href={href} aria-current={path === href ? 'page' : undefined}>{label}</a>)}<a href="/contacto">Contacto ↗</a></div></details>
   </nav>
 </header>
+<script>
+  const menu = document.querySelector<HTMLDetailsElement>('.mobile-menu');
+  menu?.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && menu.open) {
+      menu.open = false;
+      menu.querySelector('summary')?.focus();
+    }
+  });
+  document.addEventListener('click', (event) => {
+    if (menu?.open && event.target instanceof Node && !menu.contains(event.target)) menu.open = false;
+  });
+</script>
