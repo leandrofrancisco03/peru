@@ -1,4 +1,21 @@
 ---
 import ServiceLayout from '../../layouts/ServiceLayout.astro';
 ---
-<ServiceLayout slug="desarrollo-de-software" />
+<ServiceLayout slug="desarrollo-de-software">
+  <section class="section prose narrow" aria-labelledby="elegir-solucion">
+    <h2 id="elegir-solucion">¿Software a medida, integración o automatización?</h2>
+    <p>No todos los procesos necesitan una aplicación nueva. La decisión depende de dónde está la dificultad: en conectar datos, repetir una tarea o dar a tu equipo una forma de trabajar que hoy no existe.</p>
+    <ul>
+      <li><strong>Configurar lo que ya tienes:</strong> si tu sistema permite los estados, permisos y formularios necesarios, conviene evaluar esa opción antes de desarrollar.</li>
+      <li><strong>Conectar dos herramientas:</strong> si cada equipo ya tiene una interfaz adecuada, una <a href="/servicios/integraciones-y-apis">integración de APIs y sistemas</a> puede resolver el intercambio de datos.</li>
+      <li><strong>Coordinar pasos repetitivos:</strong> para recibir eventos, transformar información y enviar avisos, revisa la <a href="/servicios/automatizacion-con-n8n">automatización con n8n</a>.</li>
+      <li><strong>Crear una aplicación propia:</strong> cuando necesitas pantallas, reglas y permisos que las herramientas existentes no cubren, delimitamos un primer módulo de software.</li>
+    </ul>
+    <h3>Un piloto de órdenes de servicio, con criterios para aceptarlo</h3>
+    <p>Ejemplo demostrativo: recepción registra una orden, coordinación asigna un responsable y el técnico adjunta el resultado. Un supervisor revisa la evidencia antes del cierre. El portal debe mostrar quién cambió el estado y qué queda pendiente; n8n puede encargarse de los avisos.</p>
+    <p>Antes de aprobar ese piloto, comprobamos un registro válido, un usuario sin permiso, una solicitud repetida y una respuesta fallida del sistema integrado. El equipo debe poder recuperar el pendiente sin crear otra orden ni dar por realizado un trabajo que no se confirmó.</p>
+    <p>La <a href="/peru/ica">guía de órdenes y visitas para empresas de Ica</a> desarrolla las reglas de agenda y segunda intervención de este escenario. La aplicación se evalúa con los procesos reales de tu empresa y se implementa de forma remota.</p>
+    <h3>Qué acordar antes de iniciar el desarrollo</h3>
+    <p>La propuesta debe identificar el módulo inicial, las operaciones permitidas por rol, los datos que se migrarán y quién valida las pruebas. También debe aclarar la entrega de código y documentación, las cuentas de alojamiento, las licencias de terceros, las copias de seguridad y el alcance del mantenimiento. Son puntos que se acuerdan por proyecto; no se presupone soporte ilimitado ni se fija un plazo sin revisar las dependencias.</p>
+  </section>
+</ServiceLayout>

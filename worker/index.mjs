@@ -1,7 +1,8 @@
 export default {
  async fetch(request, env) {
   const url = new URL(request.url);
-  if (['peru.connectologyia.workers.dev', 'www.mavetio.com'].includes(url.hostname)) {
+  const canonicalHttp = url.hostname === 'mavetio.com' && url.protocol === 'http:';
+  if (canonicalHttp || ['peru.connectologyia.workers.dev', 'www.mavetio.com'].includes(url.hostname)) {
    url.hostname = 'mavetio.com'; url.protocol = 'https:'; url.port = '';
    return Response.redirect(url.href, 301);
   }
