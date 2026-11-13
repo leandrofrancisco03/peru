@@ -1,0 +1,64 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+const sections = [
+  { id: 'alcance', title: 'Alcance y contacto' }, { id: 'datos', title: 'Datos y finalidades' },
+  { id: 'oauth', title: 'Permisos OAuth y APIs' }, { id: 'almacenamiento', title: 'Vídeos, herramientas y destinatarios' },
+  { id: 'conservacion', title: 'Conservación y seguridad' }, { id: 'revocar-acceso', title: 'Revocar accesos' },
+  { id: 'eliminacion-de-datos', title: 'Eliminación de datos y derechos' }, { id: 'cambios', title: 'Cambios de la política' },
+];
+---
+<LegalLayout title="Política de privacidad" description="Cómo Mavetio y Social Publisher tratan datos, vídeos y permisos OAuth; revocación de accesos, solicitudes de eliminación y contacto empresarial en Perú." path="/politica-de-privacidad" sections={sections}>
+  <h2 id="alcance">1. Alcance y contacto</h2>
+  <p>Mavetio es el nombre comercial utilizado para ofrecer automatización, inteligencia artificial y desarrollo de software desde Perú. Esta política describe el tratamiento relacionado con este sitio, las consultas comerciales y <strong>Mavetio Social Publisher</strong>, el servicio para administrar y programar publicaciones en cuentas sociales autorizadas.</p>
+  <p>El canal empresarial para cuestiones de privacidad es <a href="mailto:contacto@mavetio.com">contacto@mavetio.com</a>.</p>
+  <p>El marco aplicable incluye la <a href="https://www.leyes.congreso.gob.pe/DetLeyNume_1p.aspx?xNorma=6&amp;xNumero=29733&amp;xTipoNorma=0">Ley N.º 29733, Ley de Protección de Datos Personales</a>, y su <a href="https://busquedas.elperuano.pe/dispositivo/SE/2349653-1">Reglamento aprobado por Decreto Supremo N.º 016-2024-JUS</a>. Cuando un cliente entrega datos de terceros para un proyecto, deben definirse por contrato las instrucciones, responsabilidades y condiciones del encargo.</p>
+
+  <h2 id="datos">2. Qué datos se tratan y para qué</h2>
+  <ul>
+    <li><strong>Consultas y relación comercial:</strong> nombre, correo, teléfono si lo facilitas y contenido del mensaje, para responder, preparar propuestas y atender el servicio solicitado. No envíes contraseñas ni información sensible en una consulta inicial.</li>
+    <li><strong>Cuentas sociales conectadas:</strong> identificadores de cuenta, canal o página y datos de perfil que entregue cada API según los permisos concedidos, para identificar el destino de publicación. La conexión no autoriza acceder a todos los datos de tu cuenta.</li>
+    <li><strong>Autorizaciones:</strong> tokens de acceso y, cuando corresponda, de renovación, permisos concedidos y estado de conexión, para ejecutar las acciones que autorices sin solicitar tu contraseña de la red social.</li>
+    <li><strong>Contenido editorial:</strong> vídeos, imágenes, textos, títulos, descripciones, destinos y fechas de programación que aportes, para preparar y enviar publicaciones. Estos archivos pueden contener datos personales de otras personas; debes contar con autorización o fundamento legal para utilizarlos.</li>
+    <li><strong>Operación y soporte:</strong> identificadores de publicaciones, estados de envío y errores devueltos por las herramientas, necesarios para gestionar incidencias. El alojamiento y los servicios conectados pueden tratar datos técnicos de conexión, como dirección IP, fecha y solicitudes, conforme a su configuración.</li>
+  </ul>
+  <p>La autorización OAuth se solicita para las funciones que el usuario decide conectar. Los tratamientos que requieran consentimiento deben informarse y autorizarse antes de realizarlos; las actuaciones necesarias para atender una relación contractual o cumplir obligaciones legales se sujetan a los supuestos previstos en la normativa. Visitar esta web no constituye consentimiento para finalidades distintas ni para conectar cuentas.</p>
+  <p>La conexión de Social Publisher no concede autorización para vender datos, utilizarlos en publicidad ajena al servicio o entrenar modelos de IA. Un proyecto de inteligencia artificial que necesite otros datos, proveedores o finalidades requiere información y condiciones específicas antes de su ejecución.</p>
+
+  <h2 id="oauth">3. Permisos OAuth y uso de APIs</h2>
+  <p>Social Publisher contempla conexiones con TikTok, YouTube, Instagram y Facebook. Las integraciones con sus APIs están previstas y su disponibilidad depende de la configuración real, de los permisos autorizados por el usuario y de las revisiones de cada plataforma.</p>
+  <p>OAuth permite autorizar a una aplicación desde la plataforma correspondiente. Lee la pantalla de autorización: allí se indican los permisos que realmente se solicitan. El alcance debe limitarse a las funciones configuradas, como identificar una cuenta autorizada, cargar contenido, publicar o consultar el resultado de un envío, cuando ese permiso esté habilitado. Rechazar un permiso puede impedir la función que lo necesita.</p>
+  <p>Las acciones se realizan mediante las herramientas y APIs habilitadas para la cuenta y siguiendo las instrucciones de publicación del usuario. No se debe eludir una confirmación, selección de privacidad o restricción exigida por la plataforma.</p>
+  <p>La integración prevista con YouTube utiliza los servicios de la API de YouTube. Google trata información según su <a href="https://policies.google.com/privacy">Política de Privacidad</a>; consulta también las <a href="https://developers.google.com/youtube/terms/developer-policies">políticas para desarrolladores de YouTube</a>.</p>
+
+  <h2 id="almacenamiento">4. Almacenamiento de vídeos, herramientas y destinatarios</h2>
+  <p>La infraestructura utiliza <strong>Postiz y n8n autoalojados en un VPS administrado mediante EasyPanel</strong>. Google Drive almacena los vídeos de origen y Google Sheets gestiona contenidos y programaciones. También se utiliza <strong>Zernio para TikTok</strong>. EasyPanel es la herramienta de administración del VPS; no se identifica aquí como proveedor de alojamiento.</p>
+  <p>Para ejecutar una publicación, las herramientas implicadas necesitan recibir o acceder al archivo, sus metadatos y las credenciales autorizadas que correspondan al flujo. Pueden existir copias de procesamiento en el VPS o en los servicios de transferencia y publicación.</p>
+  <p>La red social de destino recibe el contenido enviado y lo trata conforme a sus condiciones. Su visibilidad depende de la configuración elegida y de las reglas de la plataforma. Borrar un archivo de origen en Drive no elimina por sí mismo una publicación ya enviada ni otras copias.</p>
+  <p>El sitio web se aloja en Cloudflare. El correo y los servicios conectados intervienen al utilizar sus respectivos canales. Los proveedores de infraestructura y las plataformas pueden procesar información fuera de Perú.</p>
+
+  <h2 id="conservacion">5. Conservación y seguridad</h2>
+  <p>La conservación de vídeos de origen, copias de procesamiento, tokens, hojas de programación, registros y respaldos debe limitarse a la finalidad informada y al servicio autorizado, respetando las obligaciones legales y los requisitos de las plataformas. La finalización del servicio o la retirada del consentimiento no autoriza a conservar datos indefinidamente. Puedes solicitar información sobre tus datos y su eliminación mediante el canal indicado en esta política.</p>
+  <p>El acceso a cuentas y contenidos debe limitarse a las personas y procesos autorizados. No compartas tokens o contraseñas por correo. Si detectas un acceso indebido, revoca la conexión en la plataforma y avisa a nuestro correo empresarial.</p>
+
+  <h2 id="revocar-acceso">6. Cómo revocar los accesos</h2>
+  <ul>
+    <li><strong>TikTok:</strong> revisa en la configuración de seguridad los permisos de aplicaciones y retira el acceso de la aplicación conectada. Si se muestra el nombre de un intermediario, identifica la conexión que autorizaste para el servicio.</li>
+    <li><strong>YouTube y Google:</strong> revoca el acceso desde las <a href="https://security.google.com/settings/security/permissions">conexiones y permisos de tu cuenta de Google</a>. Revisa por separado los accesos concedidos a Drive o Sheets, si los hubiera.</li>
+    <li><strong>Instagram y Facebook:</strong> revisa las aplicaciones, sitios web o integraciones empresariales autorizadas en la configuración de la cuenta y elimina la conexión correspondiente.</li>
+  </ul>
+  <p>También puedes pedir asistencia a <a href="mailto:contacto@mavetio.com">contacto@mavetio.com</a>, indicando la plataforma y cuenta afectadas. Revocar el acceso puede impedir los envíos programados. No equivale necesariamente a borrar los datos almacenados, los archivos de Drive o las publicaciones ya realizadas: solicita el borrado por el procedimiento siguiente y gestiona el contenido publicado en la red social de destino.</p>
+
+  <h2 id="eliminacion-de-datos">7. Solicitudes de eliminación y ejercicio de derechos</h2>
+  <p>Puedes solicitar información, acceso, rectificación, cancelación o supresión y oposición al tratamiento, así como retirar el consentimiento cuando corresponda, a través de <a href="mailto:contacto@mavetio.com?subject=Privacidad%20y%20eliminaci%C3%B3n%20de%20datos">contacto@mavetio.com</a>. Este canal es accesible sin iniciar sesión en Mavetio.</p>
+  <ol>
+    <li>Indica en el asunto «Privacidad y eliminación de datos» o el derecho que deseas ejercer.</li>
+    <li>Identifica el servicio, la plataforma, el correo o identificador de la cuenta y los datos que quieres revisar o eliminar. No incluyas contraseñas ni tokens.</li>
+    <li>Indica si también deseas cancelar programaciones y desconectar cuentas. Se podrá solicitar la información mínima necesaria para verificar tu identidad o representación; no adjuntes documentos de identidad sin que se te expliquen su necesidad y el canal adecuado.</li>
+  </ol>
+  <p>La atención debe sujetarse a los plazos y condiciones de la normativa y de las APIs aplicables. Si existe una obligación legal de conservar información o una limitación de control sobre un archivo o publicación, debe explicarse el alcance y fundamento de esa limitación. La solicitud puede incluir copias de procesamiento y respaldos bajo control del servicio. El alcance de la respuesta debe distinguir los datos eliminados de los que deban conservarse por una obligación aplicable, indicando su fundamento.</p>
+  <p>Para información o tutela de tus derechos puedes acudir a la <a href="https://www.gob.pe/anpd">Autoridad Nacional de Protección de Datos Personales</a>.</p>
+
+  <h2 id="cambios">8. Cambios en esta política</h2>
+  <p>La fecha de actualización identifica esta versión. Los cambios relevantes en finalidades, destinatarios o permisos deben informarse antes de aplicar el nuevo tratamiento y requerir autorización cuando corresponda. Consulta también los <a href="/terminos-y-condiciones">Términos y condiciones</a>.</p>
+
+</LegalLayout>

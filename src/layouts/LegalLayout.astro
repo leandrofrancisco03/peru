@@ -1,0 +1,19 @@
+---
+import Layout from './Layout.astro';
+interface Props { title: string; description: string; path: string; sections: { id: string; title: string }[] }
+const { title, description, path, sections } = Astro.props;
+---
+<Layout title={`${title} | Mavetio`} description={description} emailOnlyContact breadcrumbs={[{ name: 'Inicio', url: '/' }, { name: title, url: path }]}>
+  <main id="main-content" class="page-main shell">
+    <article class="prose narrow">
+      <header class="page-heading">
+        <a href="/">Inicio</a>
+        <h1>{title}</h1>
+        <p>Mavetio y Mavetio Social Publisher · Perú</p>
+        <p>Última actualización: <time datetime="2026-11-12">12 de noviembre de 2026</time>.</p>
+      </header>
+      <nav aria-label="Contenido del documento"><h2>En esta página</h2><ul>{sections.map(section => <li><a href={`#${section.id}`}>{section.title}</a></li>)}</ul></nav>
+      <slot />
+    </article>
+  </main>
+</Layout>

@@ -54,7 +54,12 @@ for (const page of pages.values()) {
    assert(webPage?.url === expected && webPage?.inLanguage === 'es-PE', route + ': identidad WebPage');
    assert(webPage?.name === text(title[0]) && webPage?.description === desc, route + ': metadatos y schema no coinciden');
    if (webPage?.mainEntity?.['@id']) assert(ids.includes(webPage.mainEntity['@id']), route + ': mainEntity sin entidad');
-   assert(graph.find(n => n['@type'] === 'Organization')?.telephone === '+51970430127', route + ': teléfono de organización incorrecto');
+   const organization = graph.find(n => n['@type'] === 'Organization');
+   const legalPage = ['/politica-de-privacidad', '/terminos-y-condiciones'].includes(route);
+   if (legalPage) {
+    assert(!organization?.telephone && organization?.contactPoint?.email === 'contacto@mavetio.com', route + ': contacto legal debe usar solo correo empresarial');
+    assert(!/tel:|wa\.me\/|970\s*430\s*127|51970430127/.test(html), route + ': teléfono no autorizado en página legal');
+   } else assert(organization?.telephone === '+51970430127', route + ': teléfono de organización incorrecto');
    for (const kind of ['Organization', 'WebSite']) assert(graph.some(n => n['@type'] === kind), route + ': falta ' + kind);
    const article = graph.find(n => n['@type'] === 'BlogPosting');
    if (route.startsWith('/blog/')) {
@@ -104,7 +109,7 @@ for (const page of pages.values()) {
   assert(attr(img,'alt') !== undefined, route + ': imagen sin alt');
   assert(attr(img,'width') && attr(img,'height'), route + ': imagen sin dimensiones');
  }
- assert(select('a').some(n => attr(n, 'href') === 'https://wa.me/51970430127'), route + ': enlace WhatsApp incorrecto');
+ if (!['/politica-de-privacidad', '/terminos-y-condiciones'].includes(route)) assert(select('a').some(n => attr(n, 'href') === 'https://wa.me/51970430127'), route + ': enlace WhatsApp incorrecto');
  const refs = [...select('a').map(n => ({ value: attr(n,'href'), anchor: true })), ...select('img').map(n => ({ value: attr(n,'src') })), ...oneMeta('property','og:image').map(n => ({ value: attr(n,'content') })), ...select('link').filter(n => ['stylesheet','icon'].includes(attr(n,'rel'))).map(n => ({ value: attr(n,'href') })), ...select('script').filter(n => attr(n,'src')).map(n => ({ value: attr(n,'src') }))];
  for (const ref of refs) {
   if (!ref.value || /^(mailto:|tel:)/.test(ref.value)) continue;

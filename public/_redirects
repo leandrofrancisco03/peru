@@ -1,1 +1,6 @@
 # Las variantes HTML se generan durante el build. /sitemap.xml se sirve directamente.
+/privacidad /politica-de-privacidad 301
+/privacidad/ /politica-de-privacidad 301
+/privacidad.html /politica-de-privacidad 301
+/privacidad/index /politica-de-privacidad 301
+/privacidad/index.html /politica-de-privacidad 301

@@ -1,0 +1,60 @@
+---
+import LegalLayout from '../layouts/LegalLayout.astro';
+const sections = [
+  { id: 'identificacion', title: 'Identificación y alcance' }, { id: 'contratacion', title: 'Contratación y condiciones comerciales' },
+  { id: 'publisher', title: 'Funcionamiento de Social Publisher' }, { id: 'responsabilidades', title: 'Cuentas, permisos y contenido' },
+  { id: 'terceros', title: 'Plataformas y disponibilidad' }, { id: 'propiedad', title: 'Propiedad intelectual e IA' },
+  { id: 'privacidad', title: 'Privacidad, revocación y eliminación' }, { id: 'suspension', title: 'Suspensión y terminación' },
+  { id: 'ley', title: 'Responsabilidad y legislación aplicable' }, { id: 'cambios', title: 'Cambios en los términos' },
+];
+---
+<LegalLayout title="Términos y condiciones" description="Condiciones de los servicios de Mavetio y Social Publisher: cuentas sociales, programación, OAuth, contenido, responsabilidades y contacto empresarial en Perú." path="/terminos-y-condiciones" sections={sections}>
+  <h2 id="identificacion">1. Identificación y alcance</h2>
+  <p>Mavetio es un nombre comercial con operación en Perú. Ofrece automatización de procesos, inteligencia artificial y desarrollo de software, además de <strong>Mavetio Social Publisher</strong>, destinado a administrar y programar publicaciones en cuentas de TikTok, YouTube, Instagram y Facebook autorizadas por sus usuarios.</p>
+  <p>El contacto empresarial es <a href="mailto:contacto@mavetio.com">contacto@mavetio.com</a>.</p>
+  <p>Este documento describe las condiciones generales de los servicios. La contratación debe identificar al prestador y recoger la aceptación expresa de las condiciones aplicables. Consultar esta web no equivale por sí solo a contratar un servicio ni a autorizar acceso a una cuenta social.</p>
+
+  <h2 id="contratacion">2. Contratación y condiciones comerciales</h2>
+  <p>Antes de iniciar un proyecto, la propuesta aceptada debe precisar alcance, entregables, responsabilidades, dependencias, precio, impuestos aplicables, forma de pago, soporte y condiciones de cancelación. En servicios recurrentes deben informarse la duración, la renovación y sus cargos antes de su aceptación. No se presume una suscripción o renovación automática por navegar en el sitio.</p>
+  <p>Los costos de alojamiento, herramientas, almacenamiento y APIs de terceros deben identificarse en la propuesta cuando correspondan. Las solicitudes fuera del alcance requieren acuerdo adicional. La disponibilidad de una función en la documentación no constituye una oferta de acceso ilimitado ni un compromiso de plazo no acordado.</p>
+  <p>Las condiciones particulares pueden precisar estos términos, pero no restringir derechos que la legislación aplicable reconozca de forma obligatoria. No se establece una prohibición general de devoluciones; las solicitudes se evalúan según lo contratado y los derechos legales aplicables.</p>
+
+  <h2 id="publisher">3. Funcionamiento de Mavetio Social Publisher</h2>
+  <p>El flujo utiliza Postiz y n8n autoalojados en un VPS administrado con EasyPanel, Google Drive para vídeos de origen y Google Sheets para contenidos y programaciones. También se utiliza Zernio para TikTok. Se prevén integraciones con las APIs de TikTok, Google/YouTube y Meta; su habilitación depende de los permisos reales, la cuenta conectada y las aprobaciones exigidas por cada plataforma.</p>
+  <p>El usuario proporciona o selecciona el contenido, el destino y la programación, y autoriza las acciones disponibles. Debe revisar títulos, descripciones, archivos, zona horaria, audiencia y cualquier confirmación exigida antes del envío. Las automatizaciones deben respetar esas instrucciones y los controles requeridos por la plataforma.</p>
+  <p>Una programación no garantiza que una publicación sea aceptada ni que aparezca exactamente a la hora elegida: pueden intervenir cuotas, errores, revisión de contenido, caducidad de permisos o indisponibilidad externa. Ante una incidencia, conviene comprobar el estado en la plataforma antes de repetir el envío para evitar duplicados.</p>
+
+  <h2 id="responsabilidades">4. Cuentas, autorizaciones y contenido</h2>
+  <ul>
+    <li>Conecta únicamente cuentas propias o que estés autorizado a administrar. Si actúas por una empresa, debes contar con facultades suficientes para dar las instrucciones correspondientes.</li>
+    <li>Concede solo los permisos necesarios en las pantallas oficiales de autorización. No compartas contraseñas ni tokens por canales de soporte.</li>
+    <li>Debes disponer de los derechos y autorizaciones para publicar vídeos, imágenes, música, marcas y datos de terceros. Comprueba también las reglas de publicidad y contenido de cada plataforma.</li>
+    <li>No utilices el servicio para spam, suplantación, fraude, acceso no autorizado, infracción de derechos, contenido ilícito o evasión de límites de las APIs.</li>
+    <li>Comunica conexiones indebidas o errores y revisa las publicaciones que requieran intervención humana. El servicio no sustituye tu criterio editorial ni la autorización de las personas afectadas.</li>
+  </ul>
+
+  <h2 id="terceros">5. Servicios de terceros y disponibilidad</h2>
+  <p>TikTok, Google/YouTube y Meta gestionan sus plataformas de forma independiente. Postiz, n8n, EasyPanel y Zernio no se presentan como socios certificados de Mavetio. El uso de sus nombres identifica herramientas o integraciones, no un patrocinio o aprobación.</p>
+  <p>Al utilizar una integración con YouTube, resultan aplicables los <a href="https://www.youtube.com/t/terms">Términos del Servicio de YouTube</a>. También deben respetarse las condiciones vigentes de TikTok, Instagram, Facebook y de las herramientas utilizadas. Las funciones pueden cambiar por requisitos técnicos, políticas o decisiones de sus proveedores.</p>
+  <p>No se garantiza disponibilidad ininterrumpida, alcance, visualizaciones, monetización, posicionamiento, aprobación de aplicaciones ni ausencia de moderación. Las incidencias deben comunicarse al correo empresarial para revisar su origen y las actuaciones dentro del alcance contratado.</p>
+
+  <h2 id="propiedad">6. Propiedad intelectual y resultados de IA</h2>
+  <p>El usuario conserva los derechos que le correspondan sobre sus contenidos. Para prestar la función solicitada, autoriza su almacenamiento, procesamiento y transmisión a las herramientas y cuentas de destino exclusivamente en el alcance necesario para esa función. Esto no transfiere la propiedad ni autoriza usos comerciales ajenos al servicio.</p>
+  <p>La entrega de código, licencias, documentación y derechos sobre desarrollos se acuerda en cada propuesta. Los componentes de terceros mantienen sus respectivas licencias. Los resultados de IA pueden contener errores o contenido inadecuado y requieren revisión antes de utilizarlos; no sustituyen asesoramiento profesional cuando sea necesario.</p>
+
+  <h2 id="privacidad">7. Privacidad, revocación y eliminación</h2>
+  <p>La <a href="/politica-de-privacidad">Política de privacidad</a> describe los datos, herramientas y limitaciones conocidas del tratamiento. OAuth no autoriza cualquier uso de los datos. Los proyectos que impliquen datos de terceros deben definir las instrucciones y obligaciones de las partes antes de su tratamiento.</p>
+  <p>Puedes revocar permisos en la plataforma correspondiente y solicitar asistencia o eliminación escribiendo a <a href="mailto:contacto@mavetio.com">contacto@mavetio.com</a>. Consulta las <a href="/politica-de-privacidad#eliminacion-de-datos">instrucciones de eliminación de datos</a>. La desconexión puede detener publicaciones futuras, pero no borra por sí sola archivos de origen, respaldos o publicaciones ya realizadas.</p>
+
+  <h2 id="suspension">8. Suspensión y terminación</h2>
+  <p>Puede ser necesario interrumpir una conexión ante acceso no autorizado, uso ilícito, riesgo de seguridad, revocación de permisos o requerimiento de una plataforma. La medida debe limitarse a lo necesario y comunicarse cuando sea posible y legalmente procedente.</p>
+  <p>La finalización del servicio debe contemplar las programaciones pendientes, la retirada de accesos, la devolución o entrega de información que corresponda y su eliminación conforme a las obligaciones aplicables. Las condiciones económicas de cancelación y el procedimiento de cierre deben precisarse en el acuerdo de servicio. Cualquier plazo o penalidad debe informarse y acordarse conforme a la legislación aplicable.</p>
+
+  <h2 id="ley">9. Responsabilidad, legislación y atención de consultas</h2>
+  <p>Las partes responden por sus actuaciones conforme al contrato y la legislación aplicable. Las limitaciones técnicas y las intervenciones de terceros descritas aquí no exoneran a Mavetio de obligaciones propias ni excluyen responsabilidades o derechos irrenunciables.</p>
+  <p>Resulta aplicable la legislación peruana, incluida la normativa de protección de datos personales y, cuando corresponda a la relación, el Código de Protección y Defensa del Consumidor. No se impone una renuncia al acceso a autoridades competentes ni un fuero que prive al usuario de sus derechos.</p>
+  <p>Para consultas o reclamos sobre el servicio escribe a <a href="mailto:contacto@mavetio.com">contacto@mavetio.com</a>. Este correo no sustituye los mecanismos legales de reclamación que resulten exigibles.</p>
+
+  <h2 id="cambios">10. Cambios en los términos</h2>
+  <p>Los cambios relevantes deben comunicarse antes de su aplicación. No alteran retroactivamente lo contratado ni sustituyen una nueva aceptación cuando sea necesaria.</p>
+</LegalLayout>
