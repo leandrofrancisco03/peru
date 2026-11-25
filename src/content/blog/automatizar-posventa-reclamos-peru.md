@@ -5,6 +5,7 @@ excerpt: "Organiza incidencias posventa con pedido de origen, responsables y evi
 category: "Operación comercial"
 tags: ["automatización", "procesos", "Perú"]
 datePublished: "2026-11-15"
+dateModified: "2026-11-25"
 image: "/og/ventas-peru.png"
 imageAlt: "Tarjeta editorial de Mavetio sobre automatización de procesos."
 relatedPosts: ["automatizar-ventas-whatsapp-peru", "automatizar-reportes-ventas-peru"]
@@ -60,3 +61,21 @@ También prueba un fallo al guardar la tarea. El cliente no debería recibir una
 Separa tiempo hasta asignación, tiempo de atención y tiempo esperando información. Revisa casos reabiertos y casos sin próxima acción. El volumen de mensajes enviados no demuestra una mejor posventa.
 
 El escenario de [seguimiento posventa en Lambayeque](/peru/lambayeque) desarrolla esta relación entre pedido, evidencia y cierre. Para preparar un piloto, elige un motivo frecuente y completa la [ficha de diagnóstico](/recursos) con una operación normal y una reapertura. Las obligaciones legales de reclamación deben tratarse por sus canales y reglas aplicables; un tablero interno no las sustituye.
+
+
+## Ficha para revisar un caso sin perder su historial
+
+Antes de automatizar, completa este ejemplo con datos ficticios. Sirve como criterio de aceptación del piloto, no como formato legal de reclamación.
+
+| Dato | Ejemplo demostrativo |
+| --- | --- |
+| Caso | INC-001, asociado al pedido PED-001 |
+| Problema | Falta una unidad de la entrega registrada |
+| Responsable | Coordinación de posventa |
+| Siguiente acción | Verificar cantidades y evidencia del despacho |
+| Condición de cierre | Actuación acordada ejecutada y comprobada |
+| Motivo de reapertura | El resultado verificado no coincide con lo acordado |
+
+Conserva la relación entre incidencia, tarea y evidencia; evita copiar datos de clientes en cada herramienta. Si el sistema de pedidos no responde, el caso debe seguir pendiente de verificación. Si el cliente escribe otra vez, comprueba si añade información al caso o comunica un problema diferente.
+
+Para validar esas reglas, prepara los casos de la [guía de pruebas de aceptación de automatizaciones](/blog/pruebas-aceptacion-automatizacion-peru). El resultado esperado debe incluir tanto el registro correcto como la ausencia de acciones que todavía no están autorizadas.
